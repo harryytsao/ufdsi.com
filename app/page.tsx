@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="head-text text-left">Data Science and Informatics</h1>
-    </main>
+    <>
+      <Hero />
+    </>
   )
 }
