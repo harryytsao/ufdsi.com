@@ -19,11 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
         <Navbar />
         <main className="relative overflow-hidden">
           {children}
         </main>
         <Footer />
+        </div>
+
       </body>
     </html>
   )
