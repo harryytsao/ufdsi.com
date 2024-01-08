@@ -1,15 +1,13 @@
-"use client";
+'use client';
 import { NAV_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
 const Navbar = () => {
-  const [isNavVisible, setIsNavVisible] = useState(false);
-
-  // Function to toggle the visibility
-  const toggleNav = () => {
-    setIsNavVisible(!isNavVisible);
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen((prevOpen) => !prevOpen);
   };
 
   return (
