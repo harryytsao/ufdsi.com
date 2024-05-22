@@ -3,7 +3,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
-import v0 from '@/components/v0'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <div className="fixed h-screen w-full">
+        <div className="fixed h-screen w-full">
           <Navbar />
         <main className="relative overflow-hidden">
           {children}
         </main>
         <Footer />
-        </div> */}
-        v0
+        </div>
       </body>
     </html>
   )
