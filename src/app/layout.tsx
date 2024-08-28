@@ -3,11 +3,15 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
-import { Inter } from "next/font/google";
+import { Merriweather } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const merriweather = Merriweather({
+  weight: ["400", "700"], // Add multiple weights if needed
+  style: ["normal", "italic"], // Add styles if needed
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -22,7 +26,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FCFCFC] dark:bg-black ${merriweather.className}`}>
         <Providers>
           <Header />
           {children}
