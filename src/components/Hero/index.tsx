@@ -18,7 +18,7 @@ const Hero = () => {
                   A Community for Data Science Innovation in Data Science at the University of Florida<br /> Actively fostering a strong data science community on campus via our workshops and networking initiatives.
                 </p> */}
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  University of Florida's first undergraduate data science focused student organization
+                  University of Florida&apos;s first undergraduate data science focused student organization
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
