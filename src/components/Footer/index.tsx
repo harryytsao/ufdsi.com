@@ -52,7 +52,7 @@ const Footer = () => {
                   </a>
 
                   <a
-                    href="https://discord.com/invite/rJ2TTPZk"
+                    href="https://discord.gg/GUEAwEhRQw"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
