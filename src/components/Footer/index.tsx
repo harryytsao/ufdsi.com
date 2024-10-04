@@ -11,13 +11,13 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
-                  <Image
+                  {/* <Image
                     src="/images/logo/logo-2.svg"
                     alt="logo"
                     className="w-full dark:hidden"
                     width={140}
                     height={30}
-                  />
+                  /> */}
                   <Image
                     src="/images/logo/logo.svg"
                     alt="logo"
@@ -109,12 +109,20 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div className="w-full px-4 w-fit"> 
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Social Media
+                  Find Us!
                 </h2>
-                <ul>
+                <p className="mb-4 text-sm sm:text-sm md:text-sm lg:text-base xl:text-base xl:w-fit text-body-color dark:text-body-color-dark">
+                  UF Informatics Institute<br></br>
+                  432 Newell Drive, CISE Bldg E251<br></br>
+                  Gainesville, Florida 32611-5585<br></br>
+                </p>
+                <p className="mb-4 text-xs sm:text-xs md:text-xs lg:text-sm xl:text-sm xl:w-fit text-body-color dark:text-body-color-dark italic">
+                  Located across from Marston Science Library, side of the CSE Building
+                </p>
+                {/* <ul>
                   <li>
                     <Link
                       href="https://www.instagram.com/uf_dsi/"
@@ -150,7 +158,7 @@ const Footer = () => {
                       Linktree
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
 
