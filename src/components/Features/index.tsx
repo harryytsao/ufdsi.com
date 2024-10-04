@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="About Us"
-            paragraph="DSI is partnered with the UF Informatics Institute, which is located across from Marston Science Library, side of the CSE Building"
+            paragraph="DSI is partnered with the UF Informatics Institute." //, which is located across from Marston Science Library, side of the CSE Building
             center
           />
 
