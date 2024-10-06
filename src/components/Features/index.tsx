@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="About Us"
-            paragraph="DSI is partnered with the UF Informatics Institute." //, which is located across from Marston Science Library, side of the CSE Building
+            paragraph="The Data Science & Informatics (DSI) club at the University of Florida, founded in 2019, is dedicated to helping undergraduate students explore the world of data science. Through workshops, research projects, networking events, and hackathons, DSI provides valuable opportunities to develop skills in AI, machine learning, data visualization, data analytics, and even more. Our goal is to equip students with the knowledge and connections they need to succeed in this fast-growing field." //, which is located across from Marston Science Library, side of the CSE Building
             center
           />
 
