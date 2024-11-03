@@ -1,23 +1,20 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
-  // other metadata
+  title: "Contact Us",
+  description: "Contact Us",
 };
 
 const ContactPage = () => {
   return (
     <>
-      <Breadcrumb
-        pageName="Contact Page"
-        description="Have questions or need assistance? Our team is here to help! Reach out to us through the form below, and we'll respond as soon as possible."
-      />
-
-      <Contact />
+      <div className="relative z-10 overflow-hidden bg-white dark:bg-gray-dark">
+        <div className="container relative py-16 md:py-20 lg:py-28">
+          <Contact />
+        </div>
+      </div>
     </>
   );
 };
