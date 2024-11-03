@@ -14,7 +14,7 @@ const iframeWrapperStyle: CSSProperties = {
 };
 
 const iframeStyle: CSSProperties = {
-    border: '0', 
+    border: '0',
     height: '100%',
     left: 0,
     position: 'absolute',
@@ -27,7 +27,7 @@ const Calendar: React.FC = () => {
         <div style={containerStyle}>
             <div style={iframeWrapperStyle}>
                 <iframe
-                    src="src=https://calendar.google.com/calendar/embed?src=dsiufl%40gmail.com&ctz=America%2FNew_York"
+                    src="https://calendar.google.com/calendar/embed?src=dsiufl%40gmail.com&ctz=America%2FNew_York"
                     style={iframeStyle}
                     aria-label="Google Calendar Embed"
                 ></iframe>

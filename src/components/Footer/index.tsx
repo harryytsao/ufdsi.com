@@ -11,13 +11,6 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
-                  {/* <Image
-                    src="/images/logo/logo-2.svg"
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  /> */}
                   <Image
                     src="/images/logo/logo.svg"
                     alt="logo"
@@ -26,10 +19,6 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                {/* <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
-                </p> */}
                 <div className="flex items-center">
 
                   <a
@@ -71,7 +60,7 @@ const Footer = () => {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/company/dsiufl/mycompany/"
+                    href="https://www.linkedin.com/company/dsiufl/"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -103,113 +92,8 @@ const Footer = () => {
                 <p className="mb-4 text-xs sm:text-xs md:text-xs lg:text-sm xl:text-sm xl:w-fit text-body-color dark:text-body-color-dark italic">
                   Located across from Marston Science Library, side of the CSE Building
                 </p>
-                {/* <ul>
-                  <li>
-                    <Link
-                      href="https://www.instagram.com/uf_dsi/"
-                      target="_blank"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Instagram
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.linkedin.com/company/dsiufl/mycompany/"
-                      target="_blank"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      LinkedIn
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://discord.com/invite/KKebqFtmbb"
-                      target="_blank"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Discord
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://linktr.ee/ufldsi"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Linktree
-                    </Link>
-                  </li>
-                </ul> */}
               </div>
             </div>
-
-            {/* <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      TOS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Refund Policy
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
-
-            {/* <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>

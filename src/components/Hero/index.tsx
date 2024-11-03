@@ -14,9 +14,6 @@ const Hero = () => {
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Data Science and Informatics
                 </h1>
-                {/* <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  A Community for Data Science Innovation in Data Science at the University of Florida<br /> Actively fostering a strong data science community on campus via our workshops and networking initiatives.
-                </p> */}
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   University of Florida&apos;s first undergraduate data science focused student organization
                 </p>
@@ -27,12 +24,6 @@ const Hero = () => {
                   >
                     🔥 Join Our Discord
                   </Link>
-                  {/* <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Star on GitHub
-                  </Link> */}
                 </div>
               </div>
             </div>
