@@ -22,7 +22,8 @@ const SectionTitle = ({
     tick: 1,
     step: 5,
     scramble: 5,
-    seed: 2
+    seed: 2,
+    range: [65, 125]
   });
 
   return (
