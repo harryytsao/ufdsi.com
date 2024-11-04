@@ -6,7 +6,7 @@ type Person = {
 };
 
 const PersonCard = ({ person }: { person: Person }) => (
-  <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center transform transition duration-150 hover:scale-105 hover:shadow-xl">
+  <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center transform transition duration-150 hover:scale-105 hover:shadow-xl w-full max-w-[280px]">
     <div className="w-32 h-32 relative mb-4">
       <img
         src={person.image || "https://via.placeholder.com/150"}
@@ -70,6 +70,12 @@ const executives: Person[] = [
     position: "Workshop Director",
     linkedIn: "https://www.linkedin.com/in/marielledoenges/",
     image: "/images/people/marielle.jpeg"
+  },
+  {
+    name: "Aaron Goffstein",
+    position: "Networking Coordinator",
+    linkedIn: "https://www.linkedin.com/in/aaron-goffstein/",
+    image: "/images/people/aaron.jpeg"
   },
   {
     name: "Sanjana Dundigalla",
@@ -155,7 +161,7 @@ const Team = () => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
             Executive Board
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {executives.map((person, index) => (
               <PersonCard key={`exec-${index}`} person={person} />
             ))}
