@@ -8,8 +8,8 @@ const featuresData: Feature[] = [
       <Image
         src="/images/features/workshop.jpeg"
         alt="Technical Workshops"
-        width={1200}
-        height={1200}
+        width={600}
+        height={400}
         className="object-cover rounded-lg w-full h-full"
       />
     ),
@@ -23,8 +23,8 @@ const featuresData: Feature[] = [
       <Image
         src="/images/features/social.jpeg"
         alt="Social Events"
-        width={1200}
-        height={1200}
+        width={600}
+        height={400}
         className="object-cover rounded-lg w-full h-full"
       />
     ),
@@ -38,8 +38,8 @@ const featuresData: Feature[] = [
       <Image
         src="/images/features/networking.png"
         alt="Networking Events"
-        width={1200}
-        height={1200}
+        width={600}
+        height={400}
         className="object-cover rounded-lg w-full h-full"
       />
     ),

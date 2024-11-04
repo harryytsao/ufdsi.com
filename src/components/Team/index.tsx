@@ -11,8 +11,8 @@ const PersonCard = ({ person }: { person: Person }) => (
       <img
         src={person.image || "https://via.placeholder.com/150"}
         alt={person.name}
-        width={500}
-        height={500}
+        width={250}
+        height={250}
         className="rounded-full object-cover border-4 border-gray-100 shadow-md absolute inset-0 w-full h-full"
         loading="lazy"
         decoding="async"
