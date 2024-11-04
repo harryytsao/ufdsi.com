@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 w-fit">
+            <div className="px-4 w-fit">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Find Us!

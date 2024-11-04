@@ -11,9 +11,9 @@ const TeamPage = () => {
   return (
     <section
       id="team"
-      className="relative z-10 overflow-hidden bg-white dark:bg-gray-dark"
+      className="relative z-10 overflow-hidden bg-white pb-8 pt-[40px] dark:bg-gray-dark"
     >
-      <div className="container mx-auto px-4 py-20 sm:py-24 lg:py-32">
+      <div className="mx-auto py-20 sm:py-24 lg:py-32">
         <Team />
       </div>
     </section>

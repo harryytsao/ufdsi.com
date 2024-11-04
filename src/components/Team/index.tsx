@@ -14,8 +14,6 @@ const PersonCard = ({ person }: { person: Person }) => (
         width={250}
         height={250}
         className="rounded-full object-cover border-4 border-gray-100 shadow-md absolute inset-0 w-full h-full"
-        loading="lazy"
-        decoding="async"
       />
     </div>
     <h3 className="text-xl font-semibold text-gray-900 mb-1">{person.name}</h3>
