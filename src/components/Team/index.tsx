@@ -73,7 +73,7 @@ const executives: Person[] = [
   },
   {
     name: "Aaron Goffstein",
-    position: "Networking Coordinator",
+    position: "Networking Director",
     linkedIn: "https://www.linkedin.com/in/aaron-goffstein/",
     image: "/images/people/aaron.jpeg"
   },
