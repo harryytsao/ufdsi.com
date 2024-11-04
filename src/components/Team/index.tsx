@@ -7,11 +7,17 @@ type Person = {
 
 const PersonCard = ({ person }: { person: Person }) => (
   <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center transform transition duration-150 hover:scale-105 hover:shadow-xl">
-    <img
-      src={person.image || "https://via.placeholder.com/150"}
-      alt={person.name}
-      className="w-32 h-32 rounded-full mb-4 object-cover border-4 border-gray-100 shadow-md"
-    />
+    <div className="w-32 h-32 relative mb-4">
+      <img
+        src={person.image || "https://via.placeholder.com/150"}
+        alt={person.name}
+        width={500}
+        height={500}
+        className="rounded-full object-cover border-4 border-gray-100 shadow-md absolute inset-0 w-full h-full"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
     <h3 className="text-xl font-semibold text-gray-900 mb-1">{person.name}</h3>
     <p className="text-gray-600 text-sm mb-3">{person.position}</p>
     <div className="flex space-x-4">
