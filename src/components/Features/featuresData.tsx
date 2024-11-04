@@ -43,7 +43,7 @@ const featuresData: Feature[] = [
         className="object-cover rounded-lg w-full h-full"
       />
     ),
-    title: "Networking with Industry and Academia",
+    title: "Networking Events",
     paragraph:
       "Get the chance to talk with recruiters in the data science industry and learn more about the different internship opportunities available",
   },
