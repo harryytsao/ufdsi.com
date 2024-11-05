@@ -123,7 +123,7 @@ const juniorRoles: JuniorRole[] = [
     ]
   },
   {
-    title: "Networking Coordinators",
+    title: "Event Coordinators",
     members: [
       { name: "Analise Stuart", linkedIn: "https://www.linkedin.com/in/analise-stuart-366425301/", image: "/images/people/analise.jpeg" },
       { name: "My Pham", linkedIn: "https://www.linkedin.com/in/my-pham-8554b8278/", image: "/images/people/my.jpeg" },
