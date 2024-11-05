@@ -161,7 +161,7 @@ const Team = () => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
             Executive Board
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
             {executives.map((person, index) => (
               <PersonCard key={`exec-${index}`} person={person} />
             ))}
@@ -178,7 +178,7 @@ const Team = () => {
               <h4 className="text-xl font-medium text-gray-700 mb-6 text-center">
                 {role.title}
               </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
                 {role.members.map((person, index) => (
                   <PersonCard key={`${role.title}-${index}`} person={person} />
                 ))}
