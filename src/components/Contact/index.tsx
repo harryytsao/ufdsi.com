@@ -12,7 +12,7 @@ const Contact = () => {
                 Get in Touch
               </h2>
               <p className="mb-8 text-lg font-medium leading-relaxed text-body-color">
-                Questions about data science, our events, or getting involved? We'd love to connect—reach out anytime!
+                Questions about data science, our events, or getting involved? We&apos;d love to connect—reach out anytime!
               </p>
 
               <div className="flex flex-col space-y-6 items-start">
