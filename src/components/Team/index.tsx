@@ -102,7 +102,7 @@ const juniorRoles: JuniorRole[] = [
     ]
   },
   {
-    title: "Sponsorship Coordinators",
+    title: "Social Media Coordinators",
     members: [
       { name: "Safi Ali", linkedIn: "https://www.linkedin.com/in/safi-ali-026b71325/", image: "/images/people/safi.jpeg" },
       { name: "Kaylee Pekar", linkedIn: "https://www.linkedin.com/in/kayleepekar/", image: "/images/people/kaylee.jpeg" },
@@ -111,7 +111,7 @@ const juniorRoles: JuniorRole[] = [
     ]
   },
   {
-    title: "Social Media Coordinators",
+    title: "Sponsorship Coordinators",
     members: [
       { name: "Pranav Bhargava", linkedIn: "https://www.linkedin.com/in/pranavb15/", image: "/images/people/pranav.jpeg" },
       { name: "Grace Cavarretta", linkedIn: "https://www.linkedin.com/in/grace-cavarretta/", image: "/images/people/grace.jpeg" },
