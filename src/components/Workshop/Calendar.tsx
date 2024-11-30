@@ -36,4 +36,17 @@ const Calendar: React.FC = () => {
     );
 };
 
-export default Calendar;
+
+const titleStyle: React.CSSProperties = {
+    fontSize: '30px',
+    fontWeight: 'bold',
+    textAlign: 'center' as 'center',
+    margin: '10px 0',
+    color: '#fff',
+};
+
+const CalendarTitle: React.FC<{ title: string }> = ({ title }) => {
+    return <h2 style={titleStyle}>{title}</h2>;
+};
+
+module.exports = {Calendar, CalendarTitle}
