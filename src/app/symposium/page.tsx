@@ -9,10 +9,16 @@ export const metadata: Metadata = {
 };
 
 const schedule = [
-    { start: '8:00 AM', end: '9:00 AM', details: 'Morning Meeting' },
-    { start: '10:00 AM', end: '11:30 AM', details: 'Code Review' },
-    { start: '1:00 PM', end: '2:00 PM', details: 'Lunch Break' },
-    { start: '3:00 PM', end: '4:00 PM', details: 'Project Presentation' },
+    { start: '9:00 AM', end: '9:30 AM', name: 'Breakfast Networking' },
+    { start: '9:30 AM', end: '10:00 AM', name: 'Keynote Speaker 1' },
+    { start: '10:00 AM', end: '10:40 AM', name: 'Workshop 1 (Companies)' },
+    { start: '10:45 AM', end: '11:25 AM', name: 'Workshop 2 (Research)' },
+    { start: '11:30 AM', end: '12:15 AM', name: 'UF Clubs Competition' },
+    { start: '12:15 PM', end: '1:00 PM', name: 'Lunch' },
+    { start: '1:00 PM', end: '1:30 PM', name: 'Poster Presentation' },
+    { start: '1:30 PM', end: '2:00 PM', name: 'Keynote Speaker 2' },
+    { start: '2:05 PM', end: '2:45 PM', name: 'Workshop 3 (Research)' },
+    { start: '2:50 PM', end: '3:30 PM', name: 'Workshop 4 (Companies)' }
 ];
 
 const Symposium = () => {
