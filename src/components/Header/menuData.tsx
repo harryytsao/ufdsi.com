@@ -24,6 +24,12 @@ const menuData: Menu[] = [
     title: "Contact Us",
     path: "/contact",
     newTab: false,
+  },
+  {
+    id: 5,
+    title: "Symposium",
+    path: "/symposium",
+    newTab: false,
   }
 ];
 export default menuData;
