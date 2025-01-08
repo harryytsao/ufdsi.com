@@ -1,17 +1,136 @@
-import React from 'react';
+'use client';
+
+import React, {useState} from 'react';
 
 const SymposiumSchedule = () => {
+  const [selectedType, setSelectedType] = useState('all');
   const schedule = [
-    { start: "9:00", end: "9:30", event: "Breakfast Networking", color: "bg-rose-50" },
-    { start: "9:30", end: "10:00", event: "Keynote Speaker 1", color: "bg-amber-50" },
-    { start: "10:00", end: "10:40", event: "Workshop 1 (Companies)", color: "bg-blue-50" },
-    { start: "10:45", end: "11:25", event: "Workshop 2 (Research)", color: "bg-blue-50" },
-    { start: "11:30", end: "12:15", event: "UF Clubs Competition", color: "bg-emerald-50" },
-    { start: "12:15", end: "1:00", event: "Lunch", color: "bg-slate-50" },
-    { start: "1:00", end: "1:30", event: "Poster Presentation", color: "bg-slate-50" },
-    { start: "1:30", end: "2:00", event: "Keynote Speaker 2", color: "bg-amber-50" },
-    { start: "2:05", end: "2:45", event: "Workshop 3 (Research)", color: "bg-blue-50" },
-    { start: "2:50", end: "3:30", event: "Workshop 4 (Companies)", color: "bg-blue-50" }
+    { 
+      time: "7:30 - 8:00", 
+      event: "Breakfast", 
+      type: "break",
+      color: "bg-amber-50" 
+    },
+    { 
+      time: "8:00 - 9:00", 
+      event: "Keynote Speaker (Opening)",
+      type: "keynote",
+      color: "bg-blue-50"
+    },
+    {
+      time: "9:00 - 10:00",
+      event: "Event Session",
+      type: "sessions",
+      tracks: {
+        industry: "(To be announced)",
+        research: "(To be announced)",
+        workshops: "(To be announced)"
+      },
+      color: "bg-purple-50"
+    },
+    { 
+      time: "10:00 - 10:10", 
+      event: "Coffee Break",
+      type: "break",
+      color: "bg-amber-50"
+    },
+    {
+      time: "10:10 - 11:10",
+      event: "Event Session",
+      type: "sessions",
+      tracks: {
+        industry: "(To be announced)",
+        research: "(To be announced)",
+        workshops: "(To be announced)"
+      },
+      color: "bg-purple-50"
+    },
+    { 
+      time: "11:10 - 11:20", 
+      event: "Coffee Break",
+      type: "break",
+      color: "bg-amber-50"
+    },
+    {
+      time: "11:20 - 12:20",
+      event: "Event Session",
+      type: "sessions",
+      tracks: {
+        industry: "(To be announced)",
+        research: "(To be announced)",
+        workshops: "(To be announced)"
+      },
+      color: "bg-purple-50"
+    },
+    { 
+      time: "12:20 - 12:50", 
+      event: "Lunch Break",
+      type: "break",
+      color: "bg-amber-50"
+    },
+    { 
+      time: "12:50 - 1:20", 
+      event: "Student Poster Sessions",
+      type: "special",
+      color: "bg-emerald-50"
+    },
+    { 
+      time: "1:20 - 1:30", 
+      event: "Coffee Break",
+      type: "break",
+      color: "bg-amber-50"
+    },
+    {
+      time: "1:30 - 2:30",
+      event: "Event Session",
+      type: "sessions",
+      tracks: {
+        industry: "(To be announced)",
+        research: "(To be announced)",
+        workshops: "(To be announced)"
+      },
+      color: "bg-purple-50"
+    },
+    { 
+      time: "2:30 - 2:40", 
+      event: "Coffee Break",
+      type: "break",
+      color: "bg-amber-50"
+    },
+    {
+      time: "2:40 - 3:40",
+      event: "Event Session",
+      type: "sessions",
+      tracks: {
+        industry: "(To be announced)",
+        research: "(To be announced)",
+        workshops: "(To be announced)"
+      },
+      color: "bg-purple-50"
+    },
+    { 
+      time: "3:40 - 3:50", 
+      event: "Coffee Break",
+      type: "break",
+      color: "bg-amber-50"
+    },
+    {
+      time: "3:50 - 4:50",
+      event: "Event Session",
+      type: "sessions",
+      tracks: {
+        industry: "(To be announced)",
+        research: "(To be announced)",
+        workshops: "(To be announced)"
+      },
+      color: "bg-purple-50"
+    },
+    { 
+      time: "4:50 - 5:00", 
+      event: "Closing",
+      type: "keynote",
+      color: "bg-blue-50"
+    }
   ];
 
   return (
@@ -24,7 +143,7 @@ const SymposiumSchedule = () => {
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         <div className="border rounded-lg shadow-sm bg-white p-6">
-          <h2 className="text-2xl font-semibold mb-4">About the Symposium</h2>
+          <h2 className="text-gray-700 mb-4 text-2xl font-semibold mb-4">About the Symposium</h2>
           <p className="text-gray-700 mb-4">
             The Data Science and Informatics (DSI) club at the University of Florida proudly presents our Spring Symposium. 
             This dynamic event brings together students, faculty, and industry professionals for a day of knowledge sharing 
@@ -40,7 +159,7 @@ const SymposiumSchedule = () => {
         </div>
 
         <div className="border rounded-lg shadow-sm bg-white p-6">
-          <h2 className="text-2xl font-semibold mb-4">Event Details</h2>
+          <h2 className="text-gray-700 mb-4 text-2xl font-semibold mb-4">Event Details</h2>
           <div className="space-y-4 text-gray-700">
             <div>
               <p className="mb-2">📍 Location:</p>
@@ -70,21 +189,74 @@ const SymposiumSchedule = () => {
 
       <div className="border rounded-lg shadow-sm bg-white mb-12">
         <div className="p-6">
-          <h2 className="text-2xl font-semibold mb-6">Event Schedule</h2>
-          <div className="space-y-2">
-            {schedule.map((item, index) => (
-              <div 
-                key={index} 
-                className={`${item.color} border border-gray-100 p-4 rounded-lg flex justify-between items-center transition-colors duration-200 hover:bg-opacity-70`}
-              >
-                <span className="font-medium text-gray-700 w-32">
-                  {item.start} - {item.end}
-                </span>
-                <span className="flex-1 font-medium text-gray-800">
-                  {item.event}
-                </span>
-              </div>
-            ))}
+          <h2 className="text-gray-700 text-2xl font-semibold mb-6">Event Schedule</h2>
+          
+          {/* Filter Buttons */}
+          <div className="mb-6 flex flex-wrap gap-2">
+            <button 
+              onClick={() => setSelectedType('all')}
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                selectedType === 'all' ? 'bg-gray-800 text-white' : 'bg-gray-100 hover:bg-gray-200'
+              }`}
+            >
+              All Events
+            </button>
+            <button 
+              onClick={() => setSelectedType('sessions')}
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                selectedType === 'sessions' ? 'bg-gray-800 text-white' : 'bg-gray-100 hover:bg-gray-200'
+              }`}
+            >
+              Event Sessions
+            </button>
+            <button 
+              onClick={() => setSelectedType('break')}
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                selectedType === 'break' ? 'bg-gray-800 text-white' : 'bg-gray-100 hover:bg-gray-200'
+              }`}
+            >
+              Breaks
+            </button>
+          </div>
+
+          <div className="max-h-[600px] overflow-y-auto pr-2">
+            <div className="space-y-2">
+              {schedule
+                .filter(item => selectedType === 'all' || item.type === selectedType)
+                .map((item, index) => (
+                  <div 
+                    key={index} 
+                    className={`${item.color} border border-gray-100 p-4 rounded-lg transition-all hover:shadow-md`}
+                  >
+                    <div className="flex justify-between items-start">
+                      <span className="font-medium text-gray-700 w-32">
+                        {item.time}
+                      </span>
+                      <div className="flex-1">
+                        <span className="font-medium text-gray-800">
+                          {item.event}
+                        </span>
+                        {item.tracks && (
+                          <div className="mt-2 grid grid-cols-3 gap-4 text-sm">
+                            <div>
+                              <span className="font-medium text-gray-600">Industry:</span>
+                              <p className="text-gray-500">{item.tracks.industry}</p>
+                            </div>
+                            <div>
+                              <span className="font-medium text-gray-600">Research:</span>
+                              <p className="text-gray-500">{item.tracks.research}</p>
+                            </div>
+                            <div>
+                              <span className="font-medium text-gray-600">Workshops:</span>
+                              <p className="text-gray-500">{item.tracks.workshops}</p>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
       </div>
