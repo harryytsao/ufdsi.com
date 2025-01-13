@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="About Us"
-            paragraph="The Data Science & Informatics (DSI) club at the University of Florida, founded in 2019, is dedicated to helping undergraduate students explore the world of data science. Our goal is to equip students with the knowledge and connections they need to succeed in this fast-growing field."
+            paragraph="The Data Science & Informatics (DSI) club at the University of Florida, founded in 2015, is dedicated to helping undergraduate students explore the world of data science and artificial intelligence. Our goal is to equip students with the knowledge and connections they need to succeed in these fast-growing fields."
             center
           />
 
