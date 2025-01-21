@@ -66,10 +66,10 @@ const executives: Person[] = [
     image: "/images/people/michele.jpeg"
   },
   {
-    name: "Marielle Doenges",
+    name: "Ishan Kumthekar",
     position: "Workshop Director",
-    linkedIn: "https://www.linkedin.com/in/marielledoenges/",
-    image: "/images/people/marielle.jpeg"
+    linkedIn: "https://www.linkedin.com/in/ishan-kumthekar-080827255/",
+    image: "/images/people/ishan.jpeg"
   },
   {
     name: "Aaron Goffstein",
@@ -94,7 +94,6 @@ const juniorRoles: JuniorRole[] = [
   {
     title: "Workshop Coordinators",
     members: [
-      { name: "Ishan Kumthekar", linkedIn: "https://www.linkedin.com/in/ishan-kumthekar-080827255/", image: "/images/people/ishan.jpeg" },
       { name: "Cecilia Cardenas", linkedIn: "https://www.linkedin.com/in/cecilia-elena-cardenas/", image: "/images/people/cecilia.jpeg" },
       { name: "Marc Marquez", linkedIn: "https://www.linkedin.com/in/marc--marquez/", image: "/images/people/marc.jpeg" },
       { name: "Aadhitya Vijaisenthi", linkedIn: "https://www.linkedin.com/in/aadhitya-vijaisenthil/", image: "/images/people/aadhitya.jpeg" },
