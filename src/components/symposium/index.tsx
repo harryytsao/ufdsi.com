@@ -23,8 +23,8 @@ const SymposiumSchedule = () => {
       type: "sessions",
       tracks: {
         industry: "(To be announced)",
-        research: "(To be announced)",
-        workshops: "(To be announced)"
+        research: "Dr. Hyvarinen",
+        workshops: "DSI"
       },
       color: "bg-purple-50"
     },
@@ -40,8 +40,8 @@ const SymposiumSchedule = () => {
       type: "sessions",
       tracks: {
         industry: "(To be announced)",
-        research: "(To be announced)",
-        workshops: "(To be announced)"
+        research: "Dr. Wagner",
+        workshops: "SPS"
       },
       color: "bg-purple-50"
     },
@@ -55,10 +55,11 @@ const SymposiumSchedule = () => {
       time: "11:20 - 12:20",
       event: "Event Session",
       type: "sessions",
+      speaker: "Speaker: Dr. Higgs",
       tracks: {
         industry: "(To be announced)",
-        research: "(To be announced)",
-        workshops: "(To be announced)"
+        research: "Dr. Skirpan",
+        workshops: "ACM"
       },
       color: "bg-purple-50"
     },
@@ -84,10 +85,11 @@ const SymposiumSchedule = () => {
       time: "1:30 - 2:30",
       event: "Event Session",
       type: "sessions",
+      speaker: "Speaker: Dr. Hoover",
       tracks: {
         industry: "(To be announced)",
-        research: "(To be announced)",
-        workshops: "(To be announced)"
+        research: "Dr. Gelman",
+        workshops: "Colorstack"
       },
       color: "bg-purple-50"
     },
@@ -104,7 +106,7 @@ const SymposiumSchedule = () => {
       tracks: {
         industry: "(To be announced)",
         research: "(To be announced)",
-        workshops: "(To be announced)"
+        workshops: "ASA"
       },
       color: "bg-purple-50"
     },
@@ -142,7 +144,7 @@ const SymposiumSchedule = () => {
 
       <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
         <div className="border rounded-lg shadow-sm bg-white p-4 sm:p-6">
-          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">About the Symposium</h2>
+          <h2 className="text-xl sm:text-2xl text-gray-700 font-semibold mb-3 sm:mb-4">About the Symposium</h2>
           <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4">
             The Data Science and Informatics (DSI) club at the University of Florida proudly presents our Spring Symposium.
             This dynamic event brings together students, faculty, and industry professionals for a day of knowledge sharing
@@ -158,7 +160,7 @@ const SymposiumSchedule = () => {
         </div>
 
         <div className="border rounded-lg shadow-sm bg-white p-4 sm:p-6">
-          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Event Details</h2>
+          <h2 className="text-xl sm:text-2xl text-gray-700 font-semibold mb-3 sm:mb-4">Event Details</h2>
           <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-700">
             <div>
               <p className="mb-2">📍 Location:</p>
@@ -180,7 +182,7 @@ const SymposiumSchedule = () => {
               </ul>
             </div>
             <p>📅 Date: April 5, 2025</p>
-            <p>🎯 Focus: Data Science & Analytics</p>
+            <p>🎯 Focus: Data Science & AI</p>
             <p>👥 Open to: All UF Students</p>
           </div>
         </div>
@@ -188,7 +190,7 @@ const SymposiumSchedule = () => {
 
       <div className="border rounded-lg shadow-sm bg-white mb-8 sm:mb-12">
         <div className="p-4 sm:p-6">
-          <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Event Schedule</h2>
+          <h2 className="text-xl sm:text-2xl text-gray-700 font-semibold mb-4 sm:mb-6">Event Schedule</h2>
 
           {/* Filter Buttons */}
           <div className="mb-4 sm:mb-6 flex flex-wrap gap-2">
@@ -228,6 +230,9 @@ const SymposiumSchedule = () => {
                       <span className="font-medium text-gray-700 sm:w-32">
                         {item.time}
                       </span>
+                      <span className="font-medium text-gray-700 sm:w-32">
+                        {item.speaker}
+                      </span>
                       <div className="flex-1">
                         <span className="font-medium text-gray-800">
                           {item.event}
@@ -258,13 +263,15 @@ const SymposiumSchedule = () => {
       </div>
 
       <div className="text-center">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Registration</h2>
+        <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Pre Registration</h2>
         <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
-          Register now to secure your spot at the symposium.
+          Preregister now to secure your spot at the symposium.
         </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBZfmjLjTLymFaXXzplxH6NZmMtjl_T-zw3tzR1-lR-33HNw/viewform" target="_blank" rel="noopener noreferrer">
         <button className="bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors">
-          Register Now
+          Pre Register Now
         </button>
+         </a>
       </div>
     </div>
   );
