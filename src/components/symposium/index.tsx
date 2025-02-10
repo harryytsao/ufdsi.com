@@ -22,6 +22,8 @@ const SymposiumSchedule = () => {
       event: "Event Session",
       type: "sessions",
       tracks: {
+        topic: "(To be announced)",
+        speaker: "(To be announced)",
         industry: "(To be announced)",
         research: "Dr. Hyvarinen",
         workshops: "DSI"
@@ -39,6 +41,8 @@ const SymposiumSchedule = () => {
       event: "Event Session",
       type: "sessions",
       tracks: {
+        topic: "(To be announced)",
+        speaker: "(To be announced)",
         industry: "(To be announced)",
         research: "Dr. Wagner",
         workshops: "SPS"
@@ -55,8 +59,9 @@ const SymposiumSchedule = () => {
       time: "11:20 - 12:20",
       event: "Event Session",
       type: "sessions",
-      speaker: "Speaker: Dr. Higgs",
       tracks: {
+        topic: "Quantitative Methods",
+        speaker: "Dr. Higgs",
         industry: "(To be announced)",
         research: "Dr. Skirpan",
         workshops: "ACM"
@@ -85,8 +90,9 @@ const SymposiumSchedule = () => {
       time: "1:30 - 2:30",
       event: "Event Session",
       type: "sessions",
-      speaker: "Speaker: Dr. Hoover",
       tracks: {
+        topic: "AI for Business",
+        speaker: "Dr. Hoover",
         industry: "(To be announced)",
         research: "Dr. Gelman",
         workshops: "Colorstack"
@@ -104,6 +110,8 @@ const SymposiumSchedule = () => {
       event: "Event Session",
       type: "sessions",
       tracks: {
+        topic: "(To be announced)",
+        speaker: "(To be announced)",
         industry: "(To be announced)",
         research: "(To be announced)",
         workshops: "ASA"
@@ -121,6 +129,8 @@ const SymposiumSchedule = () => {
       event: "Event Session",
       type: "sessions",
       tracks: {
+        topic: "(To be announced)",
+        speaker: "(To be announced)",
         industry: "(To be announced)",
         research: "(To be announced)",
         workshops: "(To be announced)"
@@ -230,15 +240,20 @@ const SymposiumSchedule = () => {
                       <span className="font-medium text-gray-700 sm:w-32">
                         {item.time}
                       </span>
-                      <span className="font-medium text-gray-700 sm:w-32">
-                        {item.speaker}
-                      </span>
                       <div className="flex-1">
                         <span className="font-medium text-gray-800">
                           {item.event}
                         </span>
                         {item.tracks && (
-                          <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-sm">
+                          <div className="mt-2 grid grid-cols-1 sm:grid-cols-5 gap-2 sm:gap-4 text-sm">
+                            <div>
+                              <span className="font-medium text-gray-600">Topic:</span>
+                              <p className="text-gray-500">{item.tracks.topic}</p>
+                            </div>
+                            <div>
+                              <span className="font-medium text-gray-600">Speaker:</span>
+                              <p className="text-gray-500">{item.tracks.speaker}</p>
+                            </div>
                             <div>
                               <span className="font-medium text-gray-600">Industry:</span>
                               <p className="text-gray-500">{item.tracks.industry}</p>
