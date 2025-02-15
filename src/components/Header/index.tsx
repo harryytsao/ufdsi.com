@@ -102,6 +102,11 @@ const Header = () => {
                               }`}
                           >
                             {menuItem.title}
+                            {menuItem.title === "Symposium" && (
+                              <span className="ml-2 inline-flex items-center rounded-full bg-blue-500 px-3 py-1 text-xs font-semibold text-white shadow-sm ring-1 ring-inset ring-blue-700/10 transition-all hover:bg-blue-600">
+                                New!
+                              </span>
+                            )}
                           </Link>
                         ) : (
                           <>
