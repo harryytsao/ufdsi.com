@@ -173,21 +173,49 @@ const SymposiumSchedule = () => {
                   <div className="flex-1">
                     <span className="font-medium text-gray-800">{item.event}</span>
                     {item.tracks && (
-                      <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        <div className="bg-white/70 backdrop-blur-sm rounded-lg p-2 text-sm">
-                          <div className="flex items-center gap-1 mb-1">
-                            <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                            <span className="font-medium text-gray-700">Speaker: {item.tracks.speaker}</span>
+                      <div className="mt-2 grid grid-cols-1 sm:grid-cols-4 gap-3">
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                          <div className="flex flex-col">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                                Regular Track
+                              </span>
+                            </div>
+                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2325</span>
+                            <span className="text-sm text-gray-800 font-medium">TBA</span>
                           </div>
                         </div>
-                        <div className="bg-white/70 backdrop-blur-sm rounded-lg p-2 text-sm">
-                          <div className="flex items-center gap-1 mb-1">
-                            <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg>
-                            <span className="font-medium text-gray-700">Workshop: {item.tracks.workshop}</span>
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                          <div className="flex flex-col">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                                Industry Track
+                              </span>
+                            </div>
+                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2330</span>
+                            <span className="text-sm text-gray-800 font-medium">TBA</span>
+                          </div>
+                        </div>
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                          <div className="flex flex-col">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                                Research Track
+                              </span>
+                            </div>
+                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2335</span>
+                            <span className="text-sm text-gray-800 font-medium">{item.tracks.speaker}</span>
+                          </div>
+                        </div>
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                          <div className="flex flex-col">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                                Workshop Track
+                              </span>
+                            </div>
+                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2365</span>
+                            <span className="text-sm text-gray-800 font-medium">{item.tracks.workshop} Workshop</span>
                           </div>
                         </div>
                       </div>
