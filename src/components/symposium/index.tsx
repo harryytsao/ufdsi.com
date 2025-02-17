@@ -174,10 +174,10 @@ const SymposiumSchedule = () => {
                     <span className="font-medium text-gray-800">{item.event}</span>
                     {item.tracks && (
                       <div className="mt-2 grid grid-cols-1 sm:grid-cols-4 gap-3">
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-blue-200">
                           <div className="flex flex-col">
                             <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                              <span className="inline-flex items-center rounded-md bg-blue-50 px-2.5 py-1.5 text-xs font-medium text-blue-700">
                                 Regular Track
                               </span>
                             </div>
@@ -185,10 +185,10 @@ const SymposiumSchedule = () => {
                             <span className="text-sm text-gray-800 font-medium">TBA</span>
                           </div>
                         </div>
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-purple-200">
                           <div className="flex flex-col">
                             <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                              <span className="inline-flex items-center rounded-md bg-purple-50 px-2.5 py-1.5 text-xs font-medium text-purple-700">
                                 Industry Track
                               </span>
                             </div>
@@ -196,10 +196,10 @@ const SymposiumSchedule = () => {
                             <span className="text-sm text-gray-800 font-medium">TBA</span>
                           </div>
                         </div>
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-green-200">
                           <div className="flex flex-col">
                             <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                              <span className="inline-flex items-center rounded-md bg-green-50 px-2.5 py-1.5 text-xs font-medium text-green-700">
                                 Research Track
                               </span>
                             </div>
@@ -207,10 +207,10 @@ const SymposiumSchedule = () => {
                             <span className="text-sm text-gray-800 font-medium">{item.tracks.speaker}</span>
                           </div>
                         </div>
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-indigo-200">
                           <div className="flex flex-col">
                             <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                              <span className="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1.5 text-xs font-medium text-indigo-700">
                                 Workshop Track
                               </span>
                             </div>
