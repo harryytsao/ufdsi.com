@@ -94,7 +94,7 @@ const SymposiumSchedule = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 pt-24 sm:pt-28 pb-8">
       <div className="mb-6 text-center">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-2">DSI Spring Symposium 2025</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold mb-2 mt-10">DSI Spring Symposium 2025</h1>
         <p className="text-base sm:text-lg mb-4">Join us for a day of learning, networking, and innovation</p>
       </div>
 
@@ -228,7 +228,7 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
-      <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 border border-blue-100 shadow-lg">
+      <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 border border-blue-100 shadow-lg mb-12">
         <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-blue-800">Registration</h2>
         <p className="text-base sm:text-lg text-gray-700 mb-5">Secure your spot for the DSI Spring Symposium 2025!</p>
         <a href="https://forms.gle/FkXfWQy7mE6dpYDF7" target="_blank" rel="noopener noreferrer">
@@ -237,6 +237,38 @@ const SymposiumSchedule = () => {
           </button>
         </a>
       </div>
+
+      <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-white text-center">Collaborators</h2>
+
+      <div className="border rounded-lg shadow-sm bg-white p-3 sm:p-4 mb-6">
+        <h2 className="text-lg sm:text-xl text-gray-700 font-semibold">Speakers From</h2>
+        <img
+          src="/images/symposium-collaborators/speaker-affiliations.png"
+          alt="Speaker Affiliations"
+          className="w-full h-auto rounded-lg"
+        />
+      </div>
+
+      <div className="border rounded-lg shadow-sm bg-white p-3 sm:p-4 mb-6">
+        <h2 className="text-lg sm:text-xl text-gray-700 font-semibold">Workshops From</h2>
+        <img
+          src="/images/symposium-collaborators/workshop-orgs.png"
+          alt="Workshop Organizations"
+          className="w-full h-auto rounded-lg"
+        />
+      </div>
+
+      <div className="border rounded-lg shadow-sm bg-white p-3 sm:p-4">
+        <h2 className="text-lg sm:text-xl text-gray-700 font-semibold">Other Collaborating Student Organizations</h2>
+        <img
+          src="/images/symposium-collaborators/other-student-orgs.png"
+          alt="Other Collaborating Student Organizations"
+          className="w-full h-auto rounded-lg"
+        />
+      </div>
+
+      
+      
     </div>
   );
 };
