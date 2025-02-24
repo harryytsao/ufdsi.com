@@ -7,49 +7,79 @@ const SymposiumSchedule = () => {
   const schedule = [
     {
       time: "7:00 - 8:00",
-      event: "Registration and Coffee",
+      event: "Registration and Coffee Break",
       type: "break",
       color: "bg-blue-50"
     },
     {
       time: "8:00 - 9:00",
-      event: "Keynote Speaker / Opening Ceremony",
+      event: "Keynote Speaker: Jack Kendall, RainAI",
       type: "keynote",
-      color: "bg-blue-100"
+      color: "bg-teal-50"
     },
     {
       time: "9:15 - 10:15",
       event: "Industry/Research Speakers + Workshop",
       type: "sessions",
       tracks: {
+        regular: "TBA",
+        industry: "Carlos Bastos Neto, Google Cloud",
         speaker: "Dr. Aapo Hyvarinen",
-        workshop: "DSI"
+        workshop: "SPS"
       },
       color: "bg-purple-50"
+    },
+    {
+      time: "10:15 - 10:30",
+      event: "Intercession",
+      type: "break",
+      color: "bg-blue-50"
     },
     {
       time: "10:30 - 11:30",
       event: "Industry/Research Speakers + Workshop",
       type: "sessions",
       tracks: {
+        regular: "Dr. Megan Higgs",
+        industry: "TBA",
         speaker: "Dr. Hubert Wagner",
-        workshop: "IEEE SPS"
-      },
-      color: "bg-purple-50"
-    },
-    {
-      time: "11:45 - 12:45",
-      event: "Industry/Research Speakers + Workshop",
-      type: "sessions",
-      tracks: {
-        speaker: "Dr. Michael Skirpan",
         workshop: "ACM"
       },
       color: "bg-purple-50"
     },
     {
+      time: "11:30 - 12:15",
+      event: "Lunch Break",
+      type: "break",
+      color: "bg-blue-50"
+    },
+    {
+      time: "11:45 - 12:30",
+      event: "Student Poster Sessions",
+      type: "break",
+      color: "bg-blue-50"
+    },
+    {
+      time: "12:30 - 12:45",
+      event: "Intercession",
+      type: "break",
+      color: "bg-blue-50"
+    },
+    {
       time: "12:45 - 1:45",
-      event: "Lunch and Student Poster Sessions",
+      event: "Industry/Research Speakers + Workshop",
+      type: "sessions",
+      tracks: {
+        regular: "Dr. Jim Hoover",
+        industry: "TBA",
+        speaker: "Dr. Andrew Gelman",
+        workshop: "Colorstack"
+      },
+      color: "bg-purple-50"
+    },
+    {
+      time: "1:45 - 2:00",
+      event: "Intercession",
       type: "break",
       color: "bg-blue-50"
     },
@@ -58,36 +88,42 @@ const SymposiumSchedule = () => {
       event: "Industry/Research Speakers + Workshop",
       type: "sessions",
       tracks: {
-        speaker: "Dr. Andrew Gelman",
-        workshop: "Colorstack"
-      },
-      color: "bg-purple-50"
-    },
-    {
-      time: "3:15 - 4:15",
-      event: "Industry/Research Speakers + Workshop",
-      type: "sessions",
-      tracks: {
+        regular: "TBA",
+        industry: "TBA",
         speaker: "TBA",
         workshop: "ASA"
       },
       color: "bg-purple-50"
     },
     {
-      time: "4:30 - 5:30",
+      time: "3:00 - 3:15",
+      event: "Intercession",
+      type: "break",
+      color: "bg-blue-50"
+    },
+    {
+      time: "3:15 - 4:15",
       event: "Industry/Research Speakers + Workshop",
       type: "sessions",
       tracks: {
+        regular: "TBA",
+        industry: "TBA",
         speaker: "TBA",
-        workshop: "UF AI Club"
+        workshop: "AI Club"
       },
       color: "bg-purple-50"
     },
     {
-      time: "5:45 - 6:30",
+      time: "4:15 - 4:30",
+      event: "Intercession",
+      type: "break",
+      color: "bg-blue-50"
+    },
+    {
+      time: "4:30 - 5:00",
       event: "Closing Ceremony",
       type: "keynote",
-      color: "bg-blue-100"
+      color: "bg-green-100"
     }
   ];
 
@@ -182,7 +218,7 @@ const SymposiumSchedule = () => {
                               </span>
                             </div>
                             <span className="text-xs font-medium text-gray-500 mb-1">Room 2325</span>
-                            <span className="text-sm text-gray-800 font-medium">TBA</span>
+                            <span className="text-sm text-gray-800 font-medium">{item.tracks.regular}</span>
                           </div>
                         </div>
                         <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-purple-200">
@@ -193,7 +229,7 @@ const SymposiumSchedule = () => {
                               </span>
                             </div>
                             <span className="text-xs font-medium text-gray-500 mb-1">Room 2330</span>
-                            <span className="text-sm text-gray-800 font-medium">TBA</span>
+                            <span className="text-sm text-gray-800 font-medium">{item.tracks.industry}</span>
                           </div>
                         </div>
                         <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-green-200">
@@ -267,8 +303,8 @@ const SymposiumSchedule = () => {
         />
       </div>
 
-      
-      
+
+
     </div>
   );
 };
