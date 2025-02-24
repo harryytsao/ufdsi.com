@@ -128,7 +128,7 @@ const SymposiumSchedule = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 pt-24 sm:pt-28 pb-8">
+    <div className="max-w-6xl mx-auto px-4 pt-24 sm:pt-28 pb-8">
       <div className="mb-6 text-center">
         <h1 className="text-2xl sm:text-3xl font-bold mb-2 mt-10">DSI Spring Symposium 2025</h1>
         <p className="text-base sm:text-lg mb-4">Join us for a day of learning, networking, and innovation</p>
@@ -196,9 +196,9 @@ const SymposiumSchedule = () => {
       </div>
 
       <div className="border rounded-lg shadow-sm bg-white mb-6">
-        <div className="p-3 sm:p-4">
+        <div className="p-3 sm:p-5">
           <h2 className="text-lg sm:text-xl text-gray-700 font-semibold mb-3">Event Schedule</h2>
-          <div className="grid grid-cols-1 gap-2">
+          <div className="grid grid-cols-1 gap-3">
             {schedule.map((item, index) => (
               <div key={index} className={`${item.color} rounded-lg p-3 transition-all duration-200 hover:shadow-md border border-gray-100`}>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2">
