@@ -7,7 +7,7 @@ const SymposiumSchedule = () => {
   const schedule = [
     {
       time: "7:00 - 8:00",
-      event: "Registration and Coffee Break",
+      event: "Registration and Refreshments",
       type: "break",
       color: "bg-blue-50"
     },
@@ -31,7 +31,7 @@ const SymposiumSchedule = () => {
     },
     {
       time: "10:15 - 10:30",
-      event: "Intercession",
+      event: "Coffee Break",
       type: "break",
       color: "bg-blue-50"
     },
@@ -61,8 +61,8 @@ const SymposiumSchedule = () => {
     },
     {
       time: "12:30 - 12:45",
-      event: "Intercession",
-      type: "break",
+      event: "",
+      type: "Break",
       color: "bg-blue-50"
     },
     {
@@ -79,7 +79,7 @@ const SymposiumSchedule = () => {
     },
     {
       time: "1:45 - 2:00",
-      event: "Intercession",
+      event: "Break",
       type: "break",
       color: "bg-blue-50"
     },
@@ -97,7 +97,7 @@ const SymposiumSchedule = () => {
     },
     {
       time: "3:00 - 3:15",
-      event: "Intercession",
+      event: "Networking Break",
       type: "break",
       color: "bg-blue-50"
     },
@@ -115,7 +115,7 @@ const SymposiumSchedule = () => {
     },
     {
       time: "4:15 - 4:30",
-      event: "Intercession",
+      event: "Short Break",
       type: "break",
       color: "bg-blue-50"
     },
