@@ -60,12 +60,6 @@ const SymposiumSchedule = () => {
       color: "bg-blue-50"
     },
     {
-      time: "12:30 - 12:45",
-      event: "",
-      type: "Break",
-      color: "bg-blue-50"
-    },
-    {
       time: "12:45 - 1:45",
       event: "Industry/Research Speakers + Workshop",
       type: "sessions",
