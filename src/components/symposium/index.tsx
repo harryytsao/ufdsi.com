@@ -40,7 +40,7 @@ const SymposiumSchedule = () => {
       event: "Industry/Research Speakers + Workshop",
       type: "sessions",
       tracks: {
-        regular: "Dr. Megan Higgs",
+        regular: "TBA",
         industry: "TBA",
         speaker: "Dr. Hubert Wagner",
         workshop: "ACM"
@@ -82,7 +82,7 @@ const SymposiumSchedule = () => {
       event: "Industry/Research Speakers + Workshop",
       type: "sessions",
       tracks: {
-        regular: "TBA",
+        regular: "Dr. Megan Higgs",
         industry: "TBA",
         speaker: "TBA",
         workshop: "ASA"
