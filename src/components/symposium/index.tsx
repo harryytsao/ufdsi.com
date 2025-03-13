@@ -2,11 +2,103 @@
 
 import React, { useState } from 'react';
 
+interface EventDetail {
+  title: string;
+  description: string;
+  room: string;
+  track: string;
+  time: string;
+  speaker_img?: string;  // Optional speaker image URL
+  speaker_sup?: string;  // Optional supplementary info
+}
+
 const SymposiumSchedule = () => {
   const [selectedType, setSelectedType] = useState('all');
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedEvent, setSelectedEvent] = useState(null);
+
+  const eventDetails: Record<string, EventDetail> = {
+    "Norman Bukingolts, Association of Computing Machinery": {
+      title: "Transforming Our Humanity Into Job Security",
+      description: "What happens when what we know isn't enough to be employable anymore? Amid rising layoffs in the tech industry and beyond due to the automation of labor with AI systems, stress about job security is thriving -- but hope for a meaningful, stable career is not yet lost. Attend this workshop to explore how analytical, generative, and agentic AI systems are being implemented in the modern workplace and understand their strengths and limitations. Learn about not just philosophical but technical arguments describing what exactly an AI system can and cannot provably do -- and why what makes us human is not only \"marketable\" but essential to the current and future workforce.",
+      room: "Room 2365",
+      track: "Workshop Track",
+      time: "10:30 - 11:30",
+      speaker_img: "/images/speakers/norman.png",
+      speaker_sup: "/images/speakers/norman_sup.png"
+    },
+    "Dr. Hubert Wagner": {
+      title: "Advanced Topological Data Analysis",
+      description: "An exploration of the latest techniques in topological data analysis and their applications in machine learning.",
+      room: "Room 2335",
+      track: "Research Track",
+      time: "10:30 - 11:30",
+      // speaker_img: "/images/speakers/hubert.jpg",
+      // speaker_sup: "Research Lead, Hugging Face"
+    },
+    "Raul Valle, IEEE Signal Processing Society": {
+      title: "Introduction to Signal Processing",
+      description: "Signals are how computers (and people) interpret the world. With the LLM hype calming down, we get a chance to revisit the mathematical roots of black-box machine learning in time-series problems, and learn how filters gave humanity access to computational foresight. Attend this workshop to attain mathematical insight into the complex world of signal processing from the perspective of its innovators, and learn what the future of AI beholds.",
+      room: "Room 2365",
+      track: "Workshop Track",
+      time: "12:45 - 1:45",
+      speaker_img: "/images/speakers/raul.png",
+      speaker_sup: "/images/speakers/raul_sup.png"
+    },
+    "Jacques Fleischer, AI Club": {
+      title: "Computer Vision and Data Annotation Workshop",
+      description: "Learn how to properly configure a CV model using sophisticated annotation platforms and a live demo of YOLO training. Hands-on participation where the audience can help train a gator detector model.",
+      room: "Room 2365",
+      track: "Workshop Track",
+      time: "3:15 - 4:15",
+      speaker_img: "/images/speakers/jacques.png",
+      speaker_sup: "/images/speakers/jacques_sup.png"
+    },
+    "Anthony James Barr, SAS Institute": {
+      title: "From SAS to A Model Of Reality",
+      description: "I will discuss the development of the SAS system for data analytics and my current work, AModelOfReality.com, a consistent and complete model of structured knowledge.",
+      room: "Room 2325",
+      track: "General Track",
+      time: "10:30 - 11:30",
+      speaker_img: "/images/speakers/anthony.png",
+      speaker_sup: "/images/speakers/anthony_sup.png"
+    },
+    "Dr. Aapo Hyvarinen, University of Helsinki": {
+      title: "Painful Intelligence: What AI Can Tell Us About Human Suffering",
+      description: "This talk introduces my recent e-book with the same title, freely available on arxiv. The book uses the modern theory of artificial intelligence (AI) to understand human suffering or mental pain. Both humans and sophisticated AI agents process information about the world in order to achieve goals and obtain rewards, which is why AI can be used as a model of the human brain and mind. The book starts with the assumption that suffering is mainly caused by frustration. Frustration means the failure of an agent (whether AI or human) to achieve a goal or a reward it wanted or expected. Frustration is inevitable because of the overwhelming complexity of the world, limited computational resources, and scarcity of good data. In particular, such limitations imply that an agent acting in the real world must cope with uncontrollability, unpredictability, and uncertainty, which all lead to frustration. Such computational theory is finally used to derive various interventions or training methods that will reduce suffering in humans. The ensuing interventions are very similar to those proposed by Buddhist and Stoic philosophy, and include mindfulness meditation.",
+      room: "Room 2335",
+      track: "Research Track",
+      time: "9:15 - 10:15",
+      speaker_img: "/images/speakers/aapo.png",
+      speaker_sup: "/images/speakers/aapo_sup.png"
+    },
+    "Dr. Megan Higgs, University of Florida": {
+      title: "Pausing to Take a Deeper Look at Assumptions",
+      description: "Assumptions are a necessary part of making conclusions and inferences from data. Formal training in Statistics and data science tends to encourage a mathematical and automatic treatment of assumptions, with relatively low expectations for justifying assumptions in the context of the problem or conveying the extent to which conclusions are conditional on assumptions. With so much focus on methods and computing, it is important to also take time to step back and more deeply consider the layers of assumptions that make up the foundation of any data analysis. I believe statisticians and data scientists have a responsibility to better convey the conditional nature of results, and to work with subject matter experts to translate and interrogate assumptions within a particular scientific context. While this is challenging in most problems, it is a necessary step toward better justifying the use of, and trust in, statistical results. The goal of this high-level talk is to increase, or re-highlight, awareness and spur discussion about related challenges and strategies.",
+      room: "Room 2325",
+      track: "General Track",
+      time: "2:00 - 3:00",
+      speaker_img: "/images/speakers/megan.png",
+      speaker_sup: "/images/speakers/megan_sup.png"
+    },
+  };
+
+  const openEventModal = (eventName) => {
+    setSelectedEvent(eventDetails[eventName] || {
+      title: eventName,
+      description: "Details coming soon."
+    });
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedEvent(null);
+  };
+
   const schedule = [
     {
-      time: "7:00 - 8:00",
+      time: "7:30 - 8:00",
       event: "Registration and Refreshments",
       type: "break",
       color: "bg-blue-50"
@@ -19,37 +111,37 @@ const SymposiumSchedule = () => {
     },
     {
       time: "9:15 - 10:15",
-      event: "Industry/Research Speakers + Workshop",
+      event: "Session #1",
       type: "sessions",
       tracks: {
         regular: "TBA",
         industry: "Carlos Bastos Neto, Google Cloud",
-        speaker: "Dr. Aapo Hyvarinen",
-        workshop: "SPS"
+        speaker: "Dr. Aapo Hyvarinen, University of Helsinki",
+        workshop: "TBA, Colorstack"
       },
       color: "bg-purple-50"
     },
     {
       time: "10:15 - 10:30",
-      event: "Coffee Break",
+      event: "Short Break",
       type: "break",
       color: "bg-blue-50"
     },
     {
       time: "10:30 - 11:30",
-      event: "Industry/Research Speakers + Workshop",
+      event: "Session #2",
       type: "sessions",
       tracks: {
-        regular: "TBA",
+        regular: "Anthony James Barr, SAS Institute",
         industry: "TBA",
         speaker: "Dr. Hubert Wagner",
-        workshop: "ACM"
+        workshop: "Norman Bukingolts, Association of Computing Machinery"
       },
       color: "bg-purple-50"
     },
     {
       time: "11:30 - 12:15",
-      event: "Lunch Break",
+      event: "Short Break",
       type: "break",
       color: "bg-blue-50"
     },
@@ -61,49 +153,49 @@ const SymposiumSchedule = () => {
     },
     {
       time: "12:45 - 1:45",
-      event: "Industry/Research Speakers + Workshop",
+      event: "Session #3",
       type: "sessions",
       tracks: {
-        regular: "Dr. Jim Hoover",
+        regular: "Dr. Jim Hoover, University of Florida",
         industry: "TBA",
-        speaker: "Dr. Andrew Gelman",
-        workshop: "Colorstack"
+        speaker: "Dr. Andrew Gelman, Columbia University",
+        workshop: "Raul Valle, IEEE Signal Processing Society"
       },
       color: "bg-purple-50"
     },
     {
       time: "1:45 - 2:00",
-      event: "Break",
+      event: "Short Break",
       type: "break",
       color: "bg-blue-50"
     },
     {
       time: "2:00 - 3:00",
-      event: "Industry/Research Speakers + Workshop",
+      event: "Session #4",
       type: "sessions",
       tracks: {
-        regular: "Dr. Megan Higgs",
-        industry: "TBA",
+        regular: "Dr. Megan Higgs, University of Florida",
+        industry: "Tyler Richards, Snowflake, Ex-Meta",
         speaker: "TBA",
-        workshop: "ASA"
+        workshop: "TBA, American Statistical Association"
       },
       color: "bg-purple-50"
     },
     {
       time: "3:00 - 3:15",
-      event: "Networking Break",
+      event: "Short Break",
       type: "break",
       color: "bg-blue-50"
     },
     {
       time: "3:15 - 4:15",
-      event: "Industry/Research Speakers + Workshop",
+      event: "Session #5",
       type: "sessions",
       tracks: {
         regular: "TBA",
         industry: "TBA",
         speaker: "TBA",
-        workshop: "AI Club"
+        workshop: "Jacques Fleischer, AI Club"
       },
       color: "bg-purple-50"
     },
@@ -120,6 +212,55 @@ const SymposiumSchedule = () => {
       color: "bg-green-100"
     }
   ];
+
+  const TrackCard = ({ track, room, speaker, onClick, type }) => {
+    const isClickable = speaker !== "TBA" && speaker !== "[Presenter Name], Colorstac";
+    const speakerDetails = eventDetails[speaker];
+
+    return (
+      <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-200 hover:shadow-md transition-all">
+        <div className="flex flex-col h-full">
+          <div className="flex items-center justify-between mb-4">
+            <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-medium
+              ${type === 'general' ? 'bg-blue-50 text-blue-700' : ''}
+              ${type === 'industry' ? 'bg-purple-50 text-purple-700' : ''}
+              ${type === 'research' ? 'bg-green-50 text-green-700' : ''}
+              ${type === 'workshop' ? 'bg-indigo-50 text-indigo-700' : ''}
+            `}>
+              {track}
+            </span>
+            {isClickable && (
+              <button
+                onClick={() => onClick(speaker)}
+                className="inline-flex items-center justify-center rounded-full w-6 h-6 bg-gray-100 text-gray-500 hover:bg-gray-200"
+                aria-label="View details"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 16v-4" />
+                  <path d="M12 8h.01" />
+                </svg>
+              </button>
+            )}
+          </div>
+
+          <div className="text-xs font-medium text-gray-500 mb-3">{room}</div>
+
+          <div className="flex-grow">
+            {/* Speaker name and title */}
+            <div>
+              <h3 className="text-sm font-medium text-gray-900 leading-5 mb-1">{speaker}</h3>
+              {isClickable && speakerDetails?.title && (
+                <div className="text-sm text-gray-600 leading-5">
+                  {speakerDetails.title}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 pt-24 sm:pt-28 pb-8">
@@ -189,6 +330,16 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
+      <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 border border-blue-100 shadow-lg mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-blue-800">Registration</h2>
+        <p className="text-base sm:text-lg text-gray-700 mb-5">Secure your spot for the DSI Spring Symposium 2025!</p>
+        <a href="https://forms.gle/FkXfWQy7mE6dpYDF7" target="_blank" rel="noopener noreferrer">
+          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
+            Register Now
+          </button>
+        </a>
+      </div>
+
       <div className="border rounded-lg shadow-sm bg-white mb-6">
         <div className="p-3 sm:p-5">
           <h2 className="text-lg sm:text-xl text-gray-700 font-semibold mb-3">Event Schedule</h2>
@@ -203,51 +354,35 @@ const SymposiumSchedule = () => {
                   <div className="flex-1">
                     <span className="font-medium text-gray-800">{item.event}</span>
                     {item.tracks && (
-                      <div className="mt-2 grid grid-cols-1 sm:grid-cols-4 gap-3">
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-blue-200">
-                          <div className="flex flex-col">
-                            <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-blue-50 px-2.5 py-1.5 text-xs font-medium text-blue-700">
-                                Regular Track
-                              </span>
-                            </div>
-                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2325</span>
-                            <span className="text-sm text-gray-800 font-medium">{item.tracks.regular}</span>
-                          </div>
-                        </div>
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-purple-200">
-                          <div className="flex flex-col">
-                            <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-purple-50 px-2.5 py-1.5 text-xs font-medium text-purple-700">
-                                Industry Track
-                              </span>
-                            </div>
-                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2330</span>
-                            <span className="text-sm text-gray-800 font-medium">{item.tracks.industry}</span>
-                          </div>
-                        </div>
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-green-200">
-                          <div className="flex flex-col">
-                            <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-green-50 px-2.5 py-1.5 text-xs font-medium text-green-700">
-                                Research Track
-                              </span>
-                            </div>
-                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2335</span>
-                            <span className="text-sm text-gray-800 font-medium">{item.tracks.speaker}</span>
-                          </div>
-                        </div>
-                        <div className="bg-white rounded-xl p-3 shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-indigo-200">
-                          <div className="flex flex-col">
-                            <div className="flex items-center gap-2 mb-2">
-                              <span className="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1.5 text-xs font-medium text-indigo-700">
-                                Workshop Track
-                              </span>
-                            </div>
-                            <span className="text-xs font-medium text-gray-500 mb-1">Room 2365</span>
-                            <span className="text-sm text-gray-800 font-medium">{item.tracks.workshop} Workshop</span>
-                          </div>
-                        </div>
+                      <div className="mt-4 grid grid-cols-1 sm:grid-cols-4 gap-4">
+                        <TrackCard
+                          track="General Track"
+                          room="Room 2325"
+                          speaker={item.tracks.regular}
+                          onClick={openEventModal}
+                          type="general"
+                        />
+                        <TrackCard
+                          track="Industry Track"
+                          room="Room 2330"
+                          speaker={item.tracks.industry}
+                          onClick={openEventModal}
+                          type="industry"
+                        />
+                        <TrackCard
+                          track="Research Track"
+                          room="Room 2335"
+                          speaker={item.tracks.speaker}
+                          onClick={openEventModal}
+                          type="research"
+                        />
+                        <TrackCard
+                          track="Workshop Track"
+                          room="Room 2365"
+                          speaker={item.tracks.workshop}
+                          onClick={openEventModal}
+                          type="workshop"
+                        />
                       </div>
                     )}
                   </div>
@@ -256,16 +391,6 @@ const SymposiumSchedule = () => {
             ))}
           </div>
         </div>
-      </div>
-
-      <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 border border-blue-100 shadow-lg mb-12">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-blue-800">Registration</h2>
-        <p className="text-base sm:text-lg text-gray-700 mb-5">Secure your spot for the DSI Spring Symposium 2025!</p>
-        <a href="https://forms.gle/FkXfWQy7mE6dpYDF7" target="_blank" rel="noopener noreferrer">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
-            Register Now
-          </button>
-        </a>
       </div>
 
       <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-white text-center">Collaborators</h2>
@@ -297,9 +422,68 @@ const SymposiumSchedule = () => {
         />
       </div>
 
+      {modalOpen && selectedEvent && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">{selectedEvent.title}</h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {selectedEvent.time} • {selectedEvent.room}
+                  </p>
+                </div>
+                <button
+                  onClick={closeModal}
+                  className="text-gray-400 hover:text-gray-500 focus:outline-none"
+                >
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
 
+              {/* Speaker image and organization logo */}
+              {(selectedEvent.speaker_img || selectedEvent.speaker_sup) && (
+                <div className="flex items-center gap-4 mb-4">
+                  {selectedEvent.speaker_img && (
+                    <div className="flex-shrink-0">
+                      <img
+                        src={selectedEvent.speaker_img}
+                        alt="Speaker"
+                        className="w-16 h-16 rounded-full object-cover border border-gray-200"
+                      />
+                    </div>
+                  )}
+                  {selectedEvent.speaker_sup && (
+                    <div className="h-10 flex-shrink-0">
+                      <img
+                        src={selectedEvent.speaker_sup}
+                        alt="Organization logo"
+                        className="h-full w-auto"
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
 
-    </div>
+              <div className="prose max-w-none">
+                <p className="text-gray-700 whitespace-pre-line">{selectedEvent.description}</p>
+              </div>
+              <div className="mt-6 flex justify-end">
+                <button
+                  onClick={closeModal}
+                  className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+    </div >
   );
 };
 
