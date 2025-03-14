@@ -10,6 +10,7 @@ interface EventDetail {
   time: string;
   speaker_img?: string;  // Optional speaker image URL
   speaker_sup?: string;  // Optional supplementary info
+  speaker_sup_2?: string;  // Optional second supplementary info
 }
 
 const SymposiumSchedule = () => {
@@ -54,14 +55,15 @@ const SymposiumSchedule = () => {
       speaker_img: "/images/speakers/jacques.png",
       speaker_sup: "/images/speakers/jacques_sup.png"
     },
-    "Anthony James Barr, SAS Institute": {
+    "Tony Barr, SAS Institute, AMOR": {
       title: "From SAS to A Model Of Reality",
-      description: "I will discuss the development of the SAS system for data analytics and my current work, AModelOfReality.com, a consistent and complete model of structured knowledge.",
+      description: "Tony Barr will discuss the early history of the SAS system for data analytics and his current work, A Model Of Reality (AMOR). AMOR aims to create a world where young children and adults can understand and flourish in programming, databases, mathematics, and data analytics. AMOR uses diagrams and flowcharts to make reading and writing programs easy and intuitive for learners and seasoned users. The mission is to enable users to navigate through knowledge space naturally, as they navigate the real world.",
       room: "Room 2325",
       track: "General Track",
       time: "10:30 - 11:30",
       speaker_img: "/images/speakers/anthony.png",
-      speaker_sup: "/images/speakers/anthony_sup.png"
+      speaker_sup: "/images/speakers/anthony_sup.png",
+      speaker_sup_2: "/images/speakers/anthony_sup2.png"
     },
     "Dr. Aapo Hyvarinen, University of Helsinki": {
       title: "Painful Intelligence: What AI Can Tell Us About Human Suffering",
@@ -80,6 +82,15 @@ const SymposiumSchedule = () => {
       time: "2:00 - 3:00",
       speaker_img: "/images/speakers/megan.png",
       speaker_sup: "/images/speakers/megan_sup.png"
+    },
+    "Dr. Jim Hoover, University of Florida": {
+      title: "The Latest Developments in the Implementation of AI in Business",
+      description: "Ever since November 2022 when ChatGPT was released commercially, businesses have been pursuing the best approaches to implement AI into their processes. There has been a great deal of Fear of Missing Out (FOMO) related to this quest for value out of AI capabilities. In this talk, we will discuss what is working and what is not. And, we will explore how students can best position themselves for roles in AI as the technology continues to evolve in business.",
+      room: "Room 2325",
+      track: "General Track",
+      time: "12:45 - 1:45",
+      // speaker_img: "/images/speakers/jim.png",
+      // speaker_sup: "/images/speakers/jim_sup.png"
     },
   };
 
@@ -132,7 +143,7 @@ const SymposiumSchedule = () => {
       event: "Session #2",
       type: "sessions",
       tracks: {
-        regular: "Anthony James Barr, SAS Institute",
+        regular: "Tony Barr, SAS Institute, AMOR",
         industry: "TBA",
         speaker: "Dr. Hubert Wagner",
         workshop: "Norman Bukingolts, Association of Computing Machinery"
@@ -443,9 +454,9 @@ const SymposiumSchedule = () => {
                 </button>
               </div>
 
-              {/* Speaker image and organization logo */}
-              {(selectedEvent.speaker_img || selectedEvent.speaker_sup) && (
-                <div className="flex items-center gap-4 mb-4">
+              {/* Speaker image and organization logos */}
+              {(selectedEvent.speaker_img || selectedEvent.speaker_sup || selectedEvent.speaker_sup_2) && (
+                <div className="flex items-center gap-4 mb-4 flex-wrap">
                   {selectedEvent.speaker_img && (
                     <div className="flex-shrink-0">
                       <img
@@ -460,6 +471,15 @@ const SymposiumSchedule = () => {
                       <img
                         src={selectedEvent.speaker_sup}
                         alt="Organization logo"
+                        className="h-full w-auto"
+                      />
+                    </div>
+                  )}
+                  {selectedEvent.speaker_sup_2 && (
+                    <div className="h-10 flex-shrink-0">
+                      <img
+                        src={selectedEvent.speaker_sup_2}
+                        alt="Additional organization logo"
                         className="h-full w-auto"
                       />
                     </div>
