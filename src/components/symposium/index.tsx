@@ -76,14 +76,14 @@ const SymposiumSchedule = () => {
       speaker_img: "/images/speakers/aapo.png",
       speaker_sup: "/images/speakers/aapo_sup.png"
     },
-    "Dr. Megan Higgs, University of Florida": {
+    "Dr. Megan Higgs": {
       title: "Pausing to Take a Deeper Look at Assumptions",
       description: "Assumptions are a necessary part of making conclusions and inferences from data. Formal training in Statistics and data science tends to encourage a mathematical and automatic treatment of assumptions, with relatively low expectations for justifying assumptions in the context of the problem or conveying the extent to which conclusions are conditional on assumptions. With so much focus on methods and computing, it is important to also take time to step back and more deeply consider the layers of assumptions that make up the foundation of any data analysis. I believe statisticians and data scientists have a responsibility to better convey the conditional nature of results, and to work with subject matter experts to translate and interrogate assumptions within a particular scientific context. While this is challenging in most problems, it is a necessary step toward better justifying the use of, and trust in, statistical results. The goal of this high-level talk is to increase, or re-highlight, awareness and spur discussion about related challenges and strategies.",
       room: "Room 2325",
       track: "General Track",
       time: "2:00 - 3:00",
       speaker_img: "/images/speakers/megan.png",
-      speaker_sup: "/images/speakers/megan_sup.png"
+      // speaker_sup: "/images/speakers/megan_sup.png"
     },
     "Dr. Jim Hoover, University of Florida": {
       title: "The Latest Developments in the Implementation of AI in Business",
@@ -93,6 +93,15 @@ const SymposiumSchedule = () => {
       time: "12:45 - 1:45",
       // speaker_img: "/images/speakers/jim.png",
       // speaker_sup: "/images/speakers/jim_sup.png"
+    },
+    "Dr. Andrew Gelman, Columbia University": {
+      title: "Principles of Bayesian Workflow",
+      description: "The Bayesian approach to data analysis provides a powerful way to handle uncertainty in all observations, model parameters, and model structure using probability theory. Probabilistic programming languages make it easier to specify and fit Bayesian models, but this still leaves us with many options regarding constructing, evaluating, and using these models, along with many remaining challenges in computation. Using Bayesian inference to solve real-world problems requires not only statistical skills, subject matter knowledge, and programming, but also awareness of the decisions made in the process of data analysis. All of these aspects can be understood as part of a tangled workflow of applied Bayesian statistics. Beyond inference, the workflow also includes iterative model building, model checking, validation and troubleshooting of computational problems, model understanding, and model comparison. We review all these aspects of workflow in the context of several examples, keeping in mind that in practice we will be fitting many models for any given problem, even if only a subset of them will ultimately be relevant for our conclusions.",
+      room: "Room 2335",
+      track: "Research Track",
+      time: "12:45 - 1:45",
+      speaker_img: "/images/speakers/andrew.png",
+      // speaker_sup: "/images/speakers/andrew_sup.png"
     },
   };
 
@@ -187,7 +196,7 @@ const SymposiumSchedule = () => {
       event: "Session #4",
       type: "sessions",
       tracks: {
-        regular: "Dr. Megan Higgs, University of Florida",
+        regular: "Dr. Megan Higgs",
         industry: "Tyler Richards, Snowflake, Ex-Meta",
         speaker: "TBA",
         workshop: "TBA, American Statistical Association"
