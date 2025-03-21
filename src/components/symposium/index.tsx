@@ -101,7 +101,16 @@ const SymposiumSchedule = () => {
       track: "Research Track",
       time: "12:45 - 1:45",
       speaker_img: "/images/speakers/andrew.png",
-      // speaker_sup: "/images/speakers/andrew_sup.png"
+      speaker_sup: "/images/speakers/andrew_sup.png"
+    },
+    "Jhonathan Herrera, Colorstack": {
+      title: "Intro to State Space Models and MAMBA",
+      description: "This introduction workshop will provide you a foundational understanding of State Space Models (SSMs) and their applications in time-series modeling.",
+      room: "Room 2365",
+      track: "Workshop Track",
+      time: "9:15 - 10:15",
+      speaker_img: "/images/speakers/jhonathan.png",
+      speaker_sup: "/images/speakers/jhonathan_sup.png"
     },
   };
 
@@ -139,7 +148,7 @@ const SymposiumSchedule = () => {
         regular: "TBA",
         industry: "Carlos Bastos Neto, Google Cloud",
         speaker: "Dr. Aapo Hyvarinen, University of Helsinki",
-        workshop: "TBA, Colorstack"
+        workshop: "Jhonathan Herrera, Colorstack"
       },
       color: "bg-purple-50"
     },
@@ -199,7 +208,7 @@ const SymposiumSchedule = () => {
         regular: "Dr. Megan Higgs",
         industry: "Tyler Richards, Snowflake, Ex-Meta",
         speaker: "TBA",
-        workshop: "TBA, American Statistical Association"
+        workshop: "Kausthubh, American Statistical Association"
       },
       color: "bg-purple-50"
     },
