@@ -30,14 +30,14 @@ const SymposiumSchedule = () => {
       speaker_img: "/images/speakers/norman.png",
       speaker_sup: "/images/speakers/norman_sup.png"
     },
-    "Dr. Hubert Wagner": {
-      title: "Advanced Topological Data Analysis",
-      description: "An exploration of the latest techniques in topological data analysis and their applications in machine learning.",
+    "Dr. Hubert Wagner, University of Florida": {
+      title: "Trojan horses, Pavlov's dogs and self-driving cars",
+      description: "While deep neural networks are powerful tools, they are known to have security issues. One particular threat is the so-called Trojan attack,  which can be used to compromise, for instance, self-driving cars. I will describe our approach for detecting such attacks on vision models presented at NeurIPS' 21. This approach is motivated by basic neuroscientific principles and uses methods of topological data analysis (TDA), which I will introduce along the way. (No previous background in topology is necessary.)\n\nAbout me:\nHubert Wagner is an Assistant Professor of Data Science (Department of Mathematics, UF). His area of expertise is topological data analysis. His work on topological methods for analyzing artificial neural networks has been supported by Google under their Research Scholar Program.",
       room: "Room 2335",
       track: "Research Track",
       time: "10:30 - 11:30",
-      // speaker_img: "/images/speakers/hubert.jpg",
-      // speaker_sup: "Research Lead, Hugging Face"
+      speaker_img: "/images/speakers/hubert.png",
+      speaker_sup: "/images/speakers/hubert_sup.png"
     },
     "Raul Valle, IEEE Signal Processing Society": {
       title: "Introduction to Signal Processing",
@@ -96,7 +96,7 @@ const SymposiumSchedule = () => {
     },
     "Dr. Andrew Gelman, Columbia University": {
       title: "Principles of Bayesian Workflow",
-      description: "The Bayesian approach to data analysis provides a powerful way to handle uncertainty in all observations, model parameters, and model structure using probability theory. Probabilistic programming languages make it easier to specify and fit Bayesian models, but this still leaves us with many options regarding constructing, evaluating, and using these models, along with many remaining challenges in computation. Using Bayesian inference to solve real-world problems requires not only statistical skills, subject matter knowledge, and programming, but also awareness of the decisions made in the process of data analysis. All of these aspects can be understood as part of a tangled workflow of applied Bayesian statistics. Beyond inference, the workflow also includes iterative model building, model checking, validation and troubleshooting of computational problems, model understanding, and model comparison. We review all these aspects of workflow in the context of several examples, keeping in mind that in practice we will be fitting many models for any given problem, even if only a subset of them will ultimately be relevant for our conclusions.",
+      description: "The Bayesian approach to data analysis provides a powerful way to handle uncertainty in all observations, model parameters, and model structure using probability theory. Probabilistic programming languages make it easier to specify and fit Bayesian models, but this still leaves us with many options regarding constructing, evaluating, and using these models, along with many remaining challenges in computation.\n\nUsing Bayesian inference to solve real-world problems requires not only statistical skills, subject matter knowledge, and programming, but also awareness of the decisions made in the process of data analysis. All of these aspects can be understood as part of a tangled workflow of applied Bayesian statistics.\n\nBeyond inference, the workflow also includes iterative model building, model checking, validation and troubleshooting of computational problems, model understanding, and model comparison. We review all these aspects of workflow in the context of several examples, keeping in mind that in practice we will be fitting many models for any given problem, even if only a subset of them will ultimately be relevant for our conclusions.",
       room: "Room 2335",
       track: "Research Track",
       time: "12:45 - 1:45",
@@ -165,7 +165,7 @@ const SymposiumSchedule = () => {
       tracks: {
         regular: "Tony Barr, SAS Institute, AMOR",
         industry: "TBA",
-        speaker: "Dr. Hubert Wagner",
+        speaker: "Dr. Hubert Wagner, University of Florida",
         workshop: "Norman Bukingolts, Association of Computing Machinery"
       },
       color: "bg-purple-50"
