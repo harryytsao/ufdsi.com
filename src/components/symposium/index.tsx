@@ -112,6 +112,15 @@ const SymposiumSchedule = () => {
       speaker_img: "/images/speakers/jhonathan.png",
       speaker_sup: "/images/speakers/jhonathan_sup.png"
     },
+    "Kausthubh, American Statistical Association": {
+      title: "Introduction to NLP: Embedding Techniques for Healthcare Applications",
+      description: "This workshop introduces fundamental Natural Language Processing concepts through the lens of medical text embeddings. Participants will learn how to transform unstructured clinical text into meaningful vector representations. We cover text preprocessing techniques, tokenization, normalization, and various embedding methods from statistical approaches to neural representations.",
+      room: "Room 2365",
+      track: "Workshop Track",
+      time: "2:00 - 3:00",
+      // speaker_img: "/images/speakers/kausthubh.png",
+      // speaker_sup: "/images/speakers/kausthubh_sup.png"
+    },
   };
 
   const openEventModal = (eventName) => {
@@ -382,7 +391,7 @@ const SymposiumSchedule = () => {
         <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-blue-800 dark:text-blue-300">Registration</h2>
         <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-5">Secure your spot for the DSI Spring Symposium 2025!</p>
         <a href="https://forms.gle/FkXfWQy7mE6dpYDF7" target="_blank" rel="noopener noreferrer">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
+          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">
             Register Now
           </button>
         </a>
