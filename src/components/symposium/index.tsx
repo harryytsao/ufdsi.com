@@ -82,7 +82,6 @@ const SymposiumSchedule = () => {
       room: "Room 2325",
       track: "General Track",
       time: "2:00 - 3:00",
-      speaker_img: "/images/speakers/megan.png",
       // speaker_sup: "/images/speakers/megan_sup.png"
     },
     "Dr. Jim Hoover, University of Florida": {
@@ -450,111 +449,115 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
-      <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-gray-900 dark:text-white text-center">Collaborators</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900 dark:to-purple-900 py-4 rounded-lg">Collaborators</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div className="text-center">
-          <h3 className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-semibold mb-2">Speakers From</h3>
+          <h3 className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-semibold mb-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 py-2 px-4 rounded-lg shadow-sm">Speakers From</h3>
+          <div className="border rounded-xl shadow-lg bg-white dark:bg-gray-800 p-6 border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+            <img
+              src="/images/symposium-collaborators/speaker-affiliations.png"
+              alt="Speaker Affiliations"
+              className="w-full h-auto rounded-lg hover:opacity-90 transition-opacity"
+            />
+          </div>
         </div>
+
         <div className="text-center">
-          <h3 className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-semibold mb-2">Workshops From</h3>
+          <h3 className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-semibold mb-4 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900 dark:to-purple-800 py-2 px-4 rounded-lg shadow-sm">Workshops From</h3>
+          <div className="border rounded-xl shadow-lg bg-white dark:bg-gray-800 p-6 border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+            <img
+              src="/images/symposium-collaborators/workshop-orgs.png"
+              alt="Workshop Organizations"
+              className="w-full h-auto rounded-lg hover:opacity-90 transition-opacity"
+            />
+          </div>
         </div>
+
         <div className="text-center">
-          <h3 className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-semibold mb-2">Student Organizations</h3>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-3 sm:p-4 border-gray-200 dark:border-gray-700">
-          <img
-            src="/images/symposium-collaborators/speaker-affiliations.png"
-            alt="Speaker Affiliations"
-            className="w-full h-auto rounded-lg"
-          />
-        </div>
-
-        <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-3 sm:p-4 border-gray-200 dark:border-gray-700">
-          <img
-            src="/images/symposium-collaborators/workshop-orgs.png"
-            alt="Workshop Organizations"
-            className="w-full h-auto rounded-lg"
-          />
-        </div>
-
-        <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-3 sm:p-4 border-gray-200 dark:border-gray-700">
-          <img
-            src="/images/symposium-collaborators/other-student-orgs.png"
-            alt="Other Collaborating Student Organizations"
-            className="w-full h-auto rounded-lg"
-          />
+          <h3 className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-semibold mb-4 bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-indigo-900 dark:to-indigo-800 py-2 px-4 rounded-lg shadow-sm">Student Organizations</h3>
+          <div className="border rounded-xl shadow-lg bg-white dark:bg-gray-800 p-6 border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
+            <img
+              src="/images/symposium-collaborators/other-student-orgs.png"
+              alt="Other Collaborating Student Organizations"
+              className="w-full h-auto rounded-lg hover:opacity-90 transition-opacity"
+            />
+          </div>
         </div>
       </div>
 
       {modalOpen && selectedEvent && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">{selectedEvent.title}</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                    {selectedEvent.time} • {selectedEvent.room}
-                  </p>
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
+          <div className="min-h-screen w-full flex items-center justify-center p-4">
+            <div className="bg-white dark:bg-gray-800 rounded-lg w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+              <div className="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">{selectedEvent.title}</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                      {selectedEvent.time} • {selectedEvent.room}
+                    </p>
+                  </div>
+                  <button
+                    onClick={closeModal}
+                    className="text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none p-2"
+                    aria-label="Close modal"
+                  >
+                    <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
                 </div>
-                <button
-                  onClick={closeModal}
-                  className="text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none"
-                  aria-label="Close modal"
-                >
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
               </div>
 
-              {/* Speaker image and organization logos */}
-              {(selectedEvent.speaker_img || selectedEvent.speaker_sup || selectedEvent.speaker_sup_2) && (
-                <div className="flex items-center gap-4 mb-4 flex-wrap">
-                  {selectedEvent.speaker_img && (
-                    <div className="flex-shrink-0">
-                      <img
-                        src={selectedEvent.speaker_img}
-                        alt="Speaker"
-                        className="w-16 h-16 rounded-full object-cover border border-gray-200 dark:border-gray-700"
-                      />
-                    </div>
-                  )}
-                  {selectedEvent.speaker_sup && (
-                    <div className="h-10 flex-shrink-0">
-                      <img
-                        src={selectedEvent.speaker_sup}
-                        alt="Organization logo"
-                        className="h-full w-auto"
-                      />
-                    </div>
-                  )}
-                  {selectedEvent.speaker_sup_2 && (
-                    <div className="h-10 flex-shrink-0">
-                      <img
-                        src={selectedEvent.speaker_sup_2}
-                        alt="Additional organization logo"
-                        className="h-full w-auto"
-                      />
-                    </div>
-                  )}
-                </div>
-              )}
+              <div className="p-4">
+                {/* Speaker image and organization logos */}
+                {(selectedEvent.speaker_img || selectedEvent.speaker_sup || selectedEvent.speaker_sup_2) && (
+                  <div className="flex items-center gap-3 sm:gap-4 mb-4 flex-wrap">
+                    {selectedEvent.speaker_img && (
+                      <div className="flex-shrink-0">
+                        <img
+                          src={selectedEvent.speaker_img}
+                          alt="Speaker"
+                          className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover border border-gray-200 dark:border-gray-700"
+                        />
+                      </div>
+                    )}
+                    {selectedEvent.speaker_sup && (
+                      <div className="h-8 sm:h-10 flex-shrink-0">
+                        <img
+                          src={selectedEvent.speaker_sup}
+                          alt="Organization logo"
+                          className="h-full w-auto"
+                        />
+                      </div>
+                    )}
+                    {selectedEvent.speaker_sup_2 && (
+                      <div className="h-8 sm:h-10 flex-shrink-0">
+                        <img
+                          src={selectedEvent.speaker_sup_2}
+                          alt="Additional organization logo"
+                          className="h-full w-auto"
+                        />
+                      </div>
+                    )}
+                  </div>
+                )}
 
-              <div className="prose max-w-none dark:prose-invert">
-                <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{selectedEvent.description}</p>
+                <div className="prose max-w-none dark:prose-invert">
+                  <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 whitespace-pre-line">{selectedEvent.description}</p>
+                </div>
               </div>
-              <div className="mt-6 flex justify-end">
-                <button
-                  onClick={closeModal}
-                  className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none"
-                >
-                  Close
-                </button>
+
+              <div className="sticky bottom-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 p-4">
+                <div className="flex justify-end">
+                  <button
+                    onClick={closeModal}
+                    className="px-3 py-1.5 sm:px-4 sm:py-2 bg-blue-600 text-white text-sm sm:text-base rounded-md hover:bg-blue-700 focus:outline-none"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
