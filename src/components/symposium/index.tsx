@@ -76,13 +76,12 @@ const SymposiumSchedule = () => {
       speaker_img: "/images/speakers/aapo.png",
       speaker_sup: "/images/speakers/aapo_sup.png"
     },
-    "Dr. Megan Higgs": {
+    "Dr. Megan Higgs, Critical Inference": {
       title: "Pausing to Take a Deeper Look at Assumptions",
       description: "Assumptions are a necessary part of making conclusions and inferences from data. Formal training in Statistics and data science tends to encourage a mathematical and automatic treatment of assumptions, with relatively low expectations for justifying assumptions in the context of the problem or conveying the extent to which conclusions are conditional on assumptions. With so much focus on methods and computing, it is important to also take time to step back and more deeply consider the layers of assumptions that make up the foundation of any data analysis. I believe statisticians and data scientists have a responsibility to better convey the conditional nature of results, and to work with subject matter experts to translate and interrogate assumptions within a particular scientific context. While this is challenging in most problems, it is a necessary step toward better justifying the use of, and trust in, statistical results. The goal of this high-level talk is to increase, or re-highlight, awareness and spur discussion about related challenges and strategies.",
       room: "Room 2325",
       track: "General Track",
-      time: "2:00 - 3:00",
-      // speaker_sup: "/images/speakers/megan_sup.png"
+      time: "3:15 - 4:15"
     },
     "Dr. Jim Hoover, University of Florida": {
       title: "The Latest Developments in the Implementation of AI in Business",
@@ -90,8 +89,6 @@ const SymposiumSchedule = () => {
       room: "Room 2325",
       track: "General Track",
       time: "12:45 - 1:45",
-      // speaker_img: "/images/speakers/jim.png",
-      // speaker_sup: "/images/speakers/jim_sup.png"
     },
     "Dr. Andrew Gelman, Columbia University": {
       title: "Principles of Bayesian Workflow",
@@ -117,9 +114,56 @@ const SymposiumSchedule = () => {
       room: "Room 2365",
       track: "Workshop Track",
       time: "2:00 - 3:00",
-      // speaker_img: "/images/speakers/kausthubh.png",
-      // speaker_sup: "/images/speakers/kausthubh_sup.png"
     },
+    "Carlos Bastos Neto, Google Cloud": {
+      title: "Living a Life within Big Tech",
+      description: "Details coming soon.",
+      room: "Room 2330",
+      track: "Industry Track",
+      time: "9:15 - 10:15"
+    },
+    "Luciane Galuppo, Microsoft": {
+      title: "My Journey from Brazil to Microsoft",
+      description: "Details coming soon.",
+      room: "Room 2330",
+      track: "Industry Track",
+      time: "10:30 - 11:30"
+    },
+    "Tyler Richards, Snowflake, Ex-Meta": {
+      title: "Lessons I have learned as a Data Scientist",
+      description: "Details coming soon.",
+      room: "Room 2330",
+      track: "Industry Track",
+      time: "2:00 - 3:00"
+    },
+    "Michael Vega-Sanz, Lula": {
+      title: "Creating AI Solutions for Insurance Expenses",
+      description: "Details coming soon.",
+      room: "Room 2330",
+      track: "Industry Track",
+      time: "3:15 - 4:15"
+    },
+    "Wesley Deng, Carnegie Mellon University": {
+      title: "TBD",
+      description: "Details coming soon.",
+      room: "Room 2335",
+      track: "Research Track",
+      time: "2:00 - 3:00"
+    },
+    "Sarah K Luger, ML Commons": {
+      title: "TBD",
+      description: "Details coming soon.",
+      room: "Room 2325",
+      track: "General Track",
+      time: "2:00 - 3:00"
+    },
+    "TBD, Sentient AI": {
+      title: "TBD",
+      description: "Details coming soon.",
+      room: "Room 2330",
+      track: "Industry Track",
+      time: "12:45 - 1:45"
+    }
   };
 
   const openEventModal = (eventName) => {
@@ -172,7 +216,7 @@ const SymposiumSchedule = () => {
       type: "sessions",
       tracks: {
         regular: "Tony Barr, SAS Institute, AMOR",
-        industry: "TBA",
+        industry: "Luciane Galuppo, Microsoft",
         speaker: "Dr. Hubert Wagner, University of Florida",
         workshop: "Norman Bukingolts, Association of Computing Machinery"
       },
@@ -196,7 +240,7 @@ const SymposiumSchedule = () => {
       type: "sessions",
       tracks: {
         regular: "Dr. Jim Hoover, University of Florida",
-        industry: "TBA",
+        industry: "TBD, Sentient AI",
         speaker: "Dr. Andrew Gelman, Columbia University",
         workshop: "Raul Valle, IEEE Signal Processing Society"
       },
@@ -213,9 +257,9 @@ const SymposiumSchedule = () => {
       event: "Session #4",
       type: "sessions",
       tracks: {
-        regular: "Dr. Megan Higgs",
+        regular: "Sarah K Luger, ML Commons",
         industry: "Tyler Richards, Snowflake, Ex-Meta",
-        speaker: "TBA",
+        speaker: "Wesley Deng, Carnegie Mellon University",
         workshop: "Kausthubh, American Statistical Association"
       },
       color: "bg-purple-50"
@@ -231,8 +275,8 @@ const SymposiumSchedule = () => {
       event: "Session #5",
       type: "sessions",
       tracks: {
-        regular: "TBA",
-        industry: "TBA",
+        regular: "Dr. Megan Higgs, Critical Inference",
+        industry: "Michael Vega-Sanz, Lula",
         speaker: "TBA",
         workshop: "Jacques Fleischer, AI Club"
       },
