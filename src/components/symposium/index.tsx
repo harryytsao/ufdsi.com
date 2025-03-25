@@ -530,6 +530,52 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-500 dark:to-purple-500 py-6 rounded-lg text-white shadow-lg">Sponsors</h2>
+
+      <div className="grid grid-cols-1 gap-8 mb-12">
+        <div className="text-center">
+          <div className="border-2 rounded-xl shadow-xl bg-white dark:bg-gray-800 p-8 sm:p-12 border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
+              <a href="https://ai.research.ufl.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center space-y-4 group hover:no-underline">
+                <img
+                  src="/images/symposium-sponsors/AIIRI.png"
+                  alt="UF Artificial Intelligence & Informatics Research Institute"
+                  className="max-h-24 w-auto opacity-90 group-hover:opacity-100 transition-opacity transform group-hover:scale-105 duration-200"
+                />
+                <span className="text-sm text-gray-600 dark:text-gray-400 font-medium group-hover:text-blue-600 dark:group-hover:text-blue-400">AIIRI</span>
+              </a>
+              <a href="https://www.cise.ufl.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center space-y-4 group hover:no-underline">
+                <img
+                  src="/images/symposium-sponsors/CISE.png"
+                  alt="UF CISE Department"
+                  className="max-h-24 w-auto opacity-90 group-hover:opacity-100 transition-opacity transform group-hover:scale-105 duration-200"
+                />
+                <span className="text-sm text-gray-600 dark:text-gray-400 font-medium group-hover:text-blue-600 dark:group-hover:text-blue-400">CISE Department</span>
+              </a>
+              <a href="https://ailearning.ai.ufl.edu/the-ai-center/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center space-y-4 group hover:no-underline">
+                <img
+                  src="/images/symposium-sponsors/AI2.png"
+                  alt="UF AI Learning Academy"
+                  className="max-h-24 w-auto opacity-90 group-hover:opacity-100 transition-opacity transform group-hover:scale-105 duration-200"
+                />
+                <span className="text-sm text-gray-600 dark:text-gray-400 font-medium group-hover:text-blue-600 dark:group-hover:text-blue-400 inline-flex items-center">
+                  AI<sup className="text-[0.65em] relative top-[-0.25em]">2</sup>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {modalOpen && selectedEvent && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
           <div className="min-h-screen w-full flex items-center justify-center p-4">
