@@ -137,11 +137,11 @@ const SymposiumSchedule = () => {
       time: "2:00 - 3:00"
     },
     "Michael Vega-Sanz, Lula": {
-      title: "Creating AI Solutions for Insurance Expenses",
+      title: "How I Started Lula from my Dorm Room",
       description: "Details coming soon.",
-      room: "Room 2330",
-      track: "Industry Track",
-      time: "3:15 - 4:15"
+      room: "Room 2325",
+      track: "General Track",
+      time: "9:15 - 10:15"
     },
     "Wesley Deng, Carnegie Mellon University": {
       title: "TBD",
@@ -197,7 +197,7 @@ const SymposiumSchedule = () => {
       event: "Session #1",
       type: "sessions",
       tracks: {
-        regular: "TBA",
+        regular: "Michael Vega-Sanz, Lula",
         industry: "Carlos Bastos Neto, Google Cloud",
         speaker: "Dr. Aapo Hyvarinen, University of Helsinki",
         workshop: "Jhonathan Herrera, Colorstack"
@@ -276,7 +276,7 @@ const SymposiumSchedule = () => {
       type: "sessions",
       tracks: {
         regular: "Dr. Megan Higgs, Critical Inference",
-        industry: "Michael Vega-Sanz, Lula",
+        industry: "TBA",
         speaker: "TBA",
         workshop: "Jacques Fleischer, AI Club"
       },
@@ -535,7 +535,7 @@ const SymposiumSchedule = () => {
       <div className="grid grid-cols-1 gap-8 mb-12">
         <div className="text-center">
           <div className="border-2 rounded-xl shadow-xl bg-white dark:bg-gray-800 p-8 sm:p-12 border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-center justify-items-center">
               <a href="https://ai.research.ufl.edu/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -570,6 +570,17 @@ const SymposiumSchedule = () => {
                 <span className="text-sm text-gray-600 dark:text-gray-400 font-medium group-hover:text-blue-600 dark:group-hover:text-blue-400 inline-flex items-center">
                   AI<sup className="text-[0.65em] relative top-[-0.25em]">2</sup>
                 </span>
+              </a>
+              <a href="https://uflib.ufl.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center space-y-4 group hover:no-underline">
+                <img
+                  src="/images/symposium-sponsors/smathers.png"
+                  alt="George A. Smathers Libraries"
+                  className="max-h-24 w-auto opacity-90 group-hover:opacity-100 transition-opacity transform group-hover:scale-105 duration-200"
+                />
+                <span className="text-sm text-gray-600 dark:text-gray-400 font-medium group-hover:text-blue-600 dark:group-hover:text-blue-400">Smathers Libraries</span>
               </a>
             </div>
           </div>
