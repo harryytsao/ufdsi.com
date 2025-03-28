@@ -223,14 +223,8 @@ const SymposiumSchedule = () => {
       color: "bg-purple-50"
     },
     {
-      time: "11:30 - 12:15",
-      event: "Short Break",
-      type: "break",
-      color: "bg-blue-50"
-    },
-    {
-      time: "11:45 - 12:30",
-      event: "Student Poster Sessions",
+      time: "11:30 - 12:45",
+      event: "Lunch + Student Poster Sessions",
       type: "break",
       color: "bg-blue-50"
     },
@@ -589,25 +583,27 @@ const SymposiumSchedule = () => {
 
       {modalOpen && selectedEvent && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-          <div className="min-h-screen w-full flex items-center justify-center p-4">
-            <div className="bg-white dark:bg-gray-800 rounded-lg w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+          <div className="min-h-screen w-full flex items-center justify-center p-0 sm:p-4">
+            <div className="bg-white dark:bg-gray-800 w-full h-full sm:h-auto sm:rounded-lg sm:max-w-2xl sm:max-h-[90vh] overflow-y-auto">
               <div className="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">{selectedEvent.title}</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      {selectedEvent.time} • {selectedEvent.room}
-                    </p>
+                <div className="flex flex-col w-full pb-2">
+                  <div className="flex justify-end mb-2">
+                    <button
+                      onClick={closeModal}
+                      className="text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none p-1"
+                      aria-label="Close modal"
+                    >
+                      <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
                   </div>
-                  <button
-                    onClick={closeModal}
-                    className="text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none p-2"
-                    aria-label="Close modal"
-                  >
-                    <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
+                  <h3 className="text-base sm:text-xl font-bold text-gray-900 dark:text-white break-words mb-1">
+                    {selectedEvent.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+                    {selectedEvent.time} • {selectedEvent.room}
+                  </p>
                 </div>
               </div>
 
@@ -654,7 +650,7 @@ const SymposiumSchedule = () => {
                 <div className="flex justify-end">
                   <button
                     onClick={closeModal}
-                    className="px-3 py-1.5 sm:px-4 sm:py-2 bg-blue-600 text-white text-sm sm:text-base rounded-md hover:bg-blue-700 focus:outline-none"
+                    className="w-full sm:w-auto px-4 py-2 bg-blue-600 text-white text-sm sm:text-base rounded-md hover:bg-blue-700 focus:outline-none"
                   >
                     Close
                   </button>
