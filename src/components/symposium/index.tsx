@@ -157,7 +157,7 @@ const SymposiumSchedule = () => {
       track: "General Track",
       time: "2:00 - 3:00"
     },
-    "TBD, Sentient AI": {
+    "Antonio Knez, Sentient Foundation": {
       title: "TBD",
       description: "Details coming soon.",
       room: "Room 2330",
@@ -234,7 +234,7 @@ const SymposiumSchedule = () => {
       type: "sessions",
       tracks: {
         regular: "Dr. Jim Hoover, University of Florida",
-        industry: "TBD, Sentient AI",
+        industry: "Antonio Knez, Sentient Foundation",
         speaker: "Dr. Andrew Gelman, Columbia University",
         workshop: "Raul Valle, IEEE Signal Processing Society"
       },
@@ -524,7 +524,7 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
-      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-500 dark:to-purple-500 py-6 rounded-lg text-white shadow-lg">Sponsors</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-500 dark:to-purple-500 py-6 rounded-lg shadow-lg">Sponsors</h2>
 
       <div className="grid grid-cols-1 gap-8 mb-12">
         <div className="text-center">
