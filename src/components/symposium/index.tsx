@@ -24,7 +24,7 @@ const SymposiumSchedule = () => {
     "Norman Bukingolts, Association of Computing Machinery": {
       title: "Transforming Our Humanity Into Job Security",
       description: "What happens when what we know isn't enough to be employable anymore? Amid rising layoffs in the tech industry and beyond due to the automation of labor with AI systems, stress about job security is thriving -- but hope for a meaningful, stable career is not yet lost. Attend this workshop to explore how analytical, generative, and agentic AI systems are being implemented in the modern workplace and understand their strengths and limitations. Learn about not just philosophical but technical arguments describing what exactly an AI system can and cannot provably do -- and why what makes us human is not only \"marketable\" but essential to the current and future workforce.",
-      room: "Room 2365",
+      room: "Room 2325",
       track: "Workshop Track",
       time: "10:30 - 11:30",
       speaker_img: "/images/speakers/norman.png",
@@ -42,7 +42,7 @@ const SymposiumSchedule = () => {
     "Raul Valle, IEEE Signal Processing Society": {
       title: "Introduction to Signal Processing",
       description: "Signals are how computers (and people) interpret the world. With the LLM hype calming down, we get a chance to revisit the mathematical roots of black-box machine learning in time-series problems, and learn how filters gave humanity access to computational foresight. Attend this workshop to attain mathematical insight into the complex world of signal processing from the perspective of its innovators, and learn what the future of AI beholds.",
-      room: "Room 2365",
+      room: "Room 2325",
       track: "Workshop Track",
       time: "12:45 - 1:45",
       speaker_img: "/images/speakers/raul.png",
@@ -51,7 +51,7 @@ const SymposiumSchedule = () => {
     "Jacques Fleischer, AI Club": {
       title: "Computer Vision and Data Annotation Workshop",
       description: "Learn how to properly configure a CV model using sophisticated annotation platforms and a live demo of YOLO training. Hands-on participation where the audience can help train a gator detector model.",
-      room: "Room 2365",
+      room: "Room 2325",
       track: "Workshop Track",
       time: "3:15 - 4:15",
       speaker_img: "/images/speakers/jacques.png",
@@ -60,7 +60,7 @@ const SymposiumSchedule = () => {
     "Tony Barr, SAS Institute, AMOR": {
       title: "From SAS to A Model Of Reality",
       description: "Tony Barr will discuss the early history of the SAS system for data analytics and his current work, A Model Of Reality (AMOR). AMOR aims to create a world where young children and adults can understand and flourish in programming, databases, mathematics, and data analytics. AMOR uses diagrams and flowcharts to make reading and writing programs easy and intuitive for learners and seasoned users. The mission is to enable users to navigate through knowledge space naturally, as they navigate the real world.",
-      room: "Room 2325",
+      room: "Auditorium",
       track: "General Track",
       time: "10:30 - 11:30",
       speaker_img: "/images/speakers/anthony.png",
@@ -79,14 +79,14 @@ const SymposiumSchedule = () => {
     "Dr. Megan Higgs, Critical Inference": {
       title: "Pausing to Take a Deeper Look at Assumptions",
       description: "Assumptions are a necessary part of making conclusions and inferences from data. Formal training in Statistics and data science tends to encourage a mathematical and automatic treatment of assumptions, with relatively low expectations for justifying assumptions in the context of the problem or conveying the extent to which conclusions are conditional on assumptions. With so much focus on methods and computing, it is important to also take time to step back and more deeply consider the layers of assumptions that make up the foundation of any data analysis. I believe statisticians and data scientists have a responsibility to better convey the conditional nature of results, and to work with subject matter experts to translate and interrogate assumptions within a particular scientific context. While this is challenging in most problems, it is a necessary step toward better justifying the use of, and trust in, statistical results. The goal of this high-level talk is to increase, or re-highlight, awareness and spur discussion about related challenges and strategies.",
-      room: "Room 2325",
+      room: "Auditorium",
       track: "General Track",
       time: "3:15 - 4:15"
     },
     "Dr. Jim Hoover, University of Florida": {
       title: "The Latest Developments in the Implementation of AI in Business",
       description: "Ever since November 2022 when ChatGPT was released commercially, businesses have been pursuing the best approaches to implement AI into their processes. There has been a great deal of Fear of Missing Out (FOMO) related to this quest for value out of AI capabilities. In this talk, we will discuss what is working and what is not. And, we will explore how students can best position themselves for roles in AI as the technology continues to evolve in business.",
-      room: "Room 2325",
+      room: "Auditorium",
       track: "General Track",
       time: "12:45 - 1:45",
     },
@@ -102,7 +102,7 @@ const SymposiumSchedule = () => {
     "Jhonathan Herrera, Colorstack": {
       title: "Intro to State Space Models and MAMBA",
       description: "This introduction workshop will provide you a foundational understanding of State Space Models (SSMs) and their applications in time-series modeling.",
-      room: "Room 2365",
+      room: "Room 2325",
       track: "Workshop Track",
       time: "9:15 - 10:15",
       speaker_img: "/images/speakers/jhonathan.png",
@@ -111,7 +111,7 @@ const SymposiumSchedule = () => {
     "Kausthubh, American Statistical Association": {
       title: "Introduction to NLP: Embedding Techniques for Healthcare Applications",
       description: "This workshop introduces fundamental Natural Language Processing concepts through the lens of medical text embeddings. Participants will learn how to transform unstructured clinical text into meaningful vector representations. We cover text preprocessing techniques, tokenization, normalization, and various embedding methods from statistical approaches to neural representations.",
-      room: "Room 2365",
+      room: "Room 2325",
       track: "Workshop Track",
       time: "2:00 - 3:00",
     },
@@ -139,7 +139,7 @@ const SymposiumSchedule = () => {
     "Michael Vega-Sanz, Lula": {
       title: "How I Started Lula from my Dorm Room",
       description: "Details coming soon.",
-      room: "Room 2325",
+      room: "Auditorium",
       track: "General Track",
       time: "9:15 - 10:15"
     },
@@ -153,16 +153,29 @@ const SymposiumSchedule = () => {
     "Sarah K Luger, ML Commons": {
       title: "TBD",
       description: "Details coming soon.",
-      room: "Room 2325",
+      room: "Auditorium",
       track: "General Track",
       time: "2:00 - 3:00"
     },
     "Antonio Knez, Sentient Foundation": {
-      title: "TBD",
-      description: "Details coming soon.",
+      title: "Open and Loyal AGI for Everyone",
+      description: "The presentation will talk about Sentient’s general mission and goal while presenting what we have done so far. It will also mention the builder grant program that we recently launched, which might be interesting to student developers.",
       room: "Room 2330",
       track: "Industry Track",
       time: "12:45 - 1:45"
+    }, "Dr. Olivia Dizon-Paradis, University of Florida": {
+      title: "Intro to AI Research",
+      description: "Details coming soon.",
+      room: "Room 2335",
+      track: "Industry Track",
+      time: "3:15 - 4:15"
+    },
+    "Stephen Wormald, University of Florida": {
+      title: "RAPID-XAI - Toward Explainable Models with Single-Cycle Inference",
+      description: "This talk explores how we can make AI systems faster and easier to understand by bridging explainability and performance. It introduces a new framework that integrates logic-based neural models with custom hardware acceleration to enable single-cycle inference. Through this approach, the talk demonstrates how we can build AI systems that are not only highly interpretable but also capable of operating in real-time environments.",
+      room: "Room 2330",
+      track: "Research Track",
+      time: "3:15 - 4:15"
     }
   };
 
@@ -270,8 +283,8 @@ const SymposiumSchedule = () => {
       type: "sessions",
       tracks: {
         regular: "Dr. Megan Higgs, Critical Inference",
-        industry: "TBA",
-        speaker: "TBA",
+        industry: "Dr. Olivia Dizon-Paradis, University of Florida",
+        speaker: "Stephen Wormald, University of Florida",
         workshop: "Jacques Fleischer, AI Club"
       },
       color: "bg-purple-50"
@@ -451,7 +464,7 @@ const SymposiumSchedule = () => {
                       <div className="mt-4 grid grid-cols-1 sm:grid-cols-4 gap-4">
                         <TrackCard
                           track="General Track"
-                          room="Room 2325"
+                          room="Auditorium"
                           speaker={item.tracks.regular}
                           onClick={openEventModal}
                           type="general"
@@ -472,7 +485,7 @@ const SymposiumSchedule = () => {
                         />
                         <TrackCard
                           track="Workshop Track"
-                          room="Room 2365"
+                          room="Room 2325"
                           speaker={item.tracks.workshop}
                           onClick={openEventModal}
                           type="workshop"
