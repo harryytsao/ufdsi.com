@@ -136,15 +136,15 @@ const SymposiumSchedule = () => {
       track: "Industry Track",
       time: "2:00 - 3:00"
     },
-    "Michael Vega-Sanz, Lula": {
-      title: "How I Started Lula from my Dorm Room",
+    "Michael Vega-Sanz, Gail": {
+      title: "How I Started Gail from my Dorm Room",
       description: "Details coming soon.",
       room: "Auditorium",
       track: "General Track",
       time: "9:15 - 10:15"
     },
     "Wesley Deng, Carnegie Mellon University": {
-      title: "TBD",
+      title: "The Road after your PhD",
       description: "Details coming soon.",
       room: "Room 2330",
       track: "Research Track",
@@ -210,7 +210,7 @@ const SymposiumSchedule = () => {
       event: "Session #1",
       type: "sessions",
       tracks: {
-        regular: "Michael Vega-Sanz, Lula",
+        regular: "Michael Vega-Sanz, Gail",
         industry: "Carlos Bastos Neto, Google Cloud",
         speaker: "Dr. Aapo Hyvarinen, University of Helsinki",
         workshop: "Jhonathan Herrera, Colorstack"
