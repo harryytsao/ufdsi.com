@@ -33,7 +33,7 @@ const SymposiumSchedule = () => {
     "Dr. Hubert Wagner, University of Florida": {
       title: "Trojan horses, Pavlov's dogs and self-driving cars",
       description: "While deep neural networks are powerful tools, they are known to have security issues. One particular threat is the so-called Trojan attack,  which can be used to compromise, for instance, self-driving cars. I will describe our approach for detecting such attacks on vision models presented at NeurIPS' 21. This approach is motivated by basic neuroscientific principles and uses methods of topological data analysis (TDA), which I will introduce along the way. (No previous background in topology is necessary.)\n\nAbout me:\nHubert Wagner is an Assistant Professor of Data Science (Department of Mathematics, UF). His area of expertise is topological data analysis. His work on topological methods for analyzing artificial neural networks has been supported by Google under their Research Scholar Program.",
-      room: "Room 2335",
+      room: "Room 2330",
       track: "Research Track",
       time: "10:30 - 11:30",
       speaker_img: "/images/speakers/hubert.png",
@@ -70,7 +70,7 @@ const SymposiumSchedule = () => {
     "Dr. Aapo Hyvarinen, University of Helsinki": {
       title: "Painful Intelligence: What AI Can Tell Us About Human Suffering",
       description: "This talk introduces my recent e-book with the same title, freely available on arxiv. The book uses the modern theory of artificial intelligence (AI) to understand human suffering or mental pain. Both humans and sophisticated AI agents process information about the world in order to achieve goals and obtain rewards, which is why AI can be used as a model of the human brain and mind. The book starts with the assumption that suffering is mainly caused by frustration. Frustration means the failure of an agent (whether AI or human) to achieve a goal or a reward it wanted or expected. Frustration is inevitable because of the overwhelming complexity of the world, limited computational resources, and scarcity of good data. In particular, such limitations imply that an agent acting in the real world must cope with uncontrollability, unpredictability, and uncertainty, which all lead to frustration. Such computational theory is finally used to derive various interventions or training methods that will reduce suffering in humans. The ensuing interventions are very similar to those proposed by Buddhist and Stoic philosophy, and include mindfulness meditation.",
-      room: "Room 2335",
+      room: "Room 2330",
       track: "Research Track",
       time: "9:15 - 10:15",
       speaker_img: "/images/speakers/aapo.png",
@@ -93,7 +93,7 @@ const SymposiumSchedule = () => {
     "Dr. Andrew Gelman, Columbia University": {
       title: "Principles of Bayesian Workflow",
       description: "The Bayesian approach to data analysis provides a powerful way to handle uncertainty in all observations, model parameters, and model structure using probability theory. Probabilistic programming languages make it easier to specify and fit Bayesian models, but this still leaves us with many options regarding constructing, evaluating, and using these models, along with many remaining challenges in computation.\n\nUsing Bayesian inference to solve real-world problems requires not only statistical skills, subject matter knowledge, and programming, but also awareness of the decisions made in the process of data analysis. All of these aspects can be understood as part of a tangled workflow of applied Bayesian statistics.\n\nBeyond inference, the workflow also includes iterative model building, model checking, validation and troubleshooting of computational problems, model understanding, and model comparison. We review all these aspects of workflow in the context of several examples, keeping in mind that in practice we will be fitting many models for any given problem, even if only a subset of them will ultimately be relevant for our conclusions.",
-      room: "Room 2335",
+      room: "Room 2330",
       track: "Research Track",
       time: "12:45 - 1:45",
       speaker_img: "/images/speakers/andrew.png",
@@ -118,21 +118,21 @@ const SymposiumSchedule = () => {
     "Carlos Bastos Neto, Google Cloud": {
       title: "Living a Life within Big Tech",
       description: "Details coming soon.",
-      room: "Room 2330",
+      room: "Room 2335",
       track: "Industry Track",
       time: "9:15 - 10:15"
     },
     "Luciane Galuppo, Microsoft": {
       title: "My Journey from Brazil to Microsoft",
       description: "Details coming soon.",
-      room: "Room 2330",
+      room: "Room 2335",
       track: "Industry Track",
       time: "10:30 - 11:30"
     },
     "Tyler Richards, Snowflake, Ex-Meta": {
       title: "Lessons I have learned as a Data Scientist",
       description: "Details coming soon.",
-      room: "Room 2330",
+      room: "Room 2335",
       track: "Industry Track",
       time: "2:00 - 3:00"
     },
@@ -146,7 +146,7 @@ const SymposiumSchedule = () => {
     "Wesley Deng, Carnegie Mellon University": {
       title: "TBD",
       description: "Details coming soon.",
-      room: "Room 2335",
+      room: "Room 2330",
       track: "Research Track",
       time: "2:00 - 3:00"
     },
@@ -160,7 +160,7 @@ const SymposiumSchedule = () => {
     "Antonio Knez, Sentient Foundation": {
       title: "Open and Loyal AGI for Everyone",
       description: "The presentation will talk about Sentient's general mission and goal while presenting what we have done so far. It will also mention the builder grant program that we recently launched, which might be interesting to student developers.",
-      room: "Room 2330",
+      room: "Room 2335",
       track: "Industry Track",
       time: "12:45 - 1:45"
     }, "Dr. Olivia Dizon-Paradis, University of Florida": {
@@ -533,14 +533,14 @@ const SymposiumSchedule = () => {
                         />
                         <TrackCard
                           track="Industry Track"
-                          room="Room 2330"
+                          room="Room 2335"
                           speaker={item.tracks.industry}
                           onClick={openEventModal}
                           type="industry"
                         />
                         <TrackCard
                           track="Research Track"
-                          room="Room 2335"
+                          room="Room 2330"
                           speaker={item.tracks.speaker}
                           onClick={openEventModal}
                           type="research"
