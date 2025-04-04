@@ -437,63 +437,57 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
-      <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-6 mb-12 border-gray-200 dark:border-gray-700">
+      <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-6 mb-12 border-gray-200 dark:border-gray-700 relative">
+        <div className="absolute inset-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm flex items-center justify-center z-10 rounded-lg">
+          <div className="text-center px-4 py-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg shadow-sm max-w-md">
+            <p className="text-gray-700 dark:text-gray-300 font-medium">Zoom links will be activated closer to the event date.</p>
+          </div>
+        </div>
+
         <h2 className="text-xl sm:text-2xl text-gray-900 dark:text-white font-bold mb-6 text-center">Virtual Access Links</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <div className="bg-blue-50 dark:bg-blue-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-2">Workshop Track</h3>
-              <a href="https://ufl.zoom.us/j/97449692791"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+              <span className="inline-flex items-center text-blue-400 dark:text-blue-500 cursor-not-allowed">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </a>
+              </span>
             </div>
 
             <div className="bg-purple-50 dark:bg-purple-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-purple-800 dark:text-purple-300 mb-2">Industry Track</h3>
-              <a href="https://ufl.zoom.us/j/95148577641"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300">
+              <span className="inline-flex items-center text-purple-400 dark:text-purple-500 cursor-not-allowed">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </a>
+              </span>
             </div>
           </div>
 
           <div className="space-y-4">
             <div className="bg-green-50 dark:bg-green-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-green-800 dark:text-green-300 mb-2">Research Track</h3>
-              <a href="https://ufl.zoom.us/j/95920853708"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300">
+              <span className="inline-flex items-center text-green-400 dark:text-green-500 cursor-not-allowed">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </a>
+              </span>
             </div>
 
             <div className="bg-indigo-50 dark:bg-indigo-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-indigo-800 dark:text-indigo-300 mb-2">General Track</h3>
-              <a href="https://ufl.zoom.us/j/97513432082"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300">
+              <span className="inline-flex items-center text-indigo-400 dark:text-indigo-500 cursor-not-allowed">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </a>
+              </span>
             </div>
           </div>
         </div>
