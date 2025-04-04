@@ -151,7 +151,7 @@ const SymposiumSchedule = () => {
       time: "2:00 - 3:00"
     },
     "Sarah K Luger, ML Commons": {
-      title: "TBD",
+      title: "AI: Trends, Data, and Low-Resource Languages",
       description: "Details coming soon.",
       room: "Auditorium",
       track: "General Track",
