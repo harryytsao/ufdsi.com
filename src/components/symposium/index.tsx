@@ -22,7 +22,7 @@ const SymposiumSchedule = () => {
 
   const eventDetails: Record<string, EventDetail> = {
     "Norman Bukingolts, Association of Computing Machinery": {
-      title: "Transforming Our Humanity Into Job Security",
+      title: "Transforming our Humanity into Job Security",
       description: "What happens when what we know isn't enough to be employable anymore? Amid rising layoffs in the tech industry and beyond due to the automation of labor with AI systems, stress about job security is thriving -- but hope for a meaningful, stable career is not yet lost. Attend this workshop to explore how analytical, generative, and agentic AI systems are being implemented in the modern workplace and understand their strengths and limitations. Learn about not just philosophical but technical arguments describing what exactly an AI system can and cannot provably do -- and why what makes us human is not only \"marketable\" but essential to the current and future workforce.",
       room: "Room 2325",
       track: "Workshop Track",
@@ -32,7 +32,7 @@ const SymposiumSchedule = () => {
     },
     "Dr. Hubert Wagner, University of Florida": {
       title: "Trojan horses, Pavlov's dogs and self-driving cars",
-      description: "While deep neural networks are powerful tools, they are known to have security issues. One particular threat is the so-called Trojan attack,  which can be used to compromise, for instance, self-driving cars. I will describe our approach for detecting such attacks on vision models presented at NeurIPS' 21. This approach is motivated by basic neuroscientific principles and uses methods of topological data analysis (TDA), which I will introduce along the way. (No previous background in topology is necessary.)\n\nAbout me:\nHubert Wagner is an Assistant Professor of Data Science (Department of Mathematics, UF). His area of expertise is topological data analysis. His work on topological methods for analyzing artificial neural networks has been supported by Google under their Research Scholar Program.",
+      description: "While deep neural networks are powerful tools, they are known to have security issues. One particular threat is the so-called Trojan attack, which can be used to compromise, for instance, self-driving cars. I will describe our approach for detecting such attacks on vision models presented at NeurIPS' 21. This approach is motivated by basic neuroscientific principles and uses methods of topological data analysis (TDA), which I will introduce along the way. (No previous background in topology is necessary.)",
       room: "Room 2330",
       track: "Research Track",
       time: "10:30 - 11:30",
@@ -58,7 +58,7 @@ const SymposiumSchedule = () => {
       speaker_sup: "/images/speakers/jacques_sup.png"
     },
     "Tony Barr, SAS Institute, AMOR": {
-      title: "From SAS to A Model Of Reality",
+      title: "Developing a Model of Reality",
       description: "Tony Barr will discuss the early history of the SAS system for data analytics and his current work, A Model Of Reality (AMOR). AMOR aims to create a world where young children and adults can understand and flourish in programming, databases, mathematics, and data analytics. AMOR uses diagrams and flowcharts to make reading and writing programs easy and intuitive for learners and seasoned users. The mission is to enable users to navigate through knowledge space naturally, as they navigate the real world.",
       room: "Auditorium",
       track: "General Track",
@@ -92,7 +92,7 @@ const SymposiumSchedule = () => {
     },
     "Dr. Andrew Gelman, Columbia University": {
       title: "Principles of Bayesian Workflow",
-      description: "The Bayesian approach to data analysis provides a powerful way to handle uncertainty in all observations, model parameters, and model structure using probability theory. Probabilistic programming languages make it easier to specify and fit Bayesian models, but this still leaves us with many options regarding constructing, evaluating, and using these models, along with many remaining challenges in computation.\n\nUsing Bayesian inference to solve real-world problems requires not only statistical skills, subject matter knowledge, and programming, but also awareness of the decisions made in the process of data analysis. All of these aspects can be understood as part of a tangled workflow of applied Bayesian statistics.\n\nBeyond inference, the workflow also includes iterative model building, model checking, validation and troubleshooting of computational problems, model understanding, and model comparison. We review all these aspects of workflow in the context of several examples, keeping in mind that in practice we will be fitting many models for any given problem, even if only a subset of them will ultimately be relevant for our conclusions.",
+      description: "The Bayesian approach to data analysis provides a powerful way to handle uncertainty in all observations, model parameters, and model structure using probability theory. Probabilistic programming languages make it easier to specify and fit Bayesian models, but this still leaves us with many options regarding constructing, evaluating, and using these models, along with many remaining challenges in computation. Using Bayesian inference to solve real-world problems requires not only statistical skills, subject matter knowledge, and programming, but also awareness of the decisions made in the process of data analysis. All of these aspects can be understood as part of a tangled workflow of applied Bayesian statistics. Beyond inference, the workflow also includes iterative model building, model checking, validation and troubleshooting of computational problems, model understanding, and model comparison. We review all these aspects of workflow in the context of several examples, keeping in mind that in practice we will be fitting many models for any given problem, even if only a subset of them will ultimately be relevant for our conclusions.",
       room: "Room 2330",
       track: "Research Track",
       time: "12:45 - 1:45",
@@ -108,7 +108,7 @@ const SymposiumSchedule = () => {
       speaker_img: "/images/speakers/jhonathan.png",
       speaker_sup: "/images/speakers/jhonathan_sup.png"
     },
-    "Kausthubh, American Statistical Association": {
+    "Kausthubh Konuru, American Statistical Association": {
       title: "Introduction to NLP: Embedding Techniques for Healthcare Applications",
       description: "This workshop introduces fundamental Natural Language Processing concepts through the lens of medical text embeddings. Participants will learn how to transform unstructured clinical text into meaningful vector representations. We cover text preprocessing techniques, tokenization, normalization, and various embedding methods from statistical approaches to neural representations.",
       room: "Room 2325",
@@ -117,42 +117,42 @@ const SymposiumSchedule = () => {
     },
     "Carlos Bastos Neto, Google Cloud": {
       title: "Living a Life within Big Tech",
-      description: "Details coming soon.",
+      description: "With over two decades at Microsoft and Google, Carlos offers an inside look at building a career across the world's top tech companies. He'll share lessons on leadership, navigating industry shifts, and what it truly means to drive innovation and transformation at scale.",
       room: "Room 2335",
       track: "Industry Track",
       time: "9:15 - 10:15"
     },
     "Luciane Galuppo, Microsoft": {
-      title: "My Journey from Brazil to Microsoft",
-      description: "Details coming soon.",
+      title: "Lessons from 30 years at Microsoft",
+      description: "In this reflective talk, Luciane shares key lessons from her three-decade journey at Microsoft—from career milestones to daily life in tech. She'll touch on the evolution of the IT industry, her core values, and practical advice for navigating a successful and fulfilling career in tech.",
       room: "Room 2335",
       track: "Industry Track",
       time: "10:30 - 11:30"
     },
     "Tyler Richards, Snowflake, Ex-Meta": {
-      title: "Lessons I have learned as a Data Scientist",
-      description: "Details coming soon.",
+      title: "Overcoming Rejection as an Aspiring Data Scientist",
+      description: "In this talk, Tyler shares lessons learned from his journey breaking into data science—from early rejections to landing roles at Facebook, Streamlit, and Snowflake. He'll offer practical tips for staying resilient, building projects that stand out, and navigating an unpredictable career path with curiosity and creativity.",
       room: "Room 2335",
       track: "Industry Track",
       time: "2:00 - 3:00"
     },
     "Michael Vega-Sanz, Gail": {
-      title: "How I Started Gail from my Dorm Room",
-      description: "Details coming soon.",
+      title: "You Can Just Do Things",
+      description: "Michael shares the story of how he launched two high-growth startups—first LULA, then Gail—starting from his college dorm room. Through candid reflections on risk-taking, building in regulated industries, and lessons from the journey, he'll inspire you to stop waiting for permission and start building.",
       room: "Auditorium",
       track: "General Track",
       time: "9:15 - 10:15"
     },
     "Wesley Deng, Carnegie Mellon University": {
-      title: "The Road after your PhD",
-      description: "Details coming soon.",
+      title: "Supporting Responsible AI on the ground",
+      description: "As artificial intelligence (AI) becomes increasingly integrated into products and services across industries, ensuring its responsible development and deployment has become a critical challenge. Several tools, processes, and principles have been developed to support responsible AI (RAI) in industry practice. However, research has shown a persistent gap between the aspirational goals of these RAI interventions and the practical realities faced by practitioners tasked with designing and building responsible AI systems. In this talk, I will first present a set of insights gained from empirical studies with industry RAI practitioners. I will then share a series of tools and processes designed to better support RAI practices in real-world industry settings—particularly in the contexts of AI auditing, red-teaming, and impact assessment. Finally, I will briefly discuss future directions for research, practice, and policy in building safe and responsible AI within industry.",
       room: "Room 2330",
       track: "Research Track",
       time: "2:00 - 3:00"
     },
-    "Sarah K Luger, ML Commons": {
-      title: "AI: Trends, Data, and Low-Resource Languages",
-      description: "Details coming soon.",
+    "Dr. Sarah K Luger, ML Commons": {
+      title: "AI: trends, data, and low-resource languages",
+      description: "Drawing from over 20 years in AI and NLP, Sarah explores emerging trends in generative AI, the challenges of building inclusive datasets, and the importance of supporting low-resource languages. With insights from both industry and research—including her work on IBM Watson's Jeopardy! Challenge—she highlights how responsible AI depends on diverse data, ethical practices, and a balance between scientific rigor and creativity.",
       room: "Auditorium",
       track: "General Track",
       time: "2:00 - 3:00"
@@ -163,9 +163,10 @@ const SymposiumSchedule = () => {
       room: "Room 2335",
       track: "Industry Track",
       time: "12:45 - 1:45"
-    }, "Dr. Olivia Dizon-Paradis, University of Florida": {
+    },
+    "Dr. Olivia Dizon-Paradis, University of Florida": {
       title: "Intro to AI Research",
-      description: "Details coming soon.",
+      description: "This talk will go over an AI crash course, AI research in practice, and tools and resources for getting started with AI research.",
       room: "Room 2335",
       track: "Industry Track",
       time: "3:15 - 4:15"
@@ -437,63 +438,70 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
-      <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-6 mb-12 border-gray-200 dark:border-gray-700 relative">
-        <div className="absolute inset-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm flex items-center justify-center z-10 rounded-lg">
-          <div className="text-center px-4 py-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg shadow-sm max-w-md">
-            <p className="text-gray-700 dark:text-gray-300 font-medium">Zoom links will be activated closer to the event date.</p>
-          </div>
-        </div>
-
+      <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-6 mb-12 border-gray-200 dark:border-gray-700">
         <h2 className="text-xl sm:text-2xl text-gray-900 dark:text-white font-bold mb-6 text-center">Virtual Access Links</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <div className="bg-blue-50 dark:bg-blue-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-2">Workshop Track</h3>
-              <span className="inline-flex items-center text-blue-400 dark:text-blue-500 cursor-not-allowed">
+              <a href="https://ufl.zoom.us/j/97449692791"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </span>
+              </a>
             </div>
 
             <div className="bg-purple-50 dark:bg-purple-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-purple-800 dark:text-purple-300 mb-2">Industry Track</h3>
-              <span className="inline-flex items-center text-purple-400 dark:text-purple-500 cursor-not-allowed">
+              <a href="https://ufl.zoom.us/j/95148577641"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </span>
+              </a>
             </div>
           </div>
 
           <div className="space-y-4">
             <div className="bg-green-50 dark:bg-green-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-green-800 dark:text-green-300 mb-2">Research Track</h3>
-              <span className="inline-flex items-center text-green-400 dark:text-green-500 cursor-not-allowed">
+              <a href="https://ufl.zoom.us/j/95920853708"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </span>
+              </a>
             </div>
 
             <div className="bg-indigo-50 dark:bg-indigo-900/50 rounded-lg p-4">
               <h3 className="text-lg font-semibold text-indigo-800 dark:text-indigo-300 mb-2">General Track</h3>
-              <span className="inline-flex items-center text-indigo-400 dark:text-indigo-500 cursor-not-allowed">
+              <a href="https://ufl.zoom.us/j/97513432082"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 Join Zoom Meeting
-              </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
       <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900 dark:to-purple-900 rounded-lg p-8 border border-blue-100 dark:border-blue-800 shadow-lg mb-12">
+        {/* Registration block hidden
         <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-blue-800 dark:text-blue-300">Registration</h2>
         <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-5">Secure your spot for the DSI Spring Symposium 2025!</p>
         <a href="https://forms.gle/FkXfWQy7mE6dpYDF7" target="_blank" rel="noopener noreferrer">
@@ -501,6 +509,7 @@ const SymposiumSchedule = () => {
             Register Now
           </button>
         </a>
+        */}
       </div>
 
       <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 mb-6 border-gray-200 dark:border-gray-700">
