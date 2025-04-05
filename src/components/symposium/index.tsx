@@ -341,6 +341,22 @@ const SymposiumSchedule = () => {
     const isClickable = speaker !== "TBA" && speaker !== "[Presenter Name], Colorstac";
     const speakerDetails = eventDetails[speaker];
 
+    // Zoom meeting URLs for each track
+    const getZoomLink = () => {
+      switch (type) {
+        case 'general':
+          return "https://ufl.zoom.us/j/97513432082";
+        case 'industry':
+          return "https://ufl.zoom.us/j/95148577641";
+        case 'research':
+          return "https://ufl.zoom.us/j/95920853708";
+        case 'workshop':
+          return "https://ufl.zoom.us/j/97449692791";
+        default:
+          return "";
+      }
+    };
+
     return (
       <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-all">
         <div className="flex flex-col h-full">
@@ -375,10 +391,29 @@ const SymposiumSchedule = () => {
             <div>
               <h3 className="text-sm font-medium text-gray-900 dark:text-white leading-5 mb-1">{speaker}</h3>
               {isClickable && speakerDetails?.title && (
-                <div className="text-sm text-gray-600 dark:text-gray-400 leading-5">
+                <div className="text-sm text-gray-600 dark:text-gray-400 leading-5 mb-2">
                   {speakerDetails.title}
                 </div>
               )}
+
+              {/* Zoom Link */}
+              <a
+                href={getZoomLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-xs inline-flex items-center mt-2
+                  ${type === 'general' ? 'text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300' : ''}
+                  ${type === 'industry' ? 'text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300' : ''}
+                  ${type === 'research' ? 'text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300' : ''}
+                  ${type === 'workshop' ? 'text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300' : ''}
+                  hover:underline
+                `}
+              >
+                <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Join Zoom
+              </a>
             </div>
           </div>
         </div>
@@ -557,17 +592,30 @@ const SymposiumSchedule = () => {
                   <div className="flex-1">
                     <span className="font-medium text-gray-800 dark:text-white">{item.event}</span>
                     {item.type === 'keynote' && item.event.includes('Jack Kendall') && (
-                      <button
-                        onClick={() => openEventModal("Jack Kendall, RainAI")}
-                        className="inline-flex items-center justify-center rounded-full w-6 h-6 bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 ml-2"
-                        aria-label="View details"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <circle cx="12" cy="12" r="10" />
-                          <path d="M12 16v-4" />
-                          <path d="M12 8h.01" />
-                        </svg>
-                      </button>
+                      <>
+                        <button
+                          onClick={() => openEventModal("Jack Kendall, RainAI")}
+                          className="inline-flex items-center justify-center rounded-full w-6 h-6 bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 ml-2"
+                          aria-label="View details"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                          </svg>
+                        </button>
+                        <a
+                          href="https://ufl.zoom.us/j/97513432082"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center ml-2 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline"
+                        >
+                          <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                          </svg>
+                          Zoom Link Here
+                        </a>
+                      </>
                     )}
                     {item.tracks && (
                       <div className="mt-4 grid grid-cols-1 sm:grid-cols-4 gap-4">
