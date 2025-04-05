@@ -21,6 +21,15 @@ const SymposiumSchedule = () => {
   const { theme, setTheme } = useTheme();
 
   const eventDetails: Record<string, EventDetail> = {
+    "Jack Kendall, RainAI": {
+      title: "Keynote: Jack Kendall, RainAI",
+      description: "Jack Kendall is the Co-Founder and current CTO of Rain AI, a company building next-generation brain-inspired processors for artificial intelligence. Jack's mission is to build a brain — bridging neuroscience, physics, and computing to reimagine how machines learn. His research includes highly cited papers on analog neural networks and neuromorphic architectures. Rain is backed by leading figures in AI, including Sam Altman, the CEO of OpenAI. Jack is a University of Florida alum and one of the original founders and the second President of DSI, making his keynote today a full-circle moment for the community he helped shape.",
+      room: "Auditorium",
+      track: "General Track",
+      time: "8:00 - 9:00",
+      speaker_img: "/images/speakers/jack.png",
+      speaker_sup: "/images/speakers/jack_sup.png"
+    },
     "Norman Bukingolts, Association of Computing Machinery": {
       title: "Transforming our Humanity into Job Security",
       description: "What happens when what we know isn't enough to be employable anymore? Amid rising layoffs in the tech industry and beyond due to the automation of labor with AI systems, stress about job security is thriving -- but hope for a meaningful, stable career is not yet lost. Attend this workshop to explore how analytical, generative, and agentic AI systems are being implemented in the modern workplace and understand their strengths and limitations. Learn about not just philosophical but technical arguments describing what exactly an AI system can and cannot provably do -- and why what makes us human is not only \"marketable\" but essential to the current and future workforce.",
@@ -81,7 +90,9 @@ const SymposiumSchedule = () => {
       description: "Assumptions are a necessary part of making conclusions and inferences from data. Formal training in Statistics and data science tends to encourage a mathematical and automatic treatment of assumptions, with relatively low expectations for justifying assumptions in the context of the problem or conveying the extent to which conclusions are conditional on assumptions. With so much focus on methods and computing, it is important to also take time to step back and more deeply consider the layers of assumptions that make up the foundation of any data analysis. I believe statisticians and data scientists have a responsibility to better convey the conditional nature of results, and to work with subject matter experts to translate and interrogate assumptions within a particular scientific context. While this is challenging in most problems, it is a necessary step toward better justifying the use of, and trust in, statistical results. The goal of this high-level talk is to increase, or re-highlight, awareness and spur discussion about related challenges and strategies.",
       room: "Auditorium",
       track: "General Track",
-      time: "3:15 - 4:15"
+      time: "3:15 - 4:15",
+      speaker_img: "/images/speakers/megan.png",
+      speaker_sup: "/images/speakers/megan_sup.png"
     },
     "Dr. Jim Hoover, University of Florida": {
       title: "The Latest Developments in the Implementation of AI in Business",
@@ -89,6 +100,8 @@ const SymposiumSchedule = () => {
       room: "Auditorium",
       track: "General Track",
       time: "12:45 - 1:45",
+      speaker_img: "/images/speakers/jim.png",
+      speaker_sup: "/images/speakers/jim_sup.png"
     },
     "Dr. Andrew Gelman, Columbia University": {
       title: "Principles of Bayesian Workflow",
@@ -114,69 +127,89 @@ const SymposiumSchedule = () => {
       room: "Room 2325",
       track: "Workshop Track",
       time: "2:00 - 3:00",
+      speaker_img: "/images/speakers/kausthubh.png",
+      speaker_sup: "/images/speakers/kausthubh_sup.png"
     },
     "Carlos Bastos Neto, Google Cloud": {
       title: "Living a Life within Big Tech",
       description: "With over two decades at Microsoft and Google, Carlos offers an inside look at building a career across the world's top tech companies. He'll share lessons on leadership, navigating industry shifts, and what it truly means to drive innovation and transformation at scale.",
       room: "Room 2335",
       track: "Industry Track",
-      time: "9:15 - 10:15"
+      time: "9:15 - 10:15",
+      speaker_img: "/images/speakers/carlos.png",
+      speaker_sup: "/images/speakers/carlos_sup.png"
     },
     "Luciane Galuppo, Microsoft": {
       title: "Lessons from 30 years at Microsoft",
       description: "In this reflective talk, Luciane shares key lessons from her three-decade journey at Microsoft—from career milestones to daily life in tech. She'll touch on the evolution of the IT industry, her core values, and practical advice for navigating a successful and fulfilling career in tech.",
       room: "Room 2335",
       track: "Industry Track",
-      time: "10:30 - 11:30"
+      time: "10:30 - 11:30",
+      speaker_img: "/images/speakers/luciane.png",
+      speaker_sup: "/images/speakers/luciane_sup.png"
     },
     "Tyler Richards, Snowflake, Ex-Meta": {
       title: "Overcoming Rejection as an Aspiring Data Scientist",
       description: "In this talk, Tyler shares lessons learned from his journey breaking into data science—from early rejections to landing roles at Facebook, Streamlit, and Snowflake. He'll offer practical tips for staying resilient, building projects that stand out, and navigating an unpredictable career path with curiosity and creativity.",
       room: "Room 2335",
       track: "Industry Track",
-      time: "2:00 - 3:00"
+      time: "2:00 - 3:00",
+      speaker_img: "/images/speakers/tyler.png",
+      speaker_sup: "/images/speakers/tyler_sup.png"
     },
     "Michael Vega-Sanz, Gail": {
       title: "You Can Just Do Things",
       description: "Michael shares the story of how he launched two high-growth startups—first LULA, then Gail—starting from his college dorm room. Through candid reflections on risk-taking, building in regulated industries, and lessons from the journey, he'll inspire you to stop waiting for permission and start building.",
       room: "Auditorium",
       track: "General Track",
-      time: "9:15 - 10:15"
+      time: "9:15 - 10:15",
+      speaker_img: "/images/speakers/michael.png",
+      speaker_sup: "/images/speakers/michael_sup.png"
     },
     "Wesley Deng, Carnegie Mellon University": {
       title: "Supporting Responsible AI on the ground",
       description: "As artificial intelligence (AI) becomes increasingly integrated into products and services across industries, ensuring its responsible development and deployment has become a critical challenge. Several tools, processes, and principles have been developed to support responsible AI (RAI) in industry practice. However, research has shown a persistent gap between the aspirational goals of these RAI interventions and the practical realities faced by practitioners tasked with designing and building responsible AI systems. In this talk, I will first present a set of insights gained from empirical studies with industry RAI practitioners. I will then share a series of tools and processes designed to better support RAI practices in real-world industry settings—particularly in the contexts of AI auditing, red-teaming, and impact assessment. Finally, I will briefly discuss future directions for research, practice, and policy in building safe and responsible AI within industry.",
       room: "Room 2330",
       track: "Research Track",
-      time: "2:00 - 3:00"
+      time: "2:00 - 3:00",
+      speaker_img: "/images/speakers/wesley.png",
+      speaker_sup: "/images/speakers/wesley_sup.png"
     },
     "Dr. Sarah K Luger, ML Commons": {
       title: "AI: trends, data, and low-resource languages",
       description: "Drawing from over 20 years in AI and NLP, Sarah explores emerging trends in generative AI, the challenges of building inclusive datasets, and the importance of supporting low-resource languages. With insights from both industry and research—including her work on IBM Watson's Jeopardy! Challenge—she highlights how responsible AI depends on diverse data, ethical practices, and a balance between scientific rigor and creativity.",
       room: "Auditorium",
       track: "General Track",
-      time: "2:00 - 3:00"
+      time: "2:00 - 3:00",
+      speaker_img: "/images/speakers/sarah.png",
+      speaker_sup: "/images/speakers/sarah_sup.png"
     },
     "Antonio Knez, Sentient Foundation": {
       title: "Open and Loyal AGI for Everyone",
       description: "The presentation will talk about Sentient's general mission and goal while presenting what we have done so far. It will also mention the builder grant program that we recently launched, which might be interesting to student developers.",
       room: "Room 2335",
       track: "Industry Track",
-      time: "12:45 - 1:45"
+      time: "12:45 - 1:45",
+      speaker_img: "/images/speakers/antonio.png",
+      speaker_sup: "/images/speakers/antonio_sup.png"
     },
     "Dr. Olivia Dizon-Paradis, University of Florida": {
       title: "Intro to AI Research",
       description: "This talk will go over an AI crash course, AI research in practice, and tools and resources for getting started with AI research.",
       room: "Room 2335",
       track: "Industry Track",
-      time: "3:15 - 4:15"
+      time: "3:15 - 4:15",
+      speaker_img: "/images/speakers/olivia.png",
+      speaker_sup: "/images/speakers/olivia_sup.png"
     },
     "Stephen Wormald, University of Florida": {
       title: "RAPID-XAI - Toward Explainable Models with Single-Cycle Inference",
       description: "This talk explores how we can make AI systems faster and easier to understand by bridging explainability and performance. It introduces a new framework that integrates logic-based neural models with custom hardware acceleration to enable single-cycle inference. Through this approach, the talk demonstrates how we can build AI systems that are not only highly interpretable but also capable of operating in real-time environments.",
       room: "Room 2330",
       track: "Research Track",
-      time: "3:15 - 4:15"
+      time: "3:15 - 4:15",
+      speaker_img: "/images/speakers/stephen.png",
+      speaker_sup: "/images/speakers/stephen_sup.png"
     }
   };
 
@@ -523,6 +556,19 @@ const SymposiumSchedule = () => {
                   </div>
                   <div className="flex-1">
                     <span className="font-medium text-gray-800 dark:text-white">{item.event}</span>
+                    {item.type === 'keynote' && item.event.includes('Jack Kendall') && (
+                      <button
+                        onClick={() => openEventModal("Jack Kendall, RainAI")}
+                        className="inline-flex items-center justify-center rounded-full w-6 h-6 bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600 ml-2"
+                        aria-label="View details"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M12 16v-4" />
+                          <path d="M12 8h.01" />
+                        </svg>
+                      </button>
+                    )}
                     {item.tracks && (
                       <div className="mt-4 grid grid-cols-1 sm:grid-cols-4 gap-4">
                         <TrackCard
@@ -720,6 +766,22 @@ const SymposiumSchedule = () => {
 
                   <div className="prose max-w-none dark:prose-invert">
                     <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 whitespace-pre-line">{selectedEvent.description}</p>
+
+                    {selectedEvent.title && selectedEvent.title.includes("Jack Kendall") && (
+                      <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <a
+                          href="https://ufl.zoom.us/j/97513432082"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium"
+                        >
+                          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                          </svg>
+                          Join General Track Zoom Meeting
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
 
