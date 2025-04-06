@@ -341,22 +341,6 @@ const SymposiumSchedule = () => {
     const isClickable = speaker !== "TBA" && speaker !== "[Presenter Name], Colorstac";
     const speakerDetails = eventDetails[speaker];
 
-    // Zoom meeting URLs for each track
-    const getZoomLink = () => {
-      switch (type) {
-        case 'general':
-          return "https://ufl.zoom.us/j/97513432082";
-        case 'industry':
-          return "https://ufl.zoom.us/j/95148577641";
-        case 'research':
-          return "https://ufl.zoom.us/j/95920853708";
-        case 'workshop':
-          return "https://ufl.zoom.us/j/97449692791";
-        default:
-          return "";
-      }
-    };
-
     return (
       <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-all">
         <div className="flex flex-col h-full">
@@ -395,25 +379,6 @@ const SymposiumSchedule = () => {
                   {speakerDetails.title}
                 </div>
               )}
-
-              {/* Zoom Link */}
-              <a
-                href={getZoomLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-xs inline-flex items-center mt-2
-                  ${type === 'general' ? 'text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300' : ''}
-                  ${type === 'industry' ? 'text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300' : ''}
-                  ${type === 'research' ? 'text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300' : ''}
-                  ${type === 'workshop' ? 'text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300' : ''}
-                  hover:underline
-                `}
-              >
-                <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
-                Join Zoom
-              </a>
             </div>
           </div>
         </div>
@@ -506,78 +471,6 @@ const SymposiumSchedule = () => {
         </div>
       </div>
 
-      <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 p-6 mb-12 border-gray-200 dark:border-gray-700">
-        <h2 className="text-xl sm:text-2xl text-gray-900 dark:text-white font-bold mb-6 text-center">Virtual Access Links</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div className="bg-blue-50 dark:bg-blue-900/50 rounded-lg p-4">
-            <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-2">General Track</h3>
-            <a href="https://ufl.zoom.us/j/97513432082"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              Join Zoom Meeting
-            </a>
-          </div>
-
-          <div className="bg-purple-50 dark:bg-purple-900/50 rounded-lg p-4">
-            <h3 className="text-lg font-semibold text-purple-800 dark:text-purple-300 mb-2">Industry Track</h3>
-            <a href="https://ufl.zoom.us/j/95148577641"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              Join Zoom Meeting
-            </a>
-          </div>
-
-          <div className="bg-green-50 dark:bg-green-900/50 rounded-lg p-4">
-            <h3 className="text-lg font-semibold text-green-800 dark:text-green-300 mb-2">Research Track</h3>
-            <a href="https://ufl.zoom.us/j/95920853708"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              Join Zoom Meeting
-            </a>
-          </div>
-
-
-
-          <div className="bg-indigo-50 dark:bg-indigo-900/50 rounded-lg p-4">
-            <h3 className="text-lg font-semibold text-indigo-800 dark:text-indigo-300 mb-2">Workshop Track</h3>
-            <a href="https://ufl.zoom.us/j/97449692791"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300">
-
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              Join Zoom Meeting
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900 dark:to-purple-900 rounded-lg p-8 border border-blue-100 dark:border-blue-800 shadow-lg mb-12">
-        {/* Registration block hidden
-        <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-blue-800 dark:text-blue-300">Registration</h2>
-        <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-5">Secure your spot for the DSI Spring Symposium 2025!</p>
-        <a href="https://forms.gle/FkXfWQy7mE6dpYDF7" target="_blank" rel="noopener noreferrer">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">
-            Register Now
-          </button>
-        </a>
-        */}
-
       <div className="border rounded-lg shadow-sm bg-white dark:bg-gray-800 mb-6 border-gray-200 dark:border-gray-700">
         <div className="p-3 sm:p-5">
           <h2 className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-semibold mb-3">Event Schedule</h2>
@@ -604,17 +497,6 @@ const SymposiumSchedule = () => {
                             <path d="M12 8h.01" />
                           </svg>
                         </button>
-                        <a
-                          href="https://ufl.zoom.us/j/97513432082"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center ml-2 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline"
-                        >
-                          <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                          </svg>
-                          Zoom Link Here
-                        </a>
                       </>
                     )}
                     {item.tracks && (
@@ -814,22 +696,6 @@ const SymposiumSchedule = () => {
 
                   <div className="prose max-w-none dark:prose-invert">
                     <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 whitespace-pre-line">{selectedEvent.description}</p>
-
-                    {selectedEvent.title && selectedEvent.title.includes("Jack Kendall") && (
-                      <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-                        <a
-                          href="https://ufl.zoom.us/j/97513432082"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium"
-                        >
-                          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                          </svg>
-                          Join General Track Zoom Meeting
-                        </a>
-                      </div>
-                    )}
                   </div>
                 </div>
 
