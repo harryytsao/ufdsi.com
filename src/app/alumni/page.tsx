@@ -292,15 +292,15 @@ const AlumniPage = () => {
                                             src={member.image}
                                             alt={member.name}
                                             className="h-full w-full object-cover object-center"
-                                          />
-                                        </div>
+                          />
+                        </div>
                                       </div>
                                     )}
                                   </div>
                                   <div className="px-6 py-5">
                                     <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
                                       {member.name}
-                                    </h4>
+                          </h4>
                                     <div className="flex items-center space-x-2 mb-3">
                                       <span className="inline-flex items-center rounded-full bg-teal-100 dark:bg-teal-900 px-3 py-1 text-sm font-medium text-teal-800 dark:text-teal-300">
                                         {member.position}
@@ -320,12 +320,12 @@ const AlumniPage = () => {
                                           LinkedIn
                                         </a>
                                       )}
-                                    </div>
-                                  </div>
-                                </div>
+                        </div>
+                      </div>
+                    </div>
                               ))}
-                            </div>
-                          </div>
+                        </div>
+                      </div>
                         </Tab.Panel>
                       ))}
                     </Tab.Panels>
