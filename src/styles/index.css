@@ -7,6 +7,22 @@
 @layer base {
   body {
     font-family: "Inter", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Better text rendering on mobile */
+  @media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  
+  /* Fix for iOS Safari 100vh issue */
+  @supports (-webkit-touch-callout: none) {
+    .min-h-screen {
+      min-height: -webkit-fill-available;
+    }
   }
 }
 
@@ -29,5 +45,72 @@
 
   input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
+  }
+  
+  /* Mobile menu animations */
+  .mobile-menu {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+  
+  .mobile-menu.hidden {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  
+  /* Text scaling for different screen sizes */
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 1.75rem !important;
+    }
+  }
+  
+  /* Dynamic text styling */
+  .dynamic-text-wrapper {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 60px;
+  }
+  
+  .dynamic-text-wrapper span {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    line-height: 1.2;
+    word-break: keep-all;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Mobile-specific fixes */
+  @media (max-width: 768px) {
+    /* Ensure buttons don't have excessive padding from global styles */
+    header button, header a {
+      padding: initial;
+    }
+    
+    /* Fix for mobile Chrome bottom bar overlap */
+    .min-h-screen {
+      min-height: 100vh;
+    }
+    
+    /* Improve text styling for Hero section */
+    .text-primary, .text-\[\#FF5722\] {
+      color: #FF5722;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+    
+    /* Adjust dynamic text height for mobile */
+    .dynamic-text-wrapper {
+      min-height: 80px;
+    }
   }
 }

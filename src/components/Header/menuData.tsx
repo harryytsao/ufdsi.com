@@ -3,32 +3,50 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
-    path: "/",
+    title: "ABOUT US",
+    path: "/about",
     newTab: false,
   },
   {
     id: 2,
-    title: "Workshops",
-    path: "/workshops",
+    title: "ALUMNI",
+    path: "/alumni",
     newTab: false,
   },
   {
     id: 3,
-    title: "Team",
-    path: "/team",
+    title: "CALENDAR",
+    path: "/workshops",
     newTab: false,
   },
   {
     id: 4,
-    title: "Contact Us",
-    path: "/contact",
+    title: "WORKSHOPS",
+    path: "/workshops-list",
     newTab: false,
   },
   {
     id: 5,
-    title: "Symposium",
+    title: "SYMPOSIUM",
     path: "/symposium",
+    newTab: false,
+  },
+  {
+    id: 6,
+    title: "PEOPLE",
+    path: "/team",
+    newTab: false,
+  },
+  {
+    id: 7,
+    title: "GALLERY",
+    path: "/gallery",
+    newTab: false,
+  },
+  {
+    id: 8,
+    title: "HOME",
+    path: "/",
     newTab: false,
   }
 ];
