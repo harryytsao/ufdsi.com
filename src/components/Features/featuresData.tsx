@@ -13,39 +13,39 @@ const featuresData: Feature[] = [
         className="object-cover rounded-lg w-full h-full"
       />
     ),
-    title: "Technical Workshops",
+    title: "Education & Skills Development",
     paragraph:
-      "We hold workshops and to provide the resources to teach students valuable skills in Data Science that can further students career in research and industry",
+      "Our technical workshops, hands-on training sessions, and certification programs help students develop practical skills in data science, AI, machine learning, and software engineering.",
   },
   {
     id: 2,
     icon: (
       <Image
         src="/images/features/social.jpeg"
-        alt="Social Events"
+        alt="Community & Networking"
         width={600}
         height={400}
         className="object-cover rounded-lg w-full h-full"
       />
     ),
-    title: "Social Events",
+    title: "Community & Networking",
     paragraph:
-      "Meet like-minded gators over activities such as potlucks, game nights, and collaborations with other clubs at UF",
+      "With over 1,100 Discord members and 1,500 Instagram followers, we foster connections through social events, industry panels, and collaborations with faculty, alumni, and other organizations.",
   },
   {
     id: 3,
     icon: (
       <Image
         src="/images/features/networking.png"
-        alt="Networking Events"
+        alt="Research & Competitions"
         width={600}
         height={400}
         className="object-cover rounded-lg w-full h-full"
       />
     ),
-    title: "Networking Events",
+    title: "Research & Competitions",
     paragraph:
-      "Get the chance to talk with recruiters in the data science industry and learn more about the different internship opportunities available",
+      "We lead in competitions like DataFest, AI Days, and hackathons, while our annual symposium showcases cutting-edge research through expert speakers and hands-on workshops.",
   },
 ];
 

@@ -1,25 +1,25 @@
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
-      <div className="container">
+    <section id="contact" className="overflow-hidden py-12 sm:py-16 md:py-20 lg:py-28">
+      <div className="container px-4 sm:px-8">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="mb-12 rounded-lg bg-white px-8 py-11 shadow-lg transition-all duration-300 hover:shadow-xl sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="mb-12 rounded-lg bg-white px-5 sm:px-8 py-8 sm:py-11 shadow-lg transition-all duration-300 hover:shadow-xl sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s"
             >
-              <h2 className="mb-6 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl">
+              <h2 className="mb-4 sm:mb-6 text-xl sm:text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl">
                 Get in Touch
               </h2>
-              <p className="mb-8 text-lg font-medium leading-relaxed text-body-color">
+              <p className="mb-6 sm:mb-8 text-base sm:text-lg font-medium leading-relaxed text-body-color">
                 Questions about data science, our events, or getting involved? We&apos;d love to connect—reach out anytime!
               </p>
 
-              <div className="flex flex-col space-y-6 items-start">
+              <div className="flex flex-col space-y-5 sm:space-y-6 items-start">
                 {/* Email Contact */}
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-3 sm:space-x-4">
                   <svg
-                    className="h-6 w-6 text-primary"
+                    className="h-5 w-5 sm:h-6 sm:w-6 text-primary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -33,7 +33,7 @@ const Contact = () => {
                   </svg>
                   <a
                     href="mailto:dsiufl@gmail.com"
-                    className="text-lg font-medium text-primary transition-colors duration-300 hover:text-primary/80 hover:underline"
+                    className="text-base sm:text-lg font-medium text-primary transition-colors duration-300 hover:text-primary/80 hover:underline"
                   >
                     dsiufl@gmail.com
                   </a>
@@ -51,9 +51,12 @@ const Contact = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
                       y="0px"
-                      width="34"
-                      height="34"
+                      width="30"
+                      height="30"
                       viewBox="0 0 24 24"
+                      className="fill-current"
+                      style={{ width: 'auto', height: '30px' }}
+                    >
                       className="fill-current">
                       <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
                     </svg>

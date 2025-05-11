@@ -1,0 +1,191 @@
+2025 - 2026 DSI Vision Board
+
+Feel free to write down anything that you have in mind for the future of DSI. Nothing too concrete, just brainstorming is fine. No idea is a bad idea!!! 
+Please don’t delete ideas; just cross them out instead (Alt+Shift+5)
+“The best way to predict the future is to create it.” - Abraham Lincoln
+
+Table of Contents:
+Internal/External Organization
+Membership
+Discord Specific Engagement
+Social Events
+Instagram
+Symposium
+Workshops
+Projects/Research
+Student Org Collaborations
+
+
+
+Internal/External Organization
+Utilize the website more. I (safi) have never had a reason to go on the DSI website.
+revamp website (calendar and option to add it to your own calendar, workshops, previous exec boards, mailing list sign up, "how to be a member", "who are we", "where we meet")
+DSI homepage (ask safi)
+Flyer request overhaul
+Automated Instagram posting?
+Utilize/promote the Youtube channel more. I did not even know we had one until like January.
+Plan Social events/collabs/junior board social a few months ahead
+Take note of the Campus Recruiting Time for diff companies and make sure to contact them early enough
+Find smaller local business and ask if they need interns/ project anything tbh
+DSI job board or something like that on the website
+DSI Newsletter: Get people to sign up for the newsletter then send out weekly email like what is happening/ list of events/scholarships/internships openings
+Office hours: might be helpful since a 1 hour workshop might not cover enough
+Make a list of clubs/companies that we can potentially collab with over the summer
+Member “application” so we have a list of members, tie it in with attendance (safi job)
+Active member score system: for exec election, banquet, internal networking event, …
+Add more games/icebreaker to the GBMs
+Have more people speak at the GBMs, more interactive
+Sponsorship packet/reach out to companies
+
+
+Membership
+Can we pretty please announce all the GBMs ahead of time? I do NOT vibe with them being released 2 days prior - real
+Treat DSI like a business, scarcity and differentiation are the driving forces. We need to give people a reason to show up to meetings:
+End of year banquet
+Food, superlatives, awards, networking
+Merch (quarter zips, crewnecks, shirts, water bottles)
+Semesterly scholarships
+I like this, one every semester ($500?) by collaborating with industry (M)
+This would instantly differentiate us from other clubs (Matheus)
+Look into the legality of this as well (M)
+Internships
+Reach out to startups or venture capitals, have a space where companies can come and recruit
+Have a resume database where students can (willingly) put their resumes, we can then leverage this when asking companies for money
+Selective projects
+Aadhi
+Table more often in Turlington. A great way to get people in all classes involved, even non-CS students!
+Event Coordinators, also speaking at classes
+Guest speakers are great, but to be honest they can be kind of boring. We need flagship speakers, and they should be tied in to the GBMs to raise attendance rather than being standalone.
+100% Agree (Matheus), have a (non-intern) speaker from Microsoft/Google/Etc at every GBM to speak for ~30min about data science or career related things
+Mentor/mentee: this is lowkey oversaturated but I really want to do study groups but we can also take advantage of the project groups and do smth like Project Pods: have teams work on mini data science projects together (could be case studies, datasets, hackathon prep, …)
+This could work but I believe it will largely be a freshman thing, and itll typically fall off mid semester
+During first GMB:
+Mailing list sign up
+Resume bank for internship/company interest
+Member “application”
+
+Discord Specific Engagement
+Almost 1000+ people, and yet it's the same 10 people talking on every channel. At this point it could be a good idea to just purge every dead member or remake the discord to force a rebrand and engagement. Only join discord if youre going to talk?  
+Game nights! Let’s play among us or jackbox every so often to make it feel alive. I was also thinking of a DSI minecraft server, but that could probably go very wrong very fast 😂.
+Discord nitro giveaways??
+CS discords appear to be oversaturated. I haven’t done research, but I am assuming that DSI, Gaitor, OSC, CSU, and more all have one and its pretty similar in structure. All of these strive to be generalists when in reality they are speciality discords. CSU should have the general, and then you should branch to other servers for specifics (like DSI for data science, OSC for programming, etc.)
+Maybe too much link spam goes on in the different channels. Concentrating them all in a few might be worthwhile?
+“Open mic nights” → Not necessarily karaoke, but more so use the discord podcast feature to have intellectual discussions on the future of AI, philosophy, user data, etc.
+I really like this and is something I have been thinking about as well, especially the philosophy and how the future will unfold; AI proofing your job; (Matheus)
+
+
+Social Events
+Have workshops collabing with clubs in diff fields (business, med, art, engineering, …) - can be social or can be an in4 session about the application of data science in those fields
+DSI Unfiltered - a series of Ask Me Anything events
+With Alumni, Club Members, professors, etc.
+With companies/recruiters
+With students?!? Maybe the other technical clubs but honestly just people who are good at something
+Mock interview
+Leetcode/Homework/Coffee Nights
+Tech Club Fair - might not be feasible this year but we’ll see
+In4 sessions about internships/graduate/ research program
+
+Instagram
+Appearance on Instagram is a spectrum:
+Appearing fun/social <——————————————> serious/academic
+Decide what look DSI wants to have. This WILL make a large impact. Example, check out Hospitaliteam and Gator User Design on Instagram. See the difference? Although Hospitaliteam looks more fun, its work-oriented and you just volunteer. I’ve never been to a GUD meeting but it definitely seems a lot more serious based solely on the Instagram page.
+Create templates for different instagram posts
+GBMs
+Socials
+Workshops
+Fundraisers
+Events
+Announcements
+Symposium (separate style)
+Eboard takeovers? QnA
+This is dumb ik but have leaflets with the qr code smth and stick it at diff places on campus 
+1080 x 1080 flyers
+Insta reels… it can be funny or professional depends on the insta appearance
+
+
+Symposium
+Give people a reason to attend speaker sessions:
+Attending x out of y sessions will either:
+Enter you into a raffle
+Give you merch
+Allow you access to something
+Rename it to “Conference”? (Matheus)
+People probably don't know what a symposium is (M)
+It technically aligns more with a conference anyway (M)
+Add a number next to it 
+E.g. “11th DSI Conference” or “DSI AI Symposium XI”
+“It makes people see that this is not the first time this is happening, it gives a bigger sense of authority” - someone I spoke to (M)
+Guest speaker consent forms to record sessions and use their face on our social media pages.
+Symposium length:
+9am – 5pm is ideal
+Speakers should be 45 minutes, 30 for presenting and 15 for questions.
+Have a waiver for speakers/participants if we intend on using their picture or recording (see screenshot below from Sarah, who was one of the speakers and has hosted many professional conferences before)
+Integrate a tech club fair?
+DSI pins.
+
+Workshops
+Give people a reason to attend workshops:
+Have a form posted for people to submit workshop interets/improvements
+Try to reach out the professors to see if they will offer extra credit for students who attend the workshop
+Make a series of everything and teach more in depth stuff
+Organize them on the website neatly, have a link to the youtube recording, a link to the GitHub materials, etc
+Partner with AIIRI. Dr. Zare expressed a lot of interest in this. It is in our best interest to have our goals aligned with theirs as much as possible
+See if different companies/professors would want to collaborate on a workshop. 
+
+
+Projects/Research
+Safi’s meteorology contacts?
+Somehow acquire large datasets and host hackathons for data (I think datafest is the right term) every semester or month. Nothing too formal, but a mix of casual and serious so people have a motivation to stay involved and things to throw on a resume.
+Randomly survey (convenience sample) a bunch of students about topics to obtain “big data” → use this to promote change or a policy
+Ask safi about SHAC, they could be interested in this regarding student health and the possibility of a medication vending machine
+Literally every (medical) research lab has at least 1 comp sci student who just analyzes their data. A lot of potential openings there for DSI members…
+Maximize the partnership with departments (and see if Dr Zare is ok w us getting outside money)
+UFIT:
+-> HiPerGator access
+-> HiPerGator tour (once a semester?)
+-> Nvidia Workshop (once a semester/year?)
+-> Funding
+AI2 Center:
+-> AI2 Days, get DSI involved for smth
+-> Funding
+Student Org Collaborations
+Internally, why don’t we advertise us as “people who will analyze your data” for literally any club and any reason. Why not? 
+Some student orgs to collab next year imo:
+AlgoGators - great for quant/ data engineer
+Dream Team Engineering - ik someone and they’re jacked, also I heard they wanna collab with clubs next year
+SASE/SHPE/WiCSE Engineering Team - I’m chill with SASE’s prev SET leader so…
+AI Healthcare - we collabed with them before but only for socials, smth more than that would be nice
+Swamphacks/Winghacks/ Hackathons in general
+UES/UF Math Club/ASA/FASS
+GEMRU
+Student EMT volunteers on campus, they respond to 911 calls for medical assistance. I am not sure if their patient databases are accessible to us, but if we could analyze their data for clinical research studies… 🤑
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AIIRI
+UFIT
+George Smather’s Library
+AI2 Center
+CISE
+Dept of Statistics
+CLAS (Tentative)

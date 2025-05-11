@@ -1,8 +1,41 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useRef, useEffect } from "react";
 
 const Footer = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const scrollContainerRef = useRef(null);
+
+  const handleScrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+      setScrollPosition(scrollContainerRef.current.scrollLeft - 200);
+    }
+  };
+
+  const handleScrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+      setScrollPosition(scrollContainerRef.current.scrollLeft + 200);
+    }
+  };
+
+  // Update scroll position when scrolling manually
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollContainerRef.current) {
+        setScrollPosition(scrollContainerRef.current.scrollLeft);
+      }
+    };
+
+    const scrollContainer = scrollContainerRef.current;
+    if (scrollContainer) {
+      scrollContainer.addEventListener('scroll', handleScroll);
+      return () => scrollContainer.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
@@ -79,19 +112,87 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="px-4 w-fit">
+            <div className="px-4 w-full md:w-1/2 lg:w-8/12 xl:w-7/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-5 text-xl font-bold text-black dark:text-white">
                   Find Us!
                 </h2>
-                <p className="mb-4 text-sm sm:text-sm md:text-sm lg:text-base xl:text-base xl:w-fit text-body-color dark:text-body-color-dark">
-                  UF Informatics Institute<br></br>
-                  432 Newell Drive, CISE Bldg E251<br></br>
-                  Gainesville, Florida 32611-5585<br></br>
+                <p className="mb-4 text-sm text-body-color dark:text-body-color-dark">
+                  UF Informatics Institute - 432 Newell Drive, CISE Bldg E251, Gainesville, FL 32611
                 </p>
-                <p className="mb-4 text-xs sm:text-xs md:text-xs lg:text-sm xl:text-sm xl:w-fit text-body-color dark:text-body-color-dark italic">
-                  Located across from Marston Science Library, side of the CSE Building
-                </p>
+                
+                {/* Location Image Carousel */}
+                <div className="relative mt-5">
+                  <div className="absolute left-0 top-1/2 z-10 -translate-y-1/2">
+                    <button 
+                      onClick={handleScrollLeft}
+                      className="flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-md hover:bg-gray-100 disabled:opacity-50 dark:bg-gray-800 dark:hover:bg-gray-700"
+                      disabled={scrollPosition <= 0}
+                      aria-label="Scroll left"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="text-gray-700 dark:text-gray-300" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div 
+                    ref={scrollContainerRef}
+                    className="flex space-x-4 overflow-x-auto pb-2 scrollbar-hide"
+                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                  >
+                    {/* Location Images (Placeholders - replace with actual images) */}
+                    <div className="relative min-w-[280px] h-[180px] rounded-lg overflow-hidden flex-shrink-0">
+                      <Image 
+                        src="/images/location/campus-map.jpg" 
+                        alt="Campus Map" 
+                        layout="fill" 
+                        objectFit="cover"
+                        className="transition-transform hover:scale-105 duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                      <div className="absolute bottom-3 left-3 text-white text-sm font-medium">
+                        Campus Map
+                      </div>
+                    </div>
+                    <div className="relative min-w-[280px] h-[180px] rounded-lg overflow-hidden flex-shrink-0">
+                      <Image 
+                        src="/images/location/marston-library.jpg" 
+                        alt="Marston Science Library" 
+                        layout="fill" 
+                        objectFit="cover"
+                        className="transition-transform hover:scale-105 duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                      <div className="absolute bottom-3 left-3 text-white text-sm font-medium">
+                        Marston Science Library
+                      </div>
+                    </div>
+                    <div className="relative min-w-[280px] h-[180px] rounded-lg overflow-hidden flex-shrink-0">
+                      <Image 
+                        src="/images/location/informatics-entrance.jpg" 
+                        alt="Informatics Institute Entrance" 
+                        layout="fill" 
+                        objectFit="cover"
+                        className="transition-transform hover:scale-105 duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                      <div className="absolute bottom-3 left-3 text-white text-sm font-medium">
+                        Informatics Institute Entrance
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute right-0 top-1/2 z-10 -translate-y-1/2">
+                    <button 
+                      onClick={handleScrollRight}
+                      className="flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
+                      aria-label="Scroll right"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="text-gray-700 dark:text-gray-300" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

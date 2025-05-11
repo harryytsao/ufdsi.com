@@ -288,7 +288,7 @@ const AlumniPage = () => {
                                     {member.image && (
                                       <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="h-full w-full">
-                                          <img
+                          <img
                                             src={member.image}
                                             alt={member.name}
                                             className="h-full w-full object-cover object-center"

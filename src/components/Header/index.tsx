@@ -61,7 +61,7 @@ const Header = () => {
                 }`}
               >
                 <Image
-                  src="/images/logo/dsi-logo-small.svg"
+                  src="/images/logo/hd-dsi-logo-transparent.svg"
                   alt="DSI logo"
                   width={100}
                   height={40}
@@ -203,65 +203,67 @@ const Header = () => {
         
         {/* Mobile Menu Dropdown */}
         <div
-          className={`mobile-menu fixed left-0 right-0 top-[66px] z-30 bg-white py-2 px-4 shadow-lg dark:bg-gray-900 lg:hidden ${
+          className={`mobile-menu fixed left-0 right-0 top-[66px] z-30 bg-white shadow-lg dark:bg-gray-900 lg:hidden ${
             navbarOpen ? "block" : "hidden"
           }`}
-          style={{ maxHeight: "calc(100vh - 66px)", overflowY: "auto" }}
+          style={{ width: "100%", maxHeight: "calc(100vh - 66px)", overflowY: "auto" }}
         >
-          <ul className="block space-y-2">
-            {menuData.map((menuItem, index) => (
-              <li key={index} className="group relative border-b border-gray-100 dark:border-gray-800 py-2">
-                {menuItem.path ? (
-                  <Link
-                    href={menuItem.path}
-                    className={`flex text-base font-medium ${
-                      usePathName === menuItem.path
-                        ? "text-primary dark:text-primary"
-                        : "text-gray-800 dark:text-white"
-                    }`}
-                    onClick={() => setNavbarOpen(false)}
-                  >
-                    {menuItem.title}
-                  </Link>
-                ) : (
-                  <>
-                    <div
-                      onClick={() => handleSubmenu(index)}
-                      className="flex cursor-pointer items-center justify-between text-base text-gray-800 dark:text-white"
+          <div className="container mx-auto">
+            <ul className="block space-y-0 py-2">
+              {menuData.map((menuItem, index) => (
+                <li key={index} className="group relative border-b border-gray-100 dark:border-gray-800 py-3">
+                  {menuItem.path ? (
+                    <Link
+                      href={menuItem.path}
+                      className={`flex text-base font-medium ${
+                        usePathName === menuItem.path
+                          ? "text-primary dark:text-primary"
+                          : "text-gray-800 dark:text-white"
+                      }`}
+                      onClick={() => setNavbarOpen(false)}
                     >
                       {menuItem.title}
-                      <span className="pl-3">
-                        <svg width="20" height="20" viewBox="0 0 25 24">
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M6.29289 8.8427C6.68342 8.45217 7.31658 8.45217 7.70711 8.8427L12 13.1356L16.2929 8.8427C16.6834 8.45217 17.3166 8.45217 17.7071 8.8427C18.0976 9.23322 18.0976 9.86639 17.7071 10.2569L12 15.964L6.29289 10.2569C5.90237 9.86639 5.90237 9.23322 6.29289 8.8427Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                    <div
-                      className={`submenu pl-4 mt-2 ${
-                        openIndex === index ? "block" : "hidden"
-                      }`}
-                    >
-                      {menuItem.submenu?.map((submenuItem, idx) => (
-                        <Link
-                          href={submenuItem.path}
-                          key={idx}
-                          className="block py-2 text-sm text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"
-                          onClick={() => setNavbarOpen(false)}
-                        >
-                          {submenuItem.title}
-                        </Link>
-                      ))}
-                    </div>
-                  </>
-                )}
-              </li>
-            ))}
-          </ul>
+                    </Link>
+                  ) : (
+                    <>
+                      <div
+                        onClick={() => handleSubmenu(index)}
+                        className="flex cursor-pointer items-center justify-between text-base text-gray-800 dark:text-white"
+                      >
+                        {menuItem.title}
+                        <span className="pl-3">
+                          <svg width="20" height="20" viewBox="0 0 25 24">
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M6.29289 8.8427C6.68342 8.45217 7.31658 8.45217 7.70711 8.8427L12 13.1356L16.2929 8.8427C16.6834 8.45217 17.3166 8.45217 17.7071 8.8427C18.0976 9.23322 18.0976 9.86639 17.7071 10.2569L12 15.964L6.29289 10.2569C5.90237 9.86639 5.90237 9.23322 6.29289 8.8427Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <div
+                        className={`submenu pl-4 mt-2 ${
+                          openIndex === index ? "block" : "hidden"
+                        }`}
+                      >
+                        {menuItem.submenu?.map((submenuItem, idx) => (
+                          <Link
+                            href={submenuItem.path}
+                            key={idx}
+                            className="block py-2 text-sm text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"
+                            onClick={() => setNavbarOpen(false)}
+                          >
+                            {submenuItem.title}
+                          </Link>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </header>
     </>
