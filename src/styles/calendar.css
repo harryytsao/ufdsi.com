@@ -1,0 +1,153 @@
+/* Calendar custom styling */
+.rbc-calendar {
+  font-family: inherit;
+  width: 100%;
+}
+
+/* Header styling */
+.rbc-toolbar {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rbc-toolbar button {
+  color: #4a5568;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #3182ce;
+  color: white;
+  border-color: #3182ce;
+}
+
+.rbc-toolbar button.rbc-active:hover {
+  background-color: #2b6cb0;
+  border-color: #2b6cb0;
+}
+
+/* Month view styling */
+.rbc-month-view {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.rbc-month-header {
+  background-color: #f7fafc;
+}
+
+.rbc-header {
+  padding: 0.75rem 0;
+  font-weight: 600;
+}
+
+.rbc-date-cell {
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  border-left: 1px solid #e2e8f0;
+}
+
+.rbc-month-row + .rbc-month-row {
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Event styling */
+.rbc-event {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border: none;
+}
+
+.rbc-event-label {
+  font-size: 0.75rem;
+}
+
+.rbc-event-content {
+  font-weight: 500;
+}
+
+/* Today styling */
+.rbc-today {
+  background-color: #ebf8ff;
+}
+
+/* Dark mode support */
+.dark .rbc-toolbar button {
+  color: #e2e8f0;
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.dark .rbc-toolbar button:hover {
+  background-color: #4a5568;
+  border-color: #718096;
+}
+
+.dark .rbc-toolbar button.rbc-active {
+  background-color: #3182ce;
+  color: white;
+  border-color: #3182ce;
+}
+
+.dark .rbc-month-view {
+  border-color: #4a5568;
+}
+
+.dark .rbc-month-header {
+  background-color: #2d3748;
+}
+
+.dark .rbc-header {
+  color: #e2e8f0;
+}
+
+.dark .rbc-day-bg + .rbc-day-bg {
+  border-left-color: #4a5568;
+}
+
+.dark .rbc-month-row + .rbc-month-row {
+  border-top-color: #4a5568;
+}
+
+.dark .rbc-today {
+  background-color: #2c5282;
+}
+
+.dark .rbc-off-range-bg {
+  background-color: #1a202c;
+}
+
+.dark .rbc-off-range {
+  color: #718096;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rbc-toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .rbc-toolbar-label {
+    margin: 0.5rem 0;
+  }
+}
