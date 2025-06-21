@@ -18,7 +18,7 @@ const upcomingWorkshops = [
     date: "7th July 2025, 6-7pm",
     location: "AIIRI",
     description: "A hands-on introduction to Python for Data Science.",
-    image: "/images/workshops/genomics.jpg",
+    image: "/images/workshop/pyth.png",
     url: "#"
   },
   {
@@ -27,7 +27,7 @@ const upcomingWorkshops = [
     date: "28th July 2025, 6-7pm",
     location: "AIIRI",
     description: "Learn the basics of Natural Language Processing with Python.",
-    image: "/images/workshops/machine-learning.jpg",
+    image: "/images/workshop/nlp.jpg",
     url: "#"
   }
 ];

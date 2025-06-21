@@ -36,6 +36,29 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const highlights = [
+    "UF Student Organization of the Year Winner",
+    "Hosted Research Symposiums for 2025 and 2024",
+    "Winner of the UF Career Influencer Award"
+  ];
+
+  const [currentHighlight, setCurrentHighlight] = useState(highlights[0]);
+  const [highlightFade, setHighlightFade] = useState("in");
+
+  useEffect(() => {
+    let highlightIndex = 0;
+    const switchHighlight = () => {
+      setHighlightFade("out");
+      setTimeout(() => {
+        highlightIndex = (highlightIndex + 1) % highlights.length;
+        setCurrentHighlight(highlights[highlightIndex]);
+        setHighlightFade("in");
+      }, 500);
+    };
+    const interval = setInterval(switchHighlight, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section
@@ -92,6 +115,36 @@ const Hero = () => {
                   >
                     LEARN MORE
                   </Link>
+                </div>
+                {/* Highlights Section (pyramid layout, transparent boxes, with images, spaced below) */}
+                <div className="mt-24 flex flex-col items-center w-full">
+                  <span className="mb-4 text-base sm:text-lg font-semibold uppercase tracking-widest text-teal-200 drop-shadow-md" style={{letterSpacing: '0.15em'}}>Highlights</span>
+                  <div className="flex flex-col items-center w-full gap-4">
+                    {/* Top highlight */}
+                    <div className="flex justify-center w-full">
+                      <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-xl sm:text-2xl md:text-3xl text-white drop-shadow-lg backdrop-blur-md max-w-xl w-full text-center border border-white/20 dark:border-gray-700">
+                        <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
+                          <img src="/images/newsletter/org-of-year.jpg" alt="Student Org of Year" className="w-20 h-20 object-cover rounded-full border-4 border-white/60 shadow" />
+                        </div>
+                        <span>UF Student Organization of the Year Winner</span>
+                      </div>
+                    </div>
+                    {/* Bottom row highlights */}
+                    <div className="flex flex-row justify-center w-full gap-6 flex-wrap">
+                      <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-lg sm:text-xl md:text-2xl text-white drop-shadow-lg backdrop-blur-md max-w-md w-full text-center border border-white/20 dark:border-gray-700">
+                        <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
+                          <img src="/images/newsletter/symposium.jpg" alt="Symposiums" className="w-16 h-16 object-cover rounded-full border-4 border-white/60 shadow" />
+                        </div>
+                        <span>Hosted Research Symposiums for 2025 and 2024</span>
+                      </div>
+                      <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-lg sm:text-xl md:text-2xl text-white drop-shadow-lg backdrop-blur-md max-w-md w-full text-center border border-white/20 dark:border-gray-700">
+                        <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
+                          <img src="/images/newsletter/influencer.jpg" alt="Career Influencer" className="w-16 h-16 object-cover rounded-full border-4 border-white/60 shadow" />
+                        </div>
+                        <span>Winner of the UF Career Influencer Award</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
