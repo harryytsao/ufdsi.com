@@ -9,7 +9,8 @@ const Hero = () => {
     "DATA SCIENCE",
     "ARTIFICIAL INTELLIGENCE",
     "MACHINE LEARNING",
-    "ADVANCING RESEARCH"
+    "ADVANCING RESEARCH", 
+    "YOU"
   ];
   
   const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
@@ -117,10 +118,10 @@ const Hero = () => {
                   </Link>
                 </div>
                 {/* Highlights Section (pyramid layout, transparent boxes, with images, spaced below) */}
-                <div className="mt-24 flex flex-col items-center w-full">
+                {/* <div className="mt-24 flex flex-col items-center w-full">
                   <span className="mb-4 text-base sm:text-lg font-semibold uppercase tracking-widest text-teal-200 drop-shadow-md" style={{letterSpacing: '0.15em'}}>Highlights</span>
                   <div className="flex flex-col items-center w-full gap-4">
-                    {/* Top highlight */}
+                    
                     <div className="flex justify-center w-full">
                       <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-xl sm:text-2xl md:text-3xl text-white drop-shadow-lg backdrop-blur-md max-w-xl w-full text-center border border-white/20 dark:border-gray-700">
                         <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
@@ -129,7 +130,7 @@ const Hero = () => {
                         <span>UF Student Organization of the Year Winner</span>
                       </div>
                     </div>
-                    {/* Bottom row highlights */}
+                    
                     <div className="flex flex-row justify-center w-full gap-6 flex-wrap">
                       <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-lg sm:text-xl md:text-2xl text-white drop-shadow-lg backdrop-blur-md max-w-md w-full text-center border border-white/20 dark:border-gray-700">
                         <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
@@ -145,7 +146,7 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
