@@ -1,0 +1,1 @@
+Please place landing-page.jpg here. This file should be a high-resolution image of a building with geometric patterns for the website landing page.

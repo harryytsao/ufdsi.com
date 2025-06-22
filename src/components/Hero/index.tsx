@@ -1,274 +1,155 @@
+"use client";
 import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  // Define the phrases in the desired order
+  const phrases = [
+    "DATA SCIENCE",
+    "ARTIFICIAL INTELLIGENCE",
+    "MACHINE LEARNING",
+    "ADVANCING RESEARCH", 
+    "YOU"
+  ];
+  
+  const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
+  const [fadeState, setFadeState] = useState("in"); // "in", "out"
+  
+  useEffect(() => {
+    let phraseIndex = 0;
+    
+    const switchPhrase = () => {
+      // Fade out current text
+      setFadeState("out");
+      
+      // After fade out, change text and fade in
+      setTimeout(() => {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        setCurrentPhrase(phrases[phraseIndex]);
+        setFadeState("in");
+      }, 500); // Half a second for fade out
+    };
+    
+    // Set up interval for phrase changes
+    const interval = setInterval(switchPhrase, 3000);
+    
+    return () => clearInterval(interval);
+  }, []);
+
+  const highlights = [
+    "UF Student Organization of the Year Winner",
+    "Hosted Research Symposiums for 2025 and 2024",
+    "Winner of the UF Career Influencer Award"
+  ];
+
+  const [currentHighlight, setCurrentHighlight] = useState(highlights[0]);
+  const [highlightFade, setHighlightFade] = useState("in");
+
+  useEffect(() => {
+    let highlightIndex = 0;
+    const switchHighlight = () => {
+      setHighlightFade("out");
+      setTimeout(() => {
+        highlightIndex = (highlightIndex + 1) % highlights.length;
+        setCurrentHighlight(highlights[highlightIndex]);
+        setHighlightFade("in");
+      }, 500);
+    };
+    const interval = setInterval(switchHighlight, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 flex min-h-screen w-full items-center justify-center overflow-hidden bg-white dark:bg-black"
       >
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Data Science and Informatics
-                </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  University of Florida&apos;s first undergraduate data science focused student organization
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <Image
+            src="/images/hero/landing-page.jpg"
+            alt="UF Building"
+            fill
+            sizes="100vw"
+            className="object-cover object-center dark:opacity-60"
+            priority
+            style={{ 
+              objectPosition: "center 35%", 
+              transform: "scale(1.1)" 
+            }}
+          />
+          <div className="absolute inset-0 bg-black/40 dark:bg-black/70"></div>
+        </div>
+
+        <div className="container relative z-10">
+          <div className="flex flex-wrap">
+            <div className="w-full">
+              <div className="mx-auto max-w-[900px] text-center px-4 flex flex-col h-auto justify-center">
+                <div className="mb-16 md:mb-20">
+                  <h2 className="mb-1 sm:mb-2 text-lg font-medium italic text-white md:text-2xl">
+                    Data Science and Informatics at the University of Florida
+                  </h2>
+                  <h1 className="mb-0 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white whitespace-nowrap">
+                    A COMMUNITY FOR
+                  </h1>
+                  
+                  {/* Fixed height container with absolute positioning for text */}
+                  <div className="relative h-[50px] sm:h-[60px] md:h-[70px] lg:h-[85px] xl:h-[100px] flex items-center justify-center">
+                    <div 
+                      className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
+                        fadeState === "in" ? "opacity-100" : "opacity-0"
+                      }`}
+                    >
+                      <div className="text-white font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[3.5rem] xl:text-6xl whitespace-nowrap px-4">
+                        {currentPhrase}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col items-center justify-center">
                   <Link
-                    href="https://discord.gg/GUEAwEhRQw"
-                    className="rounded-xl bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    href="/about"
+                    className="rounded-full bg-teal-500 px-6 py-3 text-base font-medium text-white shadow-md transition-all duration-300 ease-in-out hover:bg-teal-600 hover:shadow-lg active:shadow-sm"
                   >
-                    🔥 Join Our Discord
+                    LEARN MORE
                   </Link>
                 </div>
+                {/* Highlights Section (pyramid layout, transparent boxes, with images, spaced below) */}
+                {/* <div className="mt-24 flex flex-col items-center w-full">
+                  <span className="mb-4 text-base sm:text-lg font-semibold uppercase tracking-widest text-teal-200 drop-shadow-md" style={{letterSpacing: '0.15em'}}>Highlights</span>
+                  <div className="flex flex-col items-center w-full gap-4">
+                    
+                    <div className="flex justify-center w-full">
+                      <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-xl sm:text-2xl md:text-3xl text-white drop-shadow-lg backdrop-blur-md max-w-xl w-full text-center border border-white/20 dark:border-gray-700">
+                        <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
+                          <img src="/images/newsletter/org-of-year.jpg" alt="Student Org of Year" className="w-20 h-20 object-cover rounded-full border-4 border-white/60 shadow" />
+                        </div>
+                        <span>UF Student Organization of the Year Winner</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-row justify-center w-full gap-6 flex-wrap">
+                      <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-lg sm:text-xl md:text-2xl text-white drop-shadow-lg backdrop-blur-md max-w-md w-full text-center border border-white/20 dark:border-gray-700">
+                        <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
+                          <img src="/images/newsletter/symposium.jpg" alt="Symposiums" className="w-16 h-16 object-cover rounded-full border-4 border-white/60 shadow" />
+                        </div>
+                        <span>Hosted Research Symposiums for 2025 and 2024</span>
+                      </div>
+                      <div className="flex flex-col sm:flex-row items-center bg-white/30 dark:bg-gray-800/40 rounded-xl shadow-lg px-8 py-5 font-extrabold text-lg sm:text-xl md:text-2xl text-white drop-shadow-lg backdrop-blur-md max-w-md w-full text-center border border-white/20 dark:border-gray-700">
+                        <div className="mb-3 sm:mb-0 sm:mr-5 flex-shrink-0">
+                          <img src="/images/newsletter/influencer.jpg" alt="Career Influencer" className="w-16 h-16 object-cover rounded-full border-4 border-white/60 shadow" />
+                        </div>
+                        <span>Winner of the UF Career Influencer Award</span>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
               </div>
             </div>
           </div>
-        </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
-          <svg
-            width="450"
-            height="556"
-            viewBox="0 0 450 556"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
-              fill="url(#paint0_linear_25:217)"
-            />
-            <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
-              fill="url(#paint1_radial_25:217)"
-            />
-            <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
-              fill="url(#paint2_radial_25:217)"
-            />
-            <circle
-              cx="325.486"
-              cy="302.87"
-              r="180"
-              transform="rotate(-37.6852 325.486 302.87)"
-              fill="url(#paint3_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="184.521"
-              cy="315.521"
-              r="132.862"
-              transform="rotate(114.874 184.521 315.521)"
-              stroke="url(#paint4_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="356"
-              cy="290"
-              r="179.5"
-              transform="rotate(-30 356 290)"
-              stroke="url(#paint5_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="191.659"
-              cy="302.659"
-              r="133.362"
-              transform="rotate(133.319 191.659 302.659)"
-              fill="url(#paint6_linear_25:217)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_25:217"
-                x1="-54.5003"
-                y1="-178"
-                x2="222"
-                y2="288"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint1_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <radialGradient
-                id="paint2_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <linearGradient
-                id="paint3_linear_25:217"
-                x1="226.775"
-                y1="-66.1548"
-                x2="292.157"
-                y2="351.421"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:217"
-                x1="184.521"
-                y1="182.159"
-                x2="184.521"
-                y2="448.882"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_25:217"
-                x1="356"
-                y1="110"
-                x2="356"
-                y2="470"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint6_linear_25:217"
-                x1="118.524"
-                y1="29.2497"
-                x2="166.965"
-                y2="338.63"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
-          <svg
-            width="364"
-            height="201"
-            viewBox="0 0 364 201"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.88928 72.3303C33.6599 66.4798 101.397 64.9086 150.178 105.427C211.155 156.076 229.59 162.093 264.333 166.607C299.076 171.12 337.718 183.657 362.889 212.24"
-              stroke="url(#paint0_linear_25:218)"
-            />
-            <path
-              d="M-22.1107 72.3303C5.65989 66.4798 73.3965 64.9086 122.178 105.427C183.155 156.076 201.59 162.093 236.333 166.607C271.076 171.12 309.718 183.657 334.889 212.24"
-              stroke="url(#paint1_linear_25:218)"
-            />
-            <path
-              d="M-53.1107 72.3303C-25.3401 66.4798 42.3965 64.9086 91.1783 105.427C152.155 156.076 170.59 162.093 205.333 166.607C240.076 171.12 278.718 183.657 303.889 212.24"
-              stroke="url(#paint2_linear_25:218)"
-            />
-            <path
-              d="M-98.1618 65.0889C-68.1416 60.0601 4.73364 60.4882 56.0734 102.431C120.248 154.86 139.905 161.419 177.137 166.956C214.37 172.493 255.575 186.165 281.856 215.481"
-              stroke="url(#paint3_linear_25:218)"
-            />
-            <circle
-              opacity="0.8"
-              cx="214.505"
-              cy="60.5054"
-              r="49.7205"
-              transform="rotate(-13.421 214.505 60.5054)"
-              stroke="url(#paint4_linear_25:218)"
-            />
-            <circle cx="220" cy="63" r="43" fill="url(#paint5_radial_25:218)" />
-            <defs>
-              <linearGradient
-                id="paint0_linear_25:218"
-                x1="184.389"
-                y1="69.2405"
-                x2="184.389"
-                y2="212.24"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_25:218"
-                x1="156.389"
-                y1="69.2405"
-                x2="156.389"
-                y2="212.24"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint2_linear_25:218"
-                x1="125.389"
-                y1="69.2405"
-                x2="125.389"
-                y2="212.24"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint3_linear_25:218"
-                x1="93.8507"
-                y1="67.2674"
-                x2="89.9278"
-                y2="210.214"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:218"
-                x1="214.505"
-                y1="10.2849"
-                x2="212.684"
-                y2="99.5816"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint5_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(220 63) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="white" stopOpacity="0" />
-                <stop offset="1" stopColor="white" stopOpacity="0.08" />
-              </radialGradient>
-            </defs>
-          </svg>
         </div>
       </section>
     </>

@@ -6,36 +6,37 @@ type Person = {
 };
 
 const PersonCard = ({ person }: { person: Person }) => (
-  <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center transform transition duration-150 hover:scale-105 hover:shadow-xl w-full max-w-[280px]">
-    <div className="w-32 h-32 relative mb-4">
+  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl group hover:translate-y-[-5px] w-full max-w-[280px]">
+    <div className="h-56 w-full relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
       <img
-        src={person.image || "https://via.placeholder.com/150"}
+        src={person.image || "https://via.placeholder.com/280x224"}
         alt={person.name}
-        width={250}
-        height={250}
-        className="rounded-full object-cover border-4 border-gray-100 shadow-md absolute inset-0 w-full h-full"
+        className="w-full h-full object-cover object-center"
       />
     </div>
-    <h3 className="text-xl font-semibold text-gray-900 mb-1">{person.name}</h3>
-    <p className="text-gray-600 text-sm mb-3">{person.position}</p>
-    <div className="flex space-x-4">
-      {person.linkedIn && (
-        <a
-          href={person.linkedIn}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-500 hover:text-blue-600 transition-colors duration-200"
-        >
-          <svg
-            width="25"
-            height="25"
-            viewBox="0 0 17 16"
-            className="fill-current"
-          >
-            <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
-          </svg>
-        </a>
+    <div className="p-5">
+      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{person.name}</h3>
+      {person.position && (
+        <span className="inline-flex items-center rounded-full bg-teal-100 dark:bg-teal-900 px-3 py-1 text-sm font-medium text-teal-800 dark:text-teal-300 mb-4">
+          {person.position}
+        </span>
       )}
+      <div className="flex items-center mt-4">
+        {person.linkedIn && (
+          <a
+            href={person.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center text-sm"
+          >
+            <svg className="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            LinkedIn
+          </a>
+        )}
+      </div>
     </div>
   </div>
 );
@@ -149,18 +150,26 @@ const juniorRoles: JuniorRole[] = [
 
 const Team = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-gray-100 py-16">
+    <div className="bg-white dark:bg-gray-dark py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-          Meet Our Team
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            Meet Our Team
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            The dedicated individuals who drive our mission forward and make our community thrive.
+          </p>
+        </div>
 
         {/* Section for Executives */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
-            Executive Board
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+        <div className="mb-24">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white inline-block relative">
+              Executive Board
+              <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-blue-500"></span>
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
             {executives.map((person, index) => (
               <PersonCard key={`exec-${index}`} person={person} />
             ))}
@@ -169,21 +178,29 @@ const Team = () => {
 
         {/* Section for Junior Board */}
         <div>
-          <h3 className="text-2xl font-semibold text-gray-800 mb-12 text-center">
-            Junior E-Board
-          </h3>
-          {juniorRoles.map((role, roleIndex) => (
-            <div key={`role-${roleIndex}`} className="mb-16">
-              <h4 className="text-xl font-medium text-gray-700 mb-6 text-center">
-                {role.title}
-              </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-                {role.members.map((person, index) => (
-                  <PersonCard key={`${role.title}-${index}`} person={person} />
-                ))}
+          <div className="text-center mb-16">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white inline-block relative">
+              Junior E-Board
+              <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-blue-500"></span>
+            </h3>
+          </div>
+          
+          <div className="space-y-20">
+            {juniorRoles.map((role, roleIndex) => (
+              <div key={`role-${roleIndex}`}>
+                <div className="text-center mb-8">
+                  <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-200 inline-block px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-700 shadow-sm">
+                    {role.title}
+                  </h4>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
+                  {role.members.map((person, index) => (
+                    <PersonCard key={`${role.title}-${index}`} person={person} />
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
