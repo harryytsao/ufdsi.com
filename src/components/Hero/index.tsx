@@ -89,7 +89,7 @@ const Hero = () => {
               <div className="mx-auto max-w-[900px] text-center px-4 flex flex-col h-auto justify-center">
                 <div className="mb-16 md:mb-20">
                   <h2 className="mb-1 sm:mb-2 text-lg font-medium italic text-white md:text-2xl">
-                    Data Science and Informatics at the University of Florida
+                    Data Science and Informatics at UF
                   </h2>
                   <h1 className="mb-0 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white whitespace-nowrap">
                     A COMMUNITY FOR
@@ -106,7 +106,11 @@ const Hero = () => {
                         {currentPhrase}
                       </div>
                     </div>
+                    
                   </div>
+                  <h2 className="mb-1 sm:mb-2 text-lg font-medium italic text-white md:text-2xl">
+                    Because knowledge should be accessible to all
+                  </h2>
                 </div>
                 
                 <div className="flex flex-col items-center justify-center">
