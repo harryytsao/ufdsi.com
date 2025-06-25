@@ -24,6 +24,7 @@
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
     "autoprefixer": "^10.4.17",
+    "brace-expansion": "^4.0.1",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
