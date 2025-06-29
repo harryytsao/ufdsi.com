@@ -77,18 +77,40 @@ const execBoards: ExecBoard[] = [
     displayName: "2016-2017 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Gordon Wilson",
         position: "President",
+        linkedin: "https://www.linkedin.com/in/gordonhirschwilson/",
         image: "/images/alumni/placeholder.jpg",
         year: "2016-2017"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
+        name: "Ya Zhang",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/yazhang1/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2016-2017"
+      },
+      {
+        name: "Kyle Smyre",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/kyle-smyre-4836776b/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2016-2017"
+      },
+      {
+        name: "Ryan Sheppard",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/ryan-sheppard/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2016-2017"
+      },
+      {
+        name: "Marc Nebb",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/marc-nebb-8a5460159/",
         image: "/images/alumni/placeholder.jpg",
         year: "2016-2017"
       }
-      // Add more members as needed
     ]
   },
   {
@@ -96,18 +118,40 @@ const execBoards: ExecBoard[] = [
     displayName: "2017-2018 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Bobbie Isaly",
         position: "President",
+        linkedin: "https://www.linkedin.com/in/bobbie-isaly/",
         image: "/images/alumni/placeholder.jpg",
         year: "2017-2018"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
+        name: "Steven Remington",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/remingtonstevenr/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2017-2018"
+      },
+      {
+        name: "Anthony Codella",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/anthony-codella/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2017-2018"
+      },
+      {
+        name: "Kanis Bootsita",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/kanisbootsita/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2017-2018"
+      },
+      {
+        name: "Charlotte Talham",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/charlotte-talham-55496320a/",
         image: "/images/alumni/placeholder.jpg",
         year: "2017-2018"
       }
-      // Add more members as needed
     ]
   },
   {
@@ -115,18 +159,47 @@ const execBoards: ExecBoard[] = [
     displayName: "2018-2019 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Tyler Richards",
         position: "President",
+        linkedin: "https://www.linkedin.com/in/tylerjrichards/",
         image: "/images/alumni/placeholder.jpg",
         year: "2018-2019"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
+        name: "Ross Spencer",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/ross-spencer/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2018-2019"
+      },
+      {
+        name: "Allison Kahn",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/allison-kahn/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2018-2019"
+      },
+      {
+        name: "Matthew Silversmith",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/msilversmith/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2018-2019"
+      },
+      {
+        name: "Vinay Reddy",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/vinayreddy/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2018-2019"
+      },
+      {
+        name: "Delaney Gomen",
+        position: "Workshop Director",
+        linkedin: "https://www.linkedin.com/in/delaneygomen/",
         image: "/images/alumni/placeholder.jpg",
         year: "2018-2019"
       }
-      // Add more members as needed
     ]
   },
   {
@@ -172,18 +245,47 @@ const execBoards: ExecBoard[] = [
     displayName: "2021-2022 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Justin Friedland",
         position: "President",
+        linkedin: "https://www.linkedin.com/in/justinfriedland/",
         image: "/images/alumni/placeholder.jpg",
         year: "2021-2022"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
+        name: "Kendall Willis",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/kendall-willis-9929b5192/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2021-2022"
+      },
+      {
+        name: "Evan Smyser",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/evan-smyser/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2021-2022"
+      },
+      {
+        name: "Jiahe Yao",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/jiahe-yao-773014226/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2021-2022"
+      },
+      {
+        name: "Bella Ruiz",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/ruizbella/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2021-2022"
+      },
+      {
+        name: "Ezzard Bradford",
+        position: "Workshop Director",
+        linkedin: "https://www.linkedin.com/in/ezzard-bradford/",
         image: "/images/alumni/placeholder.jpg",
         year: "2021-2022"
       }
-      // Add more members as needed
     ]
   },
   {
@@ -191,18 +293,47 @@ const execBoards: ExecBoard[] = [
     displayName: "2022-2023 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Allan Zhang",
         position: "President",
+        linkedin: "https://www.linkedin.com/in/allan-zhang-03/",
         image: "/images/alumni/placeholder.jpg",
         year: "2022-2023"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
+        name: "Justin Witter",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/justin-witter/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2022-2023"
+      },
+      {
+        name: "Eric Chao",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/elchao/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2022-2023"
+      },
+      {
+        name: "Vincent Medina",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/vmedina13/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2022-2023"
+      },
+      {
+        name: "Lauren Zhu",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/lauren-zhu/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2022-2023"
+      },
+      {
+        name: "Matthew Peck",
+        position: "Workshop Director",
+        linkedin: "https://www.linkedin.com/in/peckmatthew6/",
         image: "/images/alumni/placeholder.jpg",
         year: "2022-2023"
       }
-      // Add more members as needed
     ]
   },
   {
@@ -210,18 +341,47 @@ const execBoards: ExecBoard[] = [
     displayName: "2023-2024 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Eric Chao",
         position: "President",
+        linkedin: "https://www.linkedin.com/in/elchao/",
         image: "/images/alumni/placeholder.jpg",
         year: "2023-2024"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
+        name: "Alisha Jithesh",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/ajithesh7/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2023-2024"
+      },
+      {
+        name: "Camila Djurinsky Zapolski",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/camila-djurinsky-zapolski-20451a236/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2023-2024"
+      },
+      {
+        name: "Hannah Hardy",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/hannah-hardy-uf/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2023-2024"
+      },
+      {
+        name: "Harry Tsao",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/harrytsao/",
+        image: "/images/alumni/placeholder.jpg",
+        year: "2023-2024"
+      },
+      {
+        name: "Matheus Kunzler Maldaner",
+        position: "Workshop Director",
+        linkedin: "https://www.linkedin.com/in/matheusmaldaner/",
         image: "/images/alumni/placeholder.jpg",
         year: "2023-2024"
       }
-      // Add more members as needed
     ]
   }
 ];

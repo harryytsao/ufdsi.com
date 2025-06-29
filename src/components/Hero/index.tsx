@@ -109,7 +109,7 @@ const Hero = () => {
                     
                   </div>
                   <h2 className="mb-1 sm:mb-2 text-lg font-medium italic text-white md:text-2xl">
-                    Because knowledge should be accessible to all
+                    Making knowledge accessible to all
                   </h2>
                 </div>
                 
