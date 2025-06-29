@@ -1,9 +1,8 @@
-import { Metadata } from "next";
+'use client';
+import dynamic from "next/dynamic";
 
-export const metadata: Metadata = {
-  title: "About Us | UF DSI",
-  description: "Learn more about the University of Florida Data Science and Informatics initiative",
-};
+// Use dynamic import with no SSR for the carousel component to avoid hydration issues
+const NewsCarousel = dynamic(() => import("@/components/NewsCarousel"), { ssr: false });
 
 const AboutPage = () => {
   return (
@@ -31,12 +30,8 @@ const AboutPage = () => {
 
               <div className="w-full px-4 lg:w-1/2">
                 <div className="text-center">
-                  <div className="relative z-10 inline-block">
-                    <img
-                      src="/images/hero/landing-page.jpg"
-                      alt="UF DSI Community"
-                      className="mx-auto max-w-full lg:ml-auto rounded-md shadow-lg"
-                    />
+                  <div className="relative z-10 inline-block w-full max-w-[500px]">
+                    <NewsCarousel />
                   </div>
                 </div>
               </div>
