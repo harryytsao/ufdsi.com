@@ -155,14 +155,14 @@ const Team = () => {
        
 
         {/* Section for Executives */}
-        <div className="mb-24">
+        <div className="mb-12">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white inline-block relative">
               Executive Board
               <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-blue-500"></span>
             </h3>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
             {executives.map((person, index) => (
               <PersonCard key={`exec-${index}`} person={person} />
             ))}
