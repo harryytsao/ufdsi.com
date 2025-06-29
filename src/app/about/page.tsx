@@ -18,13 +18,13 @@ const AboutPage = () => {
                     About Data Science & Informatics
                   </h2>
                   <p className="mb-6 text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    The UF Data Science and Informatics (DSI) initiative is a community dedicated to promoting data science education, research, and collaboration at the University of Florida.
+                    The UF Data Science and Informatics (DSI) is a Student Organization at the University of Florida founded in 2015. We are dedicated to promoting data science education, research, and collaboration to students of all majors and grade levels.
                   </p>
                   <p className="mb-6 text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    Our mission is to create a vibrant ecosystem where students, faculty, and industry partners can come together to explore the frontiers of data science and develop innovative solutions to real-world problems.
+                    We offer workshops, networking events, research opportunities, and a supportive community for anyone interested in data science, machine learning, artificial intelligence, and related fields. Most importantly, we believe knowledge should be accessible to all.
                   </p>
                   <p className="mb-6 text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                    We offer workshops, networking events, research opportunities, and a supportive community for anyone interested in data science, machine learning, artificial intelligence, and related fields.
+                    We are proudly sponsored by the UF Artificial Intelligence and Research Informatics Institute (AIIRI), which provides resources and support for our initiatives.
                   </p>
                 </div>
               </div>

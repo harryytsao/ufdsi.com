@@ -1,3 +1,5 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
+public/images/people/2017-2018/*.jpg filter=lfs diff=lfs merge=lfs -text
+public/images/people/2018-2019/*.jpg filter=lfs diff=lfs merge=lfs -text

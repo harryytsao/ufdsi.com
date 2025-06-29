@@ -152,14 +152,7 @@ const Team = () => {
   return (
     <div className="bg-white dark:bg-gray-dark py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Meet Our Team
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            The dedicated individuals who drive our mission forward and make our community thrive.
-          </p>
-        </div>
+       
 
         {/* Section for Executives */}
         <div className="mb-24">
