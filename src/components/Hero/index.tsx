@@ -77,7 +77,7 @@ const Hero = () => {
             priority
             style={{ 
               objectPosition: "center 35%", 
-              transform: "scale(1.1)" 
+              //transform: "scale(1.1)" 
             }}
           />
           <div className="absolute inset-0 bg-black/40 dark:bg-black/70"></div>

@@ -32,7 +32,113 @@ const upcomingWorkshops = [
   }
 ];
 
-const pastWorkshops = [];
+const pastWorkshops = [
+  {
+    id: 1,
+    title: "Introduction to C",
+    description: "Intro to the C Programming Language.",
+    presenters: "Raul",
+    image: "/images/workshop/c.jpeg"
+  },
+  {
+    id: 2,
+    title: "GPU Accelerated Scientific Computing",
+    description: "Intro to GPU Accelerated Workflows.",
+    presenters: "Raul",
+    image: "/images/workshop/gpu.png"
+  },
+  {
+    id: 3,
+    title: "AI Chronicles",
+    description: "Exploring the past, present, and future of AI.",
+    presenters: "Matt, Jim, Matheus",
+    image: "/images/workshop/ai.jpg"
+  },
+  {
+    id: 4,
+    title: "Applied Machine Learning",
+    description: "Applied machine learning techniques.",
+    presenters: "Hunor",
+    image: "/images/workshop/ml.jpg"
+  },
+  {
+    id: 5,
+    title: "Convolutional Neural Networks",
+    description: "Convolutional Neural Networks for image tasks.",
+    presenters: "Jim, Matheus",
+    image: "/images/workshop/cnn.jpg"
+  },
+  {
+    id: 6,
+    title: "Git and Github",
+    description: "Essentials of Git for version control.",
+    presenters: "Zach, Matheus",
+    image: "/images/workshop/git.jpg"
+  },
+  {
+    id: 7,
+    title: "Language Models",
+    description: "NLP and advanced language models.",
+    presenters: "Sebastian, Matheus",
+    image: "/images/workshop/cl.jpg"
+  },
+  {
+    id: 8,
+    title: "NumPy and MatPlotLib",
+    description: "Numerical computing and data visualization.",
+    presenters: "Jim, Matheus",
+    image: "/images/workshop/numpy.png"
+  },
+  {
+    id: 9,
+    title: "Pandas",
+    description: "Data analysis with Pandas.",
+    presenters: "Marielle",
+    image: "/images/workshop/pandas.png"
+  },
+  {
+    id: 10,
+    title: "Power BI",
+    description: "Data insights using Power BI.",
+    presenters: "Marc",
+    image: "/images/workshop/pbi.jpeg"
+  },
+  {
+    id: 11,
+    title: "PyTorch",
+    description: "Deep learning with PyTorch.",
+    presenters: "Jim, Matheus",
+    image: "/images/workshop/pytorch.jpg"
+  },
+  {
+    id: 12,
+    title: "SQL",
+    description: "SQL database manipulation and querying.",
+    presenters: "Marc",
+    image: "/images/workshop/sql.jpeg"
+  },
+  {
+    id: 13,
+    title: "Tableau",
+    description: "Data insights using Tableau.",
+    presenters: "Kyle",
+    image: "/images/workshop/tb.png"
+  },
+  {
+    id: 14,
+    title: "Sentence Transformers",
+    description: "Using Sentence Transformers for Semantic Search.",
+    presenters: "Tristan",
+    image: "/images/workshop/tf.png"
+  },
+  {
+    id: 15,
+    title: "Intro To Neural Networks",
+    description: "Algorithms needed for Neural Networks",
+    presenters: "Ishan",
+    image: "/images/workshop/nn.jpg"
+  }
+];
 
 export default function WorkshopsPage() {
   const [categories] = useState({
@@ -132,12 +238,34 @@ export default function WorkshopsPage() {
                     'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none'
                   )}
                 >
-                  <div className="flex flex-col items-center justify-center min-h-[200px]">
-                    <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Will be uploaded soon.</h3>
-                    <p className="text-lg text-gray-700 dark:text-gray-300">
-                      For Jupyter notebook archives go to{' '}
-                      <a href="https://github.com/matheusmaldaner/WorkshopArchive" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">this repository</a>.
-                    </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {pastWorkshops.map((workshop) => (
+                      <div 
+                        key={workshop.id} 
+                        className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:border dark:border-gray-700"
+                      >
+                        <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
+                          <Image 
+                            src={workshop.image} 
+                            alt={workshop.title}
+                            fill
+                            className="transition-all duration-300 hover:scale-105"
+                            style={{ filter: "grayscale(50%)", objectFit: "cover" }}
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                            {workshop.title}
+                          </h3>
+                          <p className="mb-2 text-gray-600 dark:text-gray-300 text-sm">
+                            {workshop.description}
+                          </p>
+                          <div className="text-xs font-semibold text-teal-500 dark:text-teal-400">
+                            {workshop.presenters}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </Tab.Panel>
               </Tab.Panels>
