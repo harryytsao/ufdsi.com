@@ -85,7 +85,7 @@ const Footer = () => {
                   Find Us!
                 </h2>
                 <p className="mb-4 text-sm sm:text-sm md:text-sm lg:text-base xl:text-base xl:w-fit text-body-color dark:text-body-color-dark">
-                  UF Informatics Institute<br></br>
+                  Artificial Intelligence and Informatics Research Institute<br></br>
                   432 Newell Drive, CISE Bldg E251<br></br>
                   Gainesville, Florida 32611-5585<br></br>
                 </p>
