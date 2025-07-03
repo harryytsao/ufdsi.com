@@ -239,33 +239,65 @@ export default function WorkshopsPage() {
                   )}
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {pastWorkshops.map((workshop) => (
-                      <div 
-                        key={workshop.id} 
-                        className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:border dark:border-gray-700"
-                      >
-                        <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
-                          <Image 
-                            src={workshop.image} 
-                            alt={workshop.title}
-                            fill
-                            className="transition-all duration-300 hover:scale-105"
-                            style={{ filter: "grayscale(50%)", objectFit: "cover" }}
-                          />
-                        </div>
-                        <div className="p-6">
-                          <h3 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                            {workshop.title}
-                          </h3>
-                          <p className="mb-2 text-gray-600 dark:text-gray-300 text-sm">
-                            {workshop.description}
-                          </p>
-                          <div className="text-xs font-semibold text-teal-500 dark:text-teal-400">
-                            {workshop.presenters}
+                    {pastWorkshops.map((workshop) => {
+                      // Special links for each workshop
+                      const links = {
+                        "Introduction to C": "https://github.com/matheusmaldaner/WorkshopArchive/blob/main/Workshops/Intro_C/IntroToC.ipynb",
+                        "GPU Accelerated Scientific Computing": "https://github.com/matheusmaldaner/WorkshopArchive/blob/main/Workshops/Intro_GPU/IntroToGPUAcceleratedScientificComputing.ipynb",
+                        "AI Chronicles": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/AI_Chronicles",
+                        "Applied Machine Learning": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/Applied_ML",
+                        "Convolutional Neural Networks": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/CNNS",
+                        "Git and Github": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/Git",
+                        "Language Models": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/LanguageModels",
+                        "NumPy and MatPlotLib": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/NumPy%20&%20MatPlotLib",
+                        "Pandas": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/Pandas",
+                        "Power BI": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/Power%20BI",
+                        "PyTorch": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/PyTorch",
+                        "SQL": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/SQL%202024",
+                        "Tableau": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/Tableau",
+                        "Sentence Transformers": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/Sentence_Transformers",
+                        "Intro To Neural Networks": "https://github.com/matheusmaldaner/WorkshopArchive/tree/main/Workshops/Intro%20To%20Neural%20Networks"
+                      };
+                      const link = links[workshop.title];
+                      const cardContent = (
+                        <div 
+                          key={workshop.id} 
+                          className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:border dark:border-gray-700 cursor-pointer"
+                        >
+                          <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
+                            <Image 
+                              src={workshop.image} 
+                              alt={workshop.title}
+                              fill
+                              className="transition-all duration-300 hover:scale-105"
+                              style={{ filter: "grayscale(50%)", objectFit: "cover" }}
+                            />
+                          </div>
+                          <div className="p-6">
+                            <h3 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                              {workshop.title}
+                            </h3>
+                            <p className="mb-2 text-gray-600 dark:text-gray-300 text-sm">
+                              {workshop.description}
+                            </p>
+                            <div className="text-xs font-semibold text-teal-500 dark:text-teal-400">
+                              {workshop.presenters}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      );
+                      return link ? (
+                        <a
+                          key={workshop.id}
+                          href={link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ textDecoration: 'none' }}
+                        >
+                          {cardContent}
+                        </a>
+                      ) : cardContent;
+                    })}
                   </div>
                 </Tab.Panel>
               </Tab.Panels>
