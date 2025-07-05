@@ -248,42 +248,42 @@ const execBoards: ExecBoard[] = [
         name: "Justin Friedland",
         position: "President",
         linkedin: "https://www.linkedin.com/in/justintfriedland/",
-        image: "/images/people/2021-2022/2021_JustinFriedland_PresidentSpring.jpg",
+        image: "/images/people/2021-2022/2021_JustinFriedland_PresidentSpring.jpeg",
         year: "2021-2022"
       },
       {
         name: "Kendall Willis",
         position: "Vice President External",
         linkedin: "https://www.linkedin.com/in/kendall-willis-8929b5192/",
-        image: "/images/people/2021-2022/2021_KendallWillis_VicePresidentExternalSpring.jpg",
+        image: "/images/people/2021-2022/2021_KendallWillis_VicePresidentExternalSpring.jpeg",
         year: "2021-2022"
       },
       {
         name: "Evan Smyser",
         position: "Vice President Internal",
         linkedin: "https://www.linkedin.com/in/evan-smyser/",
-        image: "/images/people/2021-2022/2021_EvanSmyser_VicePresidentInternalSpring.jpg",
+        image: "/images/people/2021-2022/2021_EvanSmyser_VicePresidentInternalSpring.jpeg",
         year: "2021-2022"
       },
       {
         name: "Jiahe Yao",
         position: "Treasurer",
         linkedin: "https://www.linkedin.com/in/jiahe-yao-773014226/",
-        image: "/images/people/2021-2022/2021_JiaheYao_TreasurerSpring.jpg",
+        image: "/images/people/2021-2022/2021_JiaheYao_TreasurerSpring.jpeg",
         year: "2021-2022"
       },
       {
         name: "Bella Ruiz",
         position: "Secretary",
         linkedin: "https://www.linkedin.com/in/ruizbella/",
-        image: "/images/people/2021-2022/2021_BellaRuiz_SecretarySpring.jpg",
+        image: "/images/people/2021-2022/2021_BellaRuiz_SecretarySpring.jpeg",
         year: "2021-2022"
       },
       {
         name: "Ezzard Bradford",
         position: "Workshop Director",
         linkedin: "https://www.linkedin.com/in/ezzard-bradford/",
-        image: "/images/alumni/placeholder.jpg",
+        image: "/images/people/2021-2022/2021_EzzardBradford_WorkshopDirectorSpring.jpeg",
         year: "2021-2022"
       }
     ]
