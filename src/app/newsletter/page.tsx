@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { articles } from './data';
@@ -96,6 +96,16 @@ export default function NewsletterPage() {
   const filteredArticles = filter === 'All' 
     ? regularArticles 
     : regularArticles.filter(article => article.category === filter);
+
+  // Add Escape key handler to close modal
+  useEffect(() => {
+    if (!selectedArticle) return;
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setSelectedArticle(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedArticle]);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
