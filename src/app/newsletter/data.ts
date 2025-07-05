@@ -16,7 +16,7 @@ export const articles = [
     articleImage: '/images/newsletter/samsara25/1.jpeg',
     date: 'February 2025',
     category: 'Competition',
-    featured: true,
+    featured: false,
     description: `Join us in congratulating one of our students, Kalim Qazi, in winning first place nationally at Sentient's Hackathon!\n\n Across 7 days of public access, Samsara logged nearly 24 hours of total usage and received over 2,800 messages, all from organic traffic. We are extremely proud of you and of your hard work!`,
   },
   {
@@ -88,5 +88,15 @@ export const articles = [
     category: 'Competition',
     featured: false,
     description: `DSI members Matheus Kunzler Maldaner, Raul Valle and Sebastian Sosa won the Best AI Hack and 2nd Place Overall at OSC Mini Hackathon by programming a Discord Bot that can use sentiment analysis to predict when undesired content is posted in a server.`,
+  },
+  {
+    id: 10,
+    title: "DSI wins Career Influencer Award",
+    image: '/images/newsletter/ccc-award25/1.jpg',
+    articleImage: '/images/newsletter/ccc-award25/2.jpg',
+    date: 'May 2025',
+    category: 'Awards',
+    featured: true,
+    description: `We have recently been recognized by the UF Career Connections Center at this year's Career Influencer Awards 🎉\n\nWe extend our gratitude to the university departments that have enabled us to succeed over the past year.\nPictured are our President, Matheus Kunzler Maldaner, alongside our Internal Vice President, Ishan Kumthekar. We thank Matt Gitzendanner and Marquise M. McGriff, M.A., CCSP, also pictured, for their continuous support.\n\nWe are excited for what our new executive team will accomplish together and remain grounded in our belief that knowledge should be accessible to all. Thank you!`,
   },
 ]; 
