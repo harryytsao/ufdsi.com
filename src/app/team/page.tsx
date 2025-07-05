@@ -247,36 +247,36 @@ const execBoards: ExecBoard[] = [
       {
         name: "Justin Friedland",
         position: "President",
-        linkedin: "https://www.linkedin.com/in/justinfriedland/",
-        image: "/images/alumni/placeholder.jpg",
+        linkedin: "https://www.linkedin.com/in/justintfriedland/",
+        image: "/images/people/2021-2022/2021_JustinFriedland_PresidentSpring.jpg",
         year: "2021-2022"
       },
       {
         name: "Kendall Willis",
         position: "Vice President External",
-        linkedin: "https://www.linkedin.com/in/kendall-willis-9929b5192/",
-        image: "/images/alumni/placeholder.jpg",
+        linkedin: "https://www.linkedin.com/in/kendall-willis-8929b5192/",
+        image: "/images/people/2021-2022/2021_KendallWillis_VicePresidentExternalSpring.jpg",
         year: "2021-2022"
       },
       {
         name: "Evan Smyser",
         position: "Vice President Internal",
         linkedin: "https://www.linkedin.com/in/evan-smyser/",
-        image: "/images/alumni/placeholder.jpg",
+        image: "/images/people/2021-2022/2021_EvanSmyser_VicePresidentInternalSpring.jpg",
         year: "2021-2022"
       },
       {
         name: "Jiahe Yao",
         position: "Treasurer",
         linkedin: "https://www.linkedin.com/in/jiahe-yao-773014226/",
-        image: "/images/alumni/placeholder.jpg",
+        image: "/images/people/2021-2022/2021_JiaheYao_TreasurerSpring.jpg",
         year: "2021-2022"
       },
       {
         name: "Bella Ruiz",
         position: "Secretary",
         linkedin: "https://www.linkedin.com/in/ruizbella/",
-        image: "/images/alumni/placeholder.jpg",
+        image: "/images/people/2021-2022/2021_BellaRuiz_SecretarySpring.jpg",
         year: "2021-2022"
       },
       {
