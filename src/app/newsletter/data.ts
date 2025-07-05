@@ -94,7 +94,7 @@ export const articles = [
     title: "DSI wins Career Influencer Award",
     image: '/images/newsletter/ccc-award25/1.jpg',
     articleImage: '/images/newsletter/ccc-award25/2.jpg',
-    date: 'May 2025',
+    date: 'April 2025',
     category: 'Awards',
     featured: true,
     description: `We have recently been recognized by the UF Career Connections Center at this year's Career Influencer Awards 🎉\n\nWe extend our gratitude to the university departments that have enabled us to succeed over the past year.\nPictured are our President, Matheus Kunzler Maldaner, alongside our Internal Vice President, Ishan Kumthekar. We thank Matt Gitzendanner and Marquise M. McGriff, M.A., CCSP, also pictured, for their continuous support.\n\nWe are excited for what our new executive team will accomplish together and remain grounded in our belief that knowledge should be accessible to all. Thank you!`,

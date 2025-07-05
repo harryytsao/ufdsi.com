@@ -6,7 +6,7 @@ import { articles } from './data';
 
 const CategoryBadge = ({ category }: { category: string }) => {
   const categoryColors = {
-    'Awards': 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
+    'Awards': 'bg-orange-100 text-orange-900 dark:bg-orange-900 dark:text-orange-200',
     'Competition': 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
     'Workshop': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
   };
@@ -100,13 +100,15 @@ export default function NewsletterPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Header Section */}
-      <section className="bg-white dark:bg-gray-800 py-16 md:py-24 pt-[150px]">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+      <section
+        className="relative z-10 overflow-hidden bg-white pb-0 pt-[120px] dark:bg-gray-dark"
+      >
+        <div className="container mx-auto">
+          <div className="mx-auto max-w-[800px] text-center mb-12">
+            <h1 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[45px]">
               DSI News
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 px-4">
               Stay updated with the latest achievements, events, and news from the University of Florida Data Science and Informatics community.
             </p>
           </div>
@@ -115,7 +117,7 @@ export default function NewsletterPage() {
 
       {/* Featured Articles */}
       {featuredArticles.length > 0 && (
-        <section className="py-12 md:py-16">
+        <section className="pt-10 md:pt-8 pb-6 md:pb-8 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">
               Featured Stories
@@ -134,7 +136,7 @@ export default function NewsletterPage() {
       )}
 
       {/* Article Grid */}
-      <section className="py-12 md:py-16">
+      <section className="pt-6 md:pt-8 pb-12 md:pb-16 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 md:mb-0">
