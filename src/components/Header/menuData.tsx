@@ -10,7 +10,7 @@ const menuData: Menu[] = [
   {
     id: 3,
     title: "CALENDAR",
-    path: "/workshops",
+    path: "/calendar",
     newTab: false,
   },
   {
