@@ -226,8 +226,21 @@ export default function NewsletterPage() {
                   </time>
                 </div>
 
-                <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                   {selectedArticle.title}
+                  {selectedArticle.link && selectedArticle.link.length > 0 && (
+                    <a
+                      href={selectedArticle.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-primary hover:underline ml-2"
+                      title="Read full article"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H19.5V12M19.5 6L10.5 15M4.5 12V18H10.5" />
+                      </svg>
+                    </a>
+                  )}
                 </h1>
 
                 <div className="prose prose-lg dark:prose-invert max-w-none">
