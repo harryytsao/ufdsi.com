@@ -19,10 +19,16 @@ const menuData: Menu[] = [
     path: "/workshops-list",
     newTab: false,
   },
+  // {
+  //   id: 5,
+  //   title: "SYMPOSIUM",
+  //   path: "/symposium",
+  //   newTab: false,
+  // },
   {
     id: 5,
     title: "SYMPOSIUM",
-    path: "/symposium",
+    path: "/symposium-new",
     newTab: false,
   },
   {
