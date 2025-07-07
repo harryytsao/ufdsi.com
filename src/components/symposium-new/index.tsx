@@ -30,14 +30,14 @@ const SymposiumNew = () => {
       name: 'Jack Kendall',
       title: 'Keynote: Building Next-Generation Brain-Inspired Processors',
       company: 'RainAI',
-      image: '/images/speakers/jack.png',
+      image: '/images/speakers/2025_JackKendall.jpg',
       companyLogo: '/images/speakers/jack_sup.png',
       description: 'Jack Kendall is the Co-Founder and current CTO of Rain AI, a company building next-generation brain-inspired processors for artificial intelligence. Jack\'s mission is to build a brain — bridging neuroscience, physics, and computing to reimagine how machines learn. His research includes highly cited papers on analog neural networks and neuromorphic architectures. Rain is backed by leading figures in AI, including Sam Altman, the CEO of OpenAI. Jack is a University of Florida alum and one of the original founders and the second President of DSI, making his keynote today a full-circle moment for the community he helped shape.',
       time: '8:00AM - 9:00AM',
       room: 'Auditorium',
       track: 'Keynote',
       category: 'keynote',
-      youtubeUrl: 'https://www.youtube.com/watch?v=example1'
+      youtubeUrl: 'https://www.youtube.com/watch?v=w5gG1SM9omM&feature=youtu.be'
     },
     {
       id: 'norman-bukingolts',
@@ -51,7 +51,7 @@ const SymposiumNew = () => {
       room: 'Room 2325',
       track: 'Workshop Track',
       category: 'workshop',
-      youtubeUrl: 'https://www.youtube.com/watch?v=example2'
+      youtubeUrl: 'https://www.youtube.com/watch?v=_B0peKlTk3k'
     },
     {
       id: 'hubert-wagner',
@@ -64,7 +64,8 @@ const SymposiumNew = () => {
       time: '10:30AM - 11:30AM',
       room: 'Room 2330',
       track: 'Research Track',
-      category: 'research'
+      category: 'research',
+      youtubeUrl: 'https://www.youtube.com/watch?v=zeSrfe8ATCE'
     },
     {
       id: 'raul-valle',
@@ -77,7 +78,8 @@ const SymposiumNew = () => {
       time: '12:45PM - 1:45PM',
       room: 'Room 2325',
       track: 'Workshop Track',
-      category: 'workshop'
+      category: 'workshop',
+      youtubeUrl: 'https://www.youtube.com/watch?v=yuJaMaA18js'
     },
     {
       id: 'jacques-fleischer',
@@ -90,7 +92,8 @@ const SymposiumNew = () => {
       time: '3:15PM - 4:15PM',
       room: 'Room 2325',
       track: 'Workshop Track',
-      category: 'workshop'
+      category: 'workshop',
+      youtubeUrl: 'https://www.youtube.com/watch?v=cSPVHXKlNFg'
     },
     {
       id: 'tony-barr',
@@ -104,7 +107,8 @@ const SymposiumNew = () => {
       time: '10:30AM - 11:30AM',
       room: 'Auditorium',
       track: 'General Track',
-      category: 'general'
+      category: 'general',
+      youtubeUrl: 'https://www.youtube.com/watch?v=HNkhqaDkPfA&feature=youtu.be'
     },
     {
       id: 'aapo-hyvarinen',
@@ -118,7 +122,7 @@ const SymposiumNew = () => {
       room: 'Room 2330',
       track: 'Research Track',
       category: 'research',
-      youtubeUrl: 'https://www.youtube.com/watch?v=example3'
+      youtubeUrl: 'https://www.youtube.com/watch?v=Ms95e1M3ajs'
     },
     {
       id: 'megan-higgs',
@@ -131,7 +135,8 @@ const SymposiumNew = () => {
       time: '3:15PM - 4:15PM',
       room: 'Auditorium',
       track: 'General Track',
-      category: 'general'
+      category: 'general',
+      youtubeUrl: 'https://www.youtube.com/watch?v=TBwZKeyi3JY'
     },
     {
       id: 'jim-hoover',
@@ -145,7 +150,7 @@ const SymposiumNew = () => {
       room: 'Auditorium',
       track: 'General Track',
       category: 'general',
-      youtubeUrl: 'https://www.youtube.com/watch?v=example4'
+      youtubeUrl: 'https://www.youtube.com/watch?v=MFD3K_zR6NM'
     },
     {
       id: 'andrew-gelman',
@@ -158,7 +163,8 @@ const SymposiumNew = () => {
       time: '12:45PM - 1:45PM',
       room: 'Room 2330',
       track: 'Research Track',
-      category: 'research'
+      category: 'research',
+      youtubeUrl: 'https://www.youtube.com/watch?v=slFGYV5BUVA'
     },
     {
       id: 'jhonathan-herrera',
@@ -171,7 +177,8 @@ const SymposiumNew = () => {
       time: '9:15AM - 10:15AM',
       room: 'Room 2325',
       track: 'Workshop Track',
-      category: 'workshop'
+      category: 'workshop',
+      youtubeUrl: 'https://www.youtube.com/watch?v=o6ArpL4QTPo'
     },
     {
       id: 'kausthubh-konuru',
@@ -184,7 +191,8 @@ const SymposiumNew = () => {
       time: '2:00PM - 3:00PM',
       room: 'Room 2325',
       track: 'Workshop Track',
-      category: 'workshop'
+      category: 'workshop',
+      youtubeUrl: 'https://www.youtube.com/watch?v=XuEAsw302hs&feature=youtu.be'
     },
     {
       id: 'carlos-bastos',
@@ -197,7 +205,8 @@ const SymposiumNew = () => {
       time: '9:15AM - 10:15AM',
       room: 'Room 2335',
       track: 'Industry Track',
-      category: 'industry'
+      category: 'industry',
+      youtubeUrl: 'https://www.youtube.com/watch?v=zIQfTEIub5o'
     },
     {
       id: 'luciane-galuppo',
@@ -210,7 +219,8 @@ const SymposiumNew = () => {
       time: '10:30AM - 11:30AM',
       room: 'Room 2335',
       track: 'Industry Track',
-      category: 'industry'
+      category: 'industry',
+      youtubeUrl: 'https://www.youtube.com/watch?v=IwLmN4V-DkQ'
     },
     {
       id: 'tyler-richards',
@@ -223,7 +233,8 @@ const SymposiumNew = () => {
       time: '2:00PM - 3:00PM',
       room: 'Room 2335',
       track: 'Industry Track',
-      category: 'industry'
+      category: 'industry',
+      youtubeUrl: 'https://www.youtube.com/watch?v=OeU40fcfOis'
     },
     {
       id: 'michael-vega',
@@ -236,7 +247,8 @@ const SymposiumNew = () => {
       time: '9:15AM - 10:15AM',
       room: 'Auditorium',
       track: 'General Track',
-      category: 'general'
+      category: 'general',
+      youtubeUrl: 'https://www.youtube.com/watch?v=i6DQyGf_g9A&feature=youtu.be'
     },
     {
       id: 'wesley-deng',
@@ -275,7 +287,8 @@ const SymposiumNew = () => {
       time: '12:45PM - 1:45PM',
       room: 'Room 2335',
       track: 'Industry Track',
-      category: 'industry'
+      category: 'industry',
+      youtubeUrl: 'https://www.youtube.com/watch?v=m-QS8uFNYcY'
     },
     {
       id: 'olivia-dizon',
@@ -627,6 +640,23 @@ const SymposiumNew = () => {
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                {/* YouTube Recording Link */}
+                {selectedSpeaker.youtubeUrl && (
+                  <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
+                    <a
+                      href={selectedSpeaker.youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="View Recording"
+                      className="inline-flex items-center justify-center w-10 h-10 bg-red-600 hover:bg-red-700 text-white rounded-full transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+                    >
+                      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                      </svg>
+                    </a>
+                    <span className="text-xs font-medium text-white bg-black/60 rounded px-2 py-1 select-none pointer-events-none">Recording</span>
+                  </div>
+                )}
                 <div className="absolute bottom-6 left-6 right-16">
                   <CategoryBadge category={selectedSpeaker.category} track={selectedSpeaker.track} />
                   <h1 className="text-2xl md:text-3xl font-bold text-white mt-3 mb-2">
@@ -667,23 +697,6 @@ const SymposiumNew = () => {
                 <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   {selectedSpeaker.title}
                 </h2>
-
-                {/* YouTube Recording Link */}
-                {selectedSpeaker.youtubeUrl && (
-                  <div className="mb-6">
-                    <a
-                      href={selectedSpeaker.youtubeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-                    >
-                      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                      </svg>
-                      YouTube Recording
-                    </a>
-                  </div>
-                )}
 
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
