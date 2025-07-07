@@ -99,4 +99,15 @@ export const articles = [
     featured: true,
     description: `We have recently been recognized by the UF Career Connections Center at this year's Career Influencer Awards 🎉\n\nWe extend our gratitude to the university departments that have enabled us to succeed over the past year.\nPictured are our President, Matheus Kunzler Maldaner, alongside our Internal Vice President, Ishan Kumthekar. We thank Matt Gitzendanner and Marquise M. McGriff, M.A., CCSP, also pictured, for their continuous support.\n\nWe are excited for what our new executive team will accomplish together and remain grounded in our belief that knowledge should be accessible to all. Thank you!`,
   },
+  {
+    id: 11,
+    title: "DSI and UFIT Collaboration with HiPerGator and AI",
+    image: '/images/newsletter/ufit-dsi-collab25/1.jpg',
+    articleImage: '/images/newsletter/ufit-dsi-collab25/1.jpg',
+    date: 'July 2025',
+    category: 'Articles',
+    featured: false,
+    link: 'https://rc.ufl.edu/highlight-articles/ufit-collaboration-feature.html',
+    description: `DSI and UFIT Research Computing are breaking barriers for accessible, hands-on AI and data science learning at UF. With HiPerGator's supercomputing power, DSI students tackle advanced projects like reimplementing Google's Titans architecture, early fire detection, and quantum-level simulations for space materials. The partnership allows students to utilize the University of Florida's supercomputer to tackle advanced projects.\n\nPictured: UFIT Research Computing training manager Matt Gitzendanner with DSI president Matheus Maldaner and Internal Vice President Ishan Kumthekar.`,
+  },
 ]; 
