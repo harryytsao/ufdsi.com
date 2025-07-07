@@ -657,6 +657,31 @@ const SymposiumNew = () => {
                     <span className="text-xs font-medium text-white bg-black/60 rounded px-2 py-1 select-none pointer-events-none">Recording</span>
                   </div>
                 )}
+                {/* Company/Affiliation Logos Bottom Right */}
+                {(selectedSpeaker.companyLogo || selectedSpeaker.companyLogo2) && (
+                  <div className="absolute bottom-4 right-4 z-10 flex items-center gap-3">
+                    {selectedSpeaker.companyLogo && (
+                      <Image
+                        src={selectedSpeaker.companyLogo}
+                        alt="Company logo"
+                        width={112}
+                        height={56}
+                        className="h-14 w-auto bg-white/80 rounded shadow p-2"
+                        style={{ maxWidth: 160, maxHeight: 64 }}
+                      />
+                    )}
+                    {selectedSpeaker.companyLogo2 && (
+                      <Image
+                        src={selectedSpeaker.companyLogo2}
+                        alt="Additional company logo"
+                        width={112}
+                        height={56}
+                        className="h-14 w-auto bg-white/80 rounded shadow p-2"
+                        style={{ maxWidth: 160, maxHeight: 64 }}
+                      />
+                    )}
+                  </div>
+                )}
                 <div className="absolute bottom-6 left-6 right-16">
                   <CategoryBadge category={selectedSpeaker.category} track={selectedSpeaker.track} />
                   <h1 className="text-2xl md:text-3xl font-bold text-white mt-3 mb-2">
@@ -673,27 +698,6 @@ const SymposiumNew = () => {
 
               {/* Content */}
               <div className="p-6 md:p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  {selectedSpeaker.companyLogo && (
-                    <Image
-                      src={selectedSpeaker.companyLogo}
-                      alt="Company logo"
-                      width={80}
-                      height={40}
-                      className="h-10 w-auto"
-                    />
-                  )}
-                  {selectedSpeaker.companyLogo2 && (
-                    <Image
-                      src={selectedSpeaker.companyLogo2}
-                      alt="Additional company logo"
-                      width={80}
-                      height={40}
-                      className="h-10 w-auto"
-                    />
-                  )}
-                </div>
-
                 <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   {selectedSpeaker.title}
                 </h2>
