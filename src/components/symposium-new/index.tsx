@@ -511,7 +511,7 @@ const SymposiumNew = () => {
         <section className="pt-8 pb-6 md:pb-8 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-              🎤 Keynote Speaker
+              Keynote Speaker
             </h2>
             <KeynoteSpeaker
               speaker={keynoteSpeaker}
@@ -526,7 +526,7 @@ const SymposiumNew = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 md:mb-0">
-              🎯 All Speakers
+              All Speakers
             </h2>
             
             {/* Filter Buttons */}
@@ -563,7 +563,7 @@ const SymposiumNew = () => {
       <section className="py-12 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            🤝 Collaborators & Sponsors
+            Collaborators & Sponsors
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
