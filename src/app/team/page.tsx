@@ -166,6 +166,13 @@ const execBoards: ExecBoard[] = [
         year: "2018-2019"
       },
       {
+        name: "Vinay Chitepu",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/vinayreddy/",
+        image: "/images/people/2018-2019/2018_VinayReddy_VicePresidentInternalSpring.jpg",
+        year: "2018-2019"
+      },
+      {
         name: "Ross Spencer",
         position: "Vice President External",
         linkedin: "https://www.linkedin.com/in/ross-spencer/",
@@ -174,9 +181,9 @@ const execBoards: ExecBoard[] = [
       },
       {
         name: "Allison Kahn",
-        position: "Vice President Internal",
+        position: "Secretary",
         linkedin: "https://www.linkedin.com/in/allison-kahn/",
-        image: "/images/people/2018-2019/2018_AllisonKahn_VicePresidentInternalSpring.jpg",
+        image: "/images/people/2018-2019/2018_AllisonKahn_SecretarySpring.jpg",
         year: "2018-2019"
       },
       {
@@ -184,13 +191,6 @@ const execBoards: ExecBoard[] = [
         position: "Treasurer",
         linkedin: "https://www.linkedin.com/in/msilversmith/",
         image: "/images/people/2018-2019/2018_MatthewSilversmith_TreasurerSpring.jpg",
-        year: "2018-2019"
-      },
-      {
-        name: "Vinay Reddy",
-        position: "Secretary",
-        linkedin: "https://www.linkedin.com/in/vinayreddy/",
-        image: "/images/people/2018-2019/2018_VinayReddy_SecretarySpring.jpg",
         year: "2018-2019"
       },
       {
@@ -207,18 +207,40 @@ const execBoards: ExecBoard[] = [
     displayName: "2019-2020 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Delaney Gomen",
         position: "President",
-        image: "/images/alumni/placeholder.jpg",
+        linkedin: "https://www.linkedin.com/in/tylerjrichards/",
+        image: "/images/people/2019-2020/2019_DelaneyGomen_PresidentSpring.jpg",
         year: "2019-2020"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
-        image: "/images/alumni/placeholder.jpg",
+        name: "Vinay Chitepu",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/vinayreddy/",
+        image: "/images/people/2019-2020/2019_VinayReddy_VicePresidentInternalSpring.jpg",
         year: "2019-2020"
-      }
-      // Add more members as needed
+      },
+      {
+        name: "Natalie Skala",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/natalieskala/",
+        image: "/images/people/2019-2020/2019_NatalieSkala_VicePresidentExternalSpring.jpg",
+        year: "2019-2020"
+      },
+      {
+        name: "Arman Bayik",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/arman-bayik/",
+        image: "/images/people/2019-2020/2019_ArmanBayik_SecretarySpring.jpg",
+        year: "2019-2020"
+      },
+      {
+        name: "Cooper Martin",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/cooper-martin/",
+        image: "/images/people/2019-2020/2019_CooperMartin_TreasurerSpring.jpg",
+        year: "2019-2020"
+      },
     ]
   },
   {
