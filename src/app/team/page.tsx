@@ -241,6 +241,13 @@ const execBoards: ExecBoard[] = [
         image: "/images/people/2019-2020/2019_CooperMartin_TreasurerSpring.jpg",
         year: "2019-2020"
       },
+      {
+        name: "Binit Banerjee",
+        position: "Workshop Director",
+        linkedin: "https://www.linkedin.com/in/binit-banerjee-75a84189/",
+        image: "/images/people/2019-2020/2019_BinitBanerjee_WorkshopDirectorSpring.jpg",
+        year: "2019-2020"
+      }
     ]
   },
   {
@@ -248,18 +255,53 @@ const execBoards: ExecBoard[] = [
     displayName: "2020-2021 Executive Board",
     members: [
       {
-        name: "Executive Member 1",
+        name: "Cooper Martin",
         position: "President",
-        image: "/images/alumni/placeholder.jpg",
+        image: "/images/people/2020-2021/2020_CooperMartin_PresidentSpring.jpg",
         year: "2020-2021"
       },
       {
-        name: "Executive Member 2",
-        position: "Vice President",
-        image: "/images/alumni/placeholder.jpg",
+        name: "Simon Frank",
+        position: "Vice President Internal",
+        linkedin: "https://www.linkedin.com/in/simon-frank/",
+        image: "/images/people/2020-2021/2020_SimonFrank_VicePresidentInternalSpring.jpg",
+        year: "2020-2021"
+      },
+      {
+        name: "Calvin Korponai",
+        position: "Vice President External",
+        linkedin: "https://www.linkedin.com/in/calvin-korponai-1a1a5b368/",
+        image: "/images/people/2020-2021/2020_CalvinKorponai_VicePresidentExternalSpring.jpg",
+        year: "2020-2021"
+      },
+      {
+        name: "Federico Marti Garro",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/fmartigarro/",
+        image: "/images/people/2020-2021/2020_FedericoMartiGarro_SecretarySpring.jpg",
+        year: "2020-2021"
+      },
+      {
+        name: "Leslie Harvey",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/leslie-harvey/",
+        image: "/images/people/2020-2021/2020_LeslieHarvey_TreasurerSpring.jpg",
+        year: "2020-2021"
+      },
+      {
+        name: "Eric De Rezende",
+        position: "Networking Director",
+        linkedin: "https://www.linkedin.com/in/eric-de-rezende/",
+        image: "/images/people/2020-2021/2020_EricDeRezende_NetworkingDirectorSpring.jpg",
+        year: "2020-2021"
+      },
+      {
+        name: "Enes Grahovac",
+        position: "Workshop Director",
+        linkedin: "https://www.linkedin.com/in/enes-grahovac-105/",
+        image: "/images/people/2020-2021/2020_EnesGrahovac_WorkshopDirectorSpring.jpg",
         year: "2020-2021"
       }
-      // Add more members as needed
     ]
   },
   {
