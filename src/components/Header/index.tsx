@@ -61,7 +61,7 @@ const Header = () => {
                 }`}
               >
                 <Image
-                  src="/images/logo/dsi-logo-small.svg"
+                  src="/images/logo/hd-transparent-dsi-logo.png"
                   alt="DSI logo"
                   width={100}
                   height={40}
