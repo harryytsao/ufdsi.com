@@ -5,6 +5,9 @@ import dynamic from "next/dynamic";
 const NewsCarousel = dynamic(() => import("@/components/NewsCarousel"), { ssr: false });
 
 const AboutPage = () => {
+  // Article IDs for "org of year", "Ccc award", and "nvidia workshop"
+  const featuredArticleIds = [1, 10, 7];
+
   return (
     <>
       <section className="pt-[150px] pb-[120px]">
@@ -31,7 +34,7 @@ const AboutPage = () => {
               <div className="w-full px-4 lg:w-1/2">
                 <div className="text-center">
                   <div className="relative z-10 inline-block w-full max-w-[500px]">
-                    <NewsCarousel />
+                    <NewsCarousel articleIds={featuredArticleIds} />
                   </div>
                 </div>
               </div>

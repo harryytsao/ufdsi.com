@@ -6,9 +6,15 @@ import Image from 'next/image';
 // Import the articles data from the newsletter page
 import { articles } from '@/app/newsletter/data';
 
-const NewsCarousel = () => {
-  // Get the 3 most recent articles
-  const recentArticles = articles.slice(0, 3);
+interface NewsCarouselProps {
+  articleIds?: number[];
+}
+
+const NewsCarousel = ({ articleIds }: NewsCarouselProps) => {
+  // Get the specified articles or default to 3 most recent
+  const displayArticles = articleIds 
+    ? articleIds.map(id => articles.find(article => article.id === id)).filter(Boolean)
+    : articles.slice(0, 3);
   
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -26,7 +32,7 @@ const NewsCarousel = () => {
     if (isTransitioning) return;
     
     setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % recentArticles.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % displayArticles.length);
     
     // Reset transition state after animation completes
     setTimeout(() => {
@@ -39,7 +45,7 @@ const NewsCarousel = () => {
     
     setIsTransitioning(true);
     setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? recentArticles.length - 1 : prevIndex - 1
+      prevIndex === 0 ? displayArticles.length - 1 : prevIndex - 1
     );
     
     // Reset transition state after animation completes
@@ -64,7 +70,7 @@ const NewsCarousel = () => {
     <div className="relative rounded-md shadow-lg overflow-hidden">
       {/* Carousel container */}
       <div className="relative h-[400px] overflow-hidden">
-        {recentArticles.map((article, index) => (
+        {displayArticles.map((article, index) => (
           <div
             key={article.id}
             className={`absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out ${
@@ -116,7 +122,7 @@ const NewsCarousel = () => {
 
       {/* Indicators */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
-        {recentArticles.map((_, index) => (
+        {displayArticles.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
