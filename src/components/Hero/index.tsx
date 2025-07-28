@@ -64,7 +64,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 flex min-h-screen w-full items-start justify-center overflow-hidden bg-white dark:bg-black pt-40 md:pt-48"
+        className="relative z-10 flex min-h-screen w-full items-start justify-center overflow-hidden bg-white dark:bg-black pt-44 md:pt-52"
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
