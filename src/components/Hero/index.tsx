@@ -35,7 +35,7 @@ const Hero = () => {
     const interval = setInterval(switchPhrase, 3000);
     
     return () => clearInterval(interval);
-  }, []);
+  }, [phrases]);
 
   const highlights = [
     "UF Student Organization of the Year Winner",
@@ -58,7 +58,7 @@ const Hero = () => {
     };
     const interval = setInterval(switchHighlight, 3500);
     return () => clearInterval(interval);
-  }, []);
+  }, [highlights]);
 
   return (
     <>
@@ -109,7 +109,7 @@ const Hero = () => {
                     
                   </div>
                   <h2 className="mb-1 sm:mb-2 text-lg font-medium italic text-white md:text-2xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.6)' }}>
-                    "Knowledge should be accessible to all"
+                    &ldquo;Knowledge should be accessible to all&rdquo;
                   </h2>
                 </div>
                 

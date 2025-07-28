@@ -1,11 +1,17 @@
-import SymposiumNew from '@/components/symposium-new/index';
+import SymposiumNew from "@/components/symposium-new";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Symposium - New",
-  description: "DSI Spring Research Symposium 2025 - A day of learning, networking, and innovation",
+  title: "Symposium - UF DSI",
+  description: "DSI's annual spring symposium.",
 };
 
-export default function SymposiumNewPage() {
-  return <SymposiumNew />;
-}
+const SymposiumNewPage = () => {
+  return (
+    <>
+      <SymposiumNew />
+    </>
+  );
+};
+
+export default SymposiumNewPage;
