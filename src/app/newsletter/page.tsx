@@ -89,20 +89,7 @@ export default function NewsletterPage() {
   const [filter, setFilter] = useState('All');
   
   const featuredArticles = articles.filter(article => article.featured);
-  const regularArticles = articles.filter(article => !article.featured).sort((a, b) => {
-    // Try to parse year and month from the date string (e.g., 'March 2025')
-    const parseDate = (dateStr: string) => {
-      const [monthStr, yearStr] = dateStr.split(' ');
-      const months = [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'
-      ];
-      const month = months.indexOf(monthStr);
-      const year = parseInt(yearStr, 10);
-      return new Date(year, month, 1);
-    };
-    return parseDate(b.date).getTime() - parseDate(a.date).getTime();
-  });
+  const regularArticles = articles.filter(article => !article.featured);
   
   const categories = ['All', ...Array.from(new Set(articles.map(a => a.category)))];
   
