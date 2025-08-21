@@ -447,7 +447,63 @@ const execBoards: ExecBoard[] = [
         year: "2023-2024"
       }
     ]
-  }
+  },
+  {
+    year: "2024-2025",
+    displayName: "2024-2025 Executive Board",
+    members: [
+      {
+        name: "Matheus Maldaner",
+        position: "President",
+        linkedin: "https://www.linkedin.com/in/matheusmaldaner/",
+        image: "/images/people/2024-2025/2024_MatheusMaldaner_PresidentSpring.jpeg",
+        year: "2024-2025"
+      },
+      {
+        name: "Kaavya Polavarapu",
+        position: "Internal Vice President",
+        linkedin: "https://www.linkedin.com/in/kaavya-polavarapu/",
+        image: "/images/people/2024-2025/2024_KaavyaPolavarapu_InternalVicePresidentSpring.jpeg",
+        year: "2024-2025"
+      },
+      {
+        name: "Harry Tsao",
+        position: "External Vice President",
+        linkedin: "https://www.linkedin.com/in/harrytsao/",
+        image: "/images/people/2024-2025/2024_HarryTsao_ExternalVicePresidentSpring.jpeg",
+        year: "2024-2025"
+      },
+      {
+        name: "Michele Hirn",
+        position: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/michele-hirn/",
+        image: "/images/people/2024-2025/2024_MicheleHirn_TreasurerSpring.jpeg",
+        year: "2024-2025"
+      },
+      {
+        name: "Ishan Kumthekar",
+        position: "Workshop Director",
+        linkedin: "https://www.linkedin.com/in/ishan-kumthekar-080827255/",
+        image: "/images/people/2024-2025/2024_IshanKumthekar_WorkshopDirectorSpring.jpeg",
+        year: "2024-2025"
+      },
+      {
+        name: "Aaron Goffstein",
+        position: "Networking Director",
+        linkedin: "https://www.linkedin.com/in/aaron-goffstein/",
+        image: "/images/people/2024-2025/2024_AaronGoffstein_NetworkingDirectorSpring.jpeg",
+        year: "2024-2025"
+      },
+      {
+        name: "Sanjana Dundigalla",
+        position: "Secretary",
+        linkedin: "https://www.linkedin.com/in/sanjana-dundigalla/",
+        image: "/images/people/2024-2025/2024_SanjanaDundigalla_SecretarySpring.jpeg",
+        year: "2024-2025"
+      }
+    ]
+  },
+  
 ];
 
 // Create an array of tab options including "Current Board" and all exec board years in descending order
@@ -479,6 +535,15 @@ const TeamPage = () => {
             <div className="absolute left-1/2 -translate-x-1/2 top-0 -mt-6 w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-500 rounded-full"></div>
            
             
+          </div>
+
+          <div className="mb-8 text-center">
+            <p className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-4">
+              Interested in applying to the Junior Executive Board?
+            </p>
+            <button className="px-6 py-2 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-75">
+              Apply Here
+            </button>
           </div>
 
           {/* Improved board selection with cards */}

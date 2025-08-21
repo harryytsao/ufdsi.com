@@ -1,7 +1,7 @@
 type Person = {
   name: string;
   position?: string;
-  linkedIn?: string;
+  linkedin?: string;
   image?: string;
 };
 
@@ -45,45 +45,52 @@ const executives: Person[] = [
   {
     name: "Matheus Maldaner",
     position: "President",
-    linkedIn: "https://www.linkedin.com/in/matheusmaldaner/",
-    image: "/images/people/2024-2025/2024_MatheusMaldaner_PresidentSpring.jpeg"
+    linkedin: "https://www.linkedin.com/in/matheusmaldaner/",
+    image: "/images/people/2024-2025/2024_MatheusMaldaner_PresidentSpring.jpeg",
+    year: "2025-2026"
   },
   {
-    name: "Kaavya Polavarapu",
+    name: "Aadhi Vijaisenthil",
     position: "Internal Vice President",
-    linkedIn: "https://www.linkedin.com/in/kaavya-polavarapu/",
-    image: "/images/people/2024-2025/2024_KaavyaPolavarapu_InternalVicePresidentSpring.jpeg"
+    linkedin: "https://www.linkedin.com/in/aadhitya-vijaisenthil/",
+    image: "/images/people/2024-2025/2024_AadhityaVijaisenthi_WorkshopCoordinatorSpring.jpeg",
+    year: "2025-2026"
   },
   {
-    name: "Harry Tsao",
+    name: "My Pham",
     position: "External Vice President",
-    linkedIn: "https://www.linkedin.com/in/harrytsao/",
-    image: "/images/people/2024-2025/2024_HarryTsao_ExternalVicePresidentSpring.jpeg"
+    linkedin: "https://www.linkedin.com/in/my-pham-8554b8278/",
+    image: "/images/people/2024-2025/2024_MyPham_EventCoordinatorSpring.jpeg",
+    year: "2025-2026"
   },
   {
-    name: "Michele Hirn",
+    name: "Pranav Bhargava",
     position: "Treasurer",
-    linkedIn: "https://www.linkedin.com/in/michele-hirn/",
-    image: "/images/people/2024-2025/2024_MicheleHirn_TreasurerSpring.jpeg"
+    linkedin: "https://www.linkedin.com/in/pranavb15/",
+    image: "/images/people/2024-2025/2024_PranavBhargava_SponsorshipCoordinatorSpring.jpeg",
+    year: "2025-2026"
   },
   {
-    name: "Ishan Kumthekar",
+    name: "Tristan Pank",
     position: "Workshop Director",
-    linkedIn: "https://www.linkedin.com/in/ishan-kumthekar-080827255/",
-    image: "/images/people/2024-2025/2024_IshanKumthekar_WorkshopDirectorSpring.jpeg"
+    linkedin: "https://www.linkedin.com/in/tristanpank/",
+    image: "/images/people/2024-2025/2024_TristanPank_WorkshopCoordinatorSpring.jpeg",
+    year: "2025-2026"
   },
   {
-    name: "Aaron Goffstein",
+    name: "Andria Gonzalez Lopez",
     position: "Networking Director",
-    linkedIn: "https://www.linkedin.com/in/aaron-goffstein/",
-    image: "/images/people/2024-2025/2024_AaronGoffstein_NetworkingDirectorSpring.jpeg"
+    linkedin: "https://www.linkedin.com/in/andria-gonzalez-lopez-79713b21b/",
+    image: "/images/people/2024-2025/2024_AndriaGonzalezLopez_NetworkingCoordinatorSpring.jpeg",
+    year: "2025-2026"
   },
   {
-    name: "Sanjana Dundigalla",
+    name: "Safi Ali",
     position: "Secretary",
-    linkedIn: "https://www.linkedin.com/in/sanjana-dundigalla/",
-    image: "/images/people/2024-2025/2024_SanjanaDundigalla_SecretarySpring.jpeg"
-  },
+    linkedin: "https://www.linkedin.com/in/safi-ali-026b71325/",
+    image: "/images/people/2024-2025/2024_SafiAli_SocialMediaCoordinatorSpring.jpeg",
+    year: "2025-2026"
+  }
 ];
 
 type JuniorRole = {
@@ -169,32 +176,6 @@ const Team = () => {
           </div>
         </div>
 
-        {/* Section for Junior Board */}
-        <div>
-          <div className="text-center mb-16">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white inline-block relative">
-              Junior E-Board
-              <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-blue-500"></span>
-            </h3>
-          </div>
-          
-          <div className="space-y-20">
-            {juniorRoles.map((role, roleIndex) => (
-              <div key={`role-${roleIndex}`}>
-                <div className="text-center mb-8">
-                  <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-200 inline-block px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-700 shadow-sm">
-                    {role.title}
-                  </h4>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
-                  {role.members.map((person, index) => (
-                    <PersonCard key={`${role.title}-${index}`} person={person} />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
