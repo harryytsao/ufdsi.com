@@ -47,49 +47,42 @@ const executives: Person[] = [
     position: "President",
     linkedin: "https://www.linkedin.com/in/matheusmaldaner/",
     image: "/images/people/2024-2025/2024_MatheusMaldaner_PresidentSpring.jpeg",
-    year: "2025-2026"
   },
   {
     name: "Aadhi Vijaisenthil",
     position: "Internal Vice President",
     linkedin: "https://www.linkedin.com/in/aadhitya-vijaisenthil/",
     image: "/images/people/2024-2025/2024_AadhityaVijaisenthi_WorkshopCoordinatorSpring.jpeg",
-    year: "2025-2026"
   },
   {
     name: "My Pham",
     position: "External Vice President",
     linkedin: "https://www.linkedin.com/in/my-pham-8554b8278/",
     image: "/images/people/2024-2025/2024_MyPham_EventCoordinatorSpring.jpeg",
-    year: "2025-2026"
   },
   {
     name: "Pranav Bhargava",
     position: "Treasurer",
     linkedin: "https://www.linkedin.com/in/pranavb15/",
     image: "/images/people/2024-2025/2024_PranavBhargava_SponsorshipCoordinatorSpring.jpeg",
-    year: "2025-2026"
   },
   {
     name: "Tristan Pank",
     position: "Workshop Director",
     linkedin: "https://www.linkedin.com/in/tristanpank/",
     image: "/images/people/2024-2025/2024_TristanPank_WorkshopCoordinatorSpring.jpeg",
-    year: "2025-2026"
   },
   {
     name: "Andria Gonzalez Lopez",
     position: "Networking Director",
     linkedin: "https://www.linkedin.com/in/andria-gonzalez-lopez-79713b21b/",
     image: "/images/people/2024-2025/2024_AndriaGonzalezLopez_NetworkingCoordinatorSpring.jpeg",
-    year: "2025-2026"
   },
   {
     name: "Safi Ali",
     position: "Secretary",
     linkedin: "https://www.linkedin.com/in/safi-ali-026b71325/",
     image: "/images/people/2024-2025/2024_SafiAli_SocialMediaCoordinatorSpring.jpeg",
-    year: "2025-2026"
   }
 ];
 
