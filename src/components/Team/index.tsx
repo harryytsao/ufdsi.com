@@ -23,9 +23,9 @@ const PersonCard = ({ person }: { person: Person }) => (
         </span>
       )}
       <div className="flex items-center mt-4">
-        {person.linkedIn && (
+        {person.linkedin && (
           <a
-            href={person.linkedIn}
+            href={person.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center text-sm"
