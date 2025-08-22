@@ -86,68 +86,6 @@ const executives: Person[] = [
   }
 ];
 
-type JuniorRole = {
-  title: string;
-  members: Person[];
-};
-
-const juniorRoles: JuniorRole[] = [
-  {
-    title: "Workshop Coordinators",
-    members: [
-      { name: "Cecilia Cardenas", linkedIn: "https://www.linkedin.com/in/cecilia-elena-cardenas/", image: "/images/people/2024-2025/2024_CeciliaCardenas_WorkshopCoordinatorSpring.jpeg" },
-      { name: "Marc Marquez", linkedIn: "https://www.linkedin.com/in/marc--marquez/", image: "/images/people/2024-2025/2024_MarcMarquez_WorkshopCoordinatorSpring.jpeg" },
-      { name: "Aadhitya Vijaisenthi", linkedIn: "https://www.linkedin.com/in/aadhitya-vijaisenthil/", image: "/images/people/2024-2025/2024_AadhityaVijaisenthi_WorkshopCoordinatorSpring.jpeg" },
-      { name: "Tristan Pank", linkedIn: "https://www.linkedin.com/in/tristan-pank/", image: "/images/people/2024-2025/2024_TristanPank_WorkshopCoordinatorSpring.jpeg" }
-    ]
-  },
-  {
-    title: "Social Media Coordinators",
-    members: [
-      { name: "Safi Ali", linkedIn: "https://www.linkedin.com/in/safi-ali-026b71325/", image: "/images/people/2024-2025/2024_SafiAli_SocialMediaCoordinatorSpring.jpeg" },
-      { name: "Kaylee Pekar", linkedIn: "https://www.linkedin.com/in/kayleepekar/", image: "/images/people/2024-2025/2024_KayleePekar_SocialMediaCoordinatorSpring.jpeg" },
-      { name: "Ron Beck", linkedIn: "https://www.linkedin.com/in/ronald-beck-156691321/", image: "/images/people/2024-2025/2024_RonBeck_SocialMediaCoordinatorSpring.jpeg" },
-      { name: "Carlos Jusino", linkedIn: "https://www.linkedin.com/in/carlosdjusino/", image: "/images/people/2024-2025/2024_CarlosJusino_SocialMediaCoordinatorSpring.jpeg" }
-    ]
-  },
-  {
-    title: "Sponsorship Coordinators",
-    members: [
-      { name: "Pranav Bhargava", linkedIn: "https://www.linkedin.com/in/pranavb15/", image: "/images/people/2024-2025/2024_PranavBhargava_SponsorshipCoordinatorSpring.jpeg" },
-      { name: "Grace Cavarretta", linkedIn: "https://www.linkedin.com/in/grace-cavarretta/", image: "/images/people/2024-2025/2024_GraceCavarretta_SponsorshipCoordinatorSpring.jpeg" },
-      { name: "Brianna Fraga", linkedIn: "https://www.linkedin.com/in/brianna-fraga/", image: "/images/people/2024-2025/2024_BriannaFraga_SponsorshipCoordinatorSpring.jpeg" },
-      { name: "Neha Jupalli", linkedIn: "https://www.linkedin.com/in/neha-jupalli-610063329/", image: "/images/people/2024-2025/2024_NehaJupalli_SponsorshipCoordinatorSpring.jpeg" }
-    ]
-  },
-  {
-    title: "Networking Coordinators",
-    members: [
-      { name: "Samantha Villafane", linkedIn: "https://www.linkedin.com/in/samantha-villafane-b8338b255/", image: "/images/people/2024-2025/2024_SamanthaVillafane_NetworkingCoordinatorSpring.jpeg" },
-      { name: "Misha Shah", linkedIn: "https://www.linkedin.com/in/misha-s-shah/", image: "/images/people/2024-2025/2024_MishaShah_NetworkingCoordinatorSpring.jpeg" },
-      { name: "Divij Goyal", linkedIn: "https://www.linkedin.com/in/divij-goyal23/", image: "/images/people/2024-2025/2024_DivijGoyal_NetworkingCoordinatorSpring.jpeg" },
-      { name: "Bryson McGinley", linkedIn: "https://www.linkedin.com/in/brysonmcginley/", image: "/images/people/2024-2025/2024_BrysonMcGinley_NetworkingCoordinatorSpring.jpeg" },
-      { name: "Andria Gonzalez Lopez", linkedIn: "https://www.linkedin.com/in/andria-gonzalez-lopez-79713b21b/", image: "/images/people/2024-2025/2024_AndriaGonzalezLopez_NetworkingCoordinatorSpring.jpeg" }
-    ]
-  },
-  {
-    title: "Webmasters",
-    members: [
-      { name: "Autumn Qiu", linkedIn: "https://www.linkedin.com/in/autumn-qiu/", image: "/images/people/2024-2025/2024_AutumnQiu_WebmasterSpring.jpeg" },
-      { name: "Suchir Kolli", linkedIn: "https://www.linkedin.com/in/suchir-kolli-9a5288293/", image: "/images/people/2024-2025/2024_SuchirKolli_WebmasterSpring.jpeg" },
-      { name: "Carlos Hernandez", linkedIn: "https://www.linkedin.com/in/carlos-hernandez2/", image: "/images/people/2024-2025/2024_CarlosHernandez_WebmasterSpring.jpeg" }
-    ]
-  },
-  {
-    title: "Event Coordinators",
-    members: [
-      { name: "Analise Stuart", linkedIn: "https://www.linkedin.com/in/analise-stuart-366425301/", image: "/images/people/2024-2025/2024_AnaliseStuart_EventCoordinatorSpring.jpeg" },
-      { name: "My Pham", linkedIn: "https://www.linkedin.com/in/my-pham-8554b8278/", image: "/images/people/2024-2025/2024_MyPham_EventCoordinatorSpring.jpeg" },
-      { name: "Sandra Hanushchik", linkedIn: "https://www.linkedin.com/in/sandra-hanuschik/", image: "/images/people/2024-2025/2024_SandraHanushchik_EventCoordinatorSpring.jpeg" },
-      { name: "Shravya Sama", linkedIn: "https://www.linkedin.com/in/shravya-sama-7850a0217/", image: "/images/people/2024-2025/2024_ShravyaSama_EventCoordinatorSpring.jpeg" }
-    ]
-  },
-];
-
 const Team = () => {
   return (
     <div className="bg-white dark:bg-gray-dark">
