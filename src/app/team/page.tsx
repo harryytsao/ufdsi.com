@@ -537,14 +537,7 @@ const TeamPage = () => {
             
           </div>
 
-          <div className="mb-8 text-center">
-            <p className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-4">
-              Interested in applying to the Junior Executive Board?
-            </p>
-            <button className="px-6 py-2 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-75">
-              Apply Here
-            </button>
-          </div>
+
 
           {/* Improved board selection with cards */}
           <div className="mx-auto w-full max-w-3xl mb-16">
